@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Full Web Tetris</title>
+
+	<meta charset="utf-8">
+	<meta name="description" content="An awesome tetris game for the moments when you need to kill the boredom.">
+	<meta name="author" content="Juande Martos - bumxu.com">
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="production.css">
+
+	<script type="text/javascript" src="j/jQall.js" ></script>
+	<script type="text/javascript" src="j/xtr/i18n_offline.js"></script>
+
+	<!-- Analytics Code -->
+</head>
+<body>
+	<div id="layout">
+		<div id="foot">
+			Full Web Tetris v.3.0
+			<div id="right">&copy; 2019 · <a href="https://www.bumxu.com" target="_blank">Bumxu & Asamid</a></div>
+		</div>
+
+		<div class="activity" id="loader">
+			<div id="firsttag-chispa">LOADING</div>
+			<div id="loader-chispa"></div>
+			<div id="title-chispa"></div>
+		</div>
+
+		<div class="activity" id="main">
+			<div id="title"></div>
+			<div id="line"></div>
+			<div id="languages">
+				-
+				<span onclick="ui.setLanguage(0)">English</span> -
+				<span onclick="ui.setLanguage(1)">Español</span> -
+				<span onclick="ui.setLanguage(2)">Français</span> - <!--
+				<span onclick="ui.setLanguage(5)">Italiano</span> -->
+				<span onclick="ui.setLanguage(3)">Deutsch</span> -
+				<span onclick="ui.setLanguage(4)">Português</span> -
+			</div>
+
+			<div id="sight"></div>
+
+			<div id="selector">
+				<div id="tiles">
+					<div onclick="ui.action(1)" id="t1" class="tile"><span class="xtr" data-xtr="newgame-mnu"></span></div>
+					<div onclick="ui.action(2)" id="t2" class="tile"><span class="xtr" data-xtr="customize-mnu"></span></div>
+					<div onclick="ui.action(4)" id="t5" class="tile"><span class="xtr" data-xtr="helpabout-mnu"></span></div>
+				</div>
+			</div>
+
+			<div style="position: absolute; left: 0; right: 0; top: 3%; text-align: center">
+				<a class="feedback" data-xtr="feedback" style="background: rgb(198,203,175); border: 1px solid #9B9E88; border-radius: 2px; color: #7D7F6E; font-size: 11px; text-decoration: none; padding: 3px 8px; font-weight: 600; display: inline-block; box-shadow: 0 0 8px rgba(0,0,0,0.25); cursor: pointer">-- Hi! Welcome to an offline echo of FWT --<br>Game is saved per route (file:///...), so finish your games before move the files.</a>
+			</div>
+		</div>
+
+		<div class="activity" id="game">
+			<div id="next">
+				<div id="l1"></div>
+				<div id="score"></div>
+				<div id="l2"></div>
+				<div id="linecount"></div>
+				<div id="l3"></div>
+				<div id="level"></div>
+				<div id="l4"></div>
+			</div>
+
+			<div class="button xtr" id="newg" onclick="ui.action(1)" data-xtr="newgame-btt"></div>
+			<div class="button xtr" id="paus" onclick="fwt.pause()" data-xtr="pausegame-btt"></div>
+			<div class="button xtr" id="sett" onclick="ui.action(2)" data-xtr="settings-btt"></div>
+			<div class="button xtr" id="back" onclick="ui.action(6)" data-xtr="goback-btt"></div>
+
+			<canvas id="canvas" width="800" height="600"></canvas>
+			<div id="osd"></div>
+
+			<div id="adGame">
+				<!-- Ads Code -->
+			</div>
+		</div>
+
+		<div class="activity" id="settings">
+
+			<div class="buttonback xtr" onclick="ui.action(6)" data-xtr="goback-btt"></div>
+
+			<div id="settingscroller">
+
+				<div class="row" id="shades">
+					<div class="description">
+						<h3 class="xtr" data-xtr="custom-shade"></h3>
+						<span class="xtr" data-xtr="custom-shade-d"></span>
+					</div>
+					<div class="controls">
+						<div class="alternate false">O</div>
+						<div class="alternate true">I</div>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="row" id="invisibles">
+					<div class="description">
+						<h3 class="xtr" data-xtr="custom-invisible"></h3>
+						<span class="xtr" data-xtr="custom-invisible-d"></span>
+					</div>
+					<div class="controls">
+						<div class="alternate false">O</div>
+						<div class="alternate true">I</div>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="row" id="speed">
+					<div class="description">
+						<h3 class="xtr" data-xtr="custom-speed"></h3>
+						<span class="xtr" data-xtr="custom-speed-d"></span>
+					</div>
+					<div class="controls">
+						<div class="alternate opt xtr" data-value="low" data-xtr="custom-speed-low"></div>
+						<div class="alternate opt xtr" data-value="medium" data-xtr="custom-speed-medium"></div>
+						<div class="alternate opt xtr" data-value="high" data-xtr="custom-speed-high"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="row" id="rotation">
+					<div class="description">
+						<h3 class="xtr" data-xtr="custom-rotation"></h3>
+						<span class="xtr" data-xtr="custom-rotation-d"></span>
+					</div>
+					<div class="controls">
+						<div class="alternate opt xtr" data-value="c" data-xtr="custom-rotation-clockwise"></div>
+						<div class="alternate opt xtr" data-value="cc" data-xtr="custom-rotation-cclockwise"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="row" id="sizes">
+					<div class="description">
+						<h3 class="xtr" data-xtr="custom-size"></h3>
+						<span class="xtr" data-xtr="custom-size-d"></span>
+					</div>
+					<div class="controls">
+						<div class="textcamp xtr" data-xtr="custom-size-width"></div>
+						<input class="textinput custom-size-w" type="text">
+						<div class="textcamp xtr" data-xtr="custom-size-height"></div>
+						<input class="textinput custom-size-h" type="text">
+						<div class="textvalidate val xtr" data-xtr="custom-size-notice"></div>
+						<div class="textvalidate xtr" data-xtr="newgame-notice"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="row" id="startlevel">
+					<div class="description">
+						<h3 class="xtr" data-xtr="custom-level"></h3>
+						<span class="xtr" data-xtr="custom-level-d"></span>
+					</div>
+					<div class="controls">
+						<div class="textcamp xtr" data-xtr="custom-level-start"></div>
+						<input class="textinput custom-level-s" type="text">
+						<div class="textvalidate val xtr" data-xtr="custom-level-notice"></div>
+						<div class="textvalidate xtr" data-xtr="newgame-notice"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="row" id="themes">
+					<div class="description">
+						<h3 class="xtr" data-xtr="custom-theme"></h3>
+						<span class="xtr" data-xtr="custom-theme-d"></span>
+					</div>
+					<div class="controlsa">
+						<div id="t0" class="alternate opt xtr" data-value="face" data-xtr="custom-theme-face"></div>
+						<div id="t1" class="alternate opt xtr" data-value="billiard" data-xtr="custom-theme-billiard"></div>
+						<div id="t2" class="alternate opt xtr" data-value="crystal" data-xtr="custom-theme-crystal"></div>
+					</div>
+					<div class="controlsb">
+						<div id="t0" class="alternate opt xtr" data-value="retro" data-xtr="custom-theme-retro"></div>
+						<div id="t1" class="alternate opt xtr" data-value="crayon" data-xtr="custom-theme-crayon"></div>
+						<div id="t2" class="alternate opt xtr" data-value="block" data-xtr="custom-theme-block"></div>
+					</div>
+					<div class="controlsc">
+						<div id="t0" class="alternate opt xtr" data-value="bit8" data-xtr="custom-theme-bit8"></div>
+						<div id="t1" class="alternate opt xtr" data-value="recent" data-xtr="custom-theme-recent"></div>
+						<div id="t2" class="alternate opt xtr" data-value="stud" data-xtr="custom-theme-stud"></div>
+					</div>
+					<div class="controlsd">
+						<div id="t0" class="alternate opt xtr" data-value="gameboy" data-xtr="custom-theme-gameboy"></div>
+						<div id="t1" class="alternate opt xtr" data-value="bckwht" data-xtr="custom-theme-bckwht"></div>
+						<div id="t2" class="alternate opt xtr" data-value="dark" data-xtr="custom-theme-dark"></div>
+					</div>
+					<div class="controlse">
+						<div id="t0" class="alternate opt xtr" data-value="classic" data-xtr="custom-theme-classic"></div>
+						<div id="t1" class="alternate opt xtr" data-value="iced" data-xtr="custom-theme-iced"></div>
+						<div id="t2" class="alternate opt xtr" data-value="panel" data-xtr="custom-theme-panel"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="row" id="set">
+					<div class="description">
+						<h3 class="xtr" data-xtr="custom-pieces"></h3>
+						<span class="xtr" data-xtr="custom-pieces-d"></span>
+					</div>
+					<div class="controlsa">
+						<div id="t3" class="alternate opt sp5" data-value="sp5"></div>
+						<div id="t4" class="alternate opt sp10" data-value="sp10"></div>
+						<div id="t5" class="alternate opt sp15" data-value="sp15"></div>
+						<div id="t6" class="alternate opt sp20" data-value="sp20"></div>
+						<div id="t7" class="alternate opt sp25" data-value="sp25"></div>
+						<div id="t8" class="alternate opt sp30" data-value="sp30"></div>
+					</div>
+					<div class="controlsb">
+						<div id="t3" class="alternate opt sp4" data-value="sp4"></div>
+						<div id="t4" class="alternate opt sp9" data-value="sp9"></div>
+						<div id="t5" class="alternate opt sp14" data-value="sp14"></div>
+						<div id="t6" class="alternate opt sp19" data-value="sp19"></div>
+						<div id="t7" class="alternate opt sp24" data-value="sp24"></div>
+						<div id="t8" class="alternate opt sp29" data-value="sp29"></div>
+					</div>
+					<div class="controlsc">
+						<div id="t3" class="alternate opt sp3" data-value="sp3"></div>
+						<div id="t4" class="alternate opt sp8" data-value="sp8"></div>
+						<div id="t5" class="alternate opt sp13" data-value="sp13"></div>
+						<div id="t6" class="alternate opt sp18" data-value="sp18"></div>
+						<div id="t7" class="alternate opt sp23" data-value="sp23"></div>
+						<div id="t8" class="alternate opt sp28" data-value="sp28"></div>
+					</div>
+					<div class="controlsd">
+						<div id="t3" class="alternate opt sp2" data-value="sp2"></div>
+						<div id="t4" class="alternate opt sp7" data-value="sp7"></div>
+						<div id="t5" class="alternate opt sp12" data-value="sp12"></div>
+						<div id="t6" class="alternate opt sp17" data-value="sp17"></div>
+						<div id="t7" class="alternate opt sp22" data-value="sp22"></div>
+						<div id="t8" class="alternate opt sp27" data-value="sp27"></div>
+					</div>
+					<div class="controlse">
+						<div id="t3" class="alternate opt sp1" data-value="sp1"></div>
+						<div id="t4" class="alternate opt sp6" data-value="sp6"></div>
+						<div id="t5" class="alternate opt sp11" data-value="sp11"></div>
+						<div id="t6" class="alternate opt sp16" data-value="sp16"></div>
+						<div id="t7" class="alternate opt sp21" data-value="sp21"></div>
+						<div id="t8" class="alternate opt sp26" data-value="sp26"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<div class="activity" id="help">
+
+			<div class="buttonback xtr" onclick="ui.action(6)" data-xtr="goback-btt"></div>
+
+			<div id="helpscroller">
+
+				<div class="bigtitle">Keyboard shortcuts</div>
+				<p>
+					<span class="line">Move piece to the right <span class="tab"><strong>Right arrow | 6 num key</strong></span></span><br>
+					<span class="line">Move piece to the left <span class="tab"><strong>Left arrow | 4 num key</strong></span></span><br>
+					<span class="line">Rotate piece<span class="tab"><strong>Up arrow* | 8 num key*</strong></span></span><br>
+					<span class="line">Rotate piece counterclockwise<span class="tab"><strong>Z key</strong></span></span><br>
+					<span class="line">Rotate piece clockwise <span class="tab"><strong>X key</strong></span></span><br>
+					<span class="line">Speedup piece drop <span class="tab"><strong>Down key | 2 num key</strong></span></span><br>
+					<span class="line">Direct fall <span class="tab"><strong>Spacebar | 0 num key</strong></span></span><br>
+					<span class="line">Hold Block <span class="tab"><strong>Shift</strong></span></span><br>
+					<span class="line">Pause the game <span class="tab"><strong>P key | 7 num key</strong></span></span><br>
+					<span class="line">Restart game o start a new quick game <span class="tab"><strong>N key | 9 num key</strong></span></span><br>
+					<br>
+					* Direction according to user settings
+				</p>
+
+				<div class="bigtitle">Changelog</div>
+				<p>
+					<strong class="title">Version 3.0.1</strong><br>
+					Next piece changed to include 3 pieces into the future.<br>
+					<br>
+					<strong class="title">Version 3.0.0</strong><br>
+					Minimum width and height limit reduced to 1.<br>
+					A plethra of themes.<br>
+					Piece sets replaced with choosing the pieces<br>
+					Added points for up to an Octotris.<br>
+					Added the invisible option.<br>
+					Added holding.<br>
+					Added the option to change starting level.<br>
+					Added the option to change the speed.<br>
+					Code optimizations.<br>
+					<br>
+					<strong class="title">Version 2.3.7</strong><br>
+					All online features have been removed.<br>
+					Multi language system now works on <code>file:///</code> routes.<br>
+					AppCache is no longer needed.<br>
+					Analytics and advertising code have been removed.<br>
+					<br>
+					<strong class="title">Deleted from Chrome Store by legal complaint from Tetris Holding LLC (6 Oct 2018). 🙁</strong><br>
+					<br>
+					<strong class="title">Version 2.3.6</strong><br>
+					New hosting provider.<br>
+					Supporting HTTPS for AppCache (<a href="https://goo.gl/rStTGz" target="_blank">https://goo.gl/rStTGz</a>).<br>
+					This removes saved games (thanks Google 🙁).<br>
+					<br>
+					<strong class="title">Version 2.3.5</strong><br>
+					Fix for issue 31.<br>
+					<br>
+					<strong class="title">Version 2.3.4</strong><br>
+					Quick fix to the leveling error! I could not delay it to the next version...  :-)<br>
+					<br>
+					<strong class="title">Version 2.3.3</strong><br>
+					Fix of important last week bug with new bumxu server schema, sorry gamers.<br>
+					Merry christmas!<br>
+					<br>
+					<strong class="title">Version 2.3.2</strong><br>
+					Collision system redone (now the game is "inbugeable" lol).<br>
+					Loading performance opmimization.<br>
+					<br>
+					<strong class="title">Version 2.3.1</strong><br>
+					Improvements and bugfixes.<br>
+					Default direction of rotation option in preferences panel.<br>
+					Different sets of pieces.<br>
+					Portuguese available again.<br>
+					Try to fix an unusual error on first load.<br>
+					<br>
+					<strong class="title">Version 2.3.0</strong><br>
+					Numerous improvements and bugfixes.<br>
+					New customized game panel finished.<br>
+					Deep review of the user interface.<br>
+					Review of the changelog.<br>
+					<br>
+					<strong class="title">Deleted from Chrome Store by user complaints :-(</strong><br>
+					<br>
+					<strong class="title">Version 2.2.0</strong><br>
+					New customized game panel in beta.<br>
+					Smart preload system.<br>
+					Recover saved games.<br>
+					Fixed: No pause on Internet Explorer.<br>
+					Fixed: With the game finished, speed up key still works. XD<br>
+					<br>
+					<strong class="title">Version 2.1.0</strong><br>
+					Game box size variable.<br>
+					<br>
+					<strong class="title">Version 2.0.8</strong><br>
+					Released documentation in English.<br>
+					Images perloader added.<br>
+					"New game" without reload the application & keyboard shourcuts.<br>
+					Conversion to OOP.<br>
+					Autoresize improved.<br>
+					Direct fall of pieces with the spacebar key.<br>
+					OSD.<br>
+					<br>
+					<strong class="title">Version 2.0.6</strong><br>
+					Next piece box enabled.<br>
+					<br>
+					<strong class="title">Version 2.0.5</strong><br>
+					New score system.<br>
+					Fixed minor bugs with the keyboard control.<br>
+					<br>
+					<strong class="title">Version 2</strong><br>
+					Programmed from scratch.<br>
+					Highly optimized.<br>
+					Completely integrated with site interface.<br>
+					Core separated from rendering, optimized for HTML5 but with classic mode available.<br>
+					In studing failures of the previous version.<br>
+					Interface an game board dinamicaly adaptable whit resolution up to 1000 x 600 (netbooks, tablets).
+				<br>
+					<br>
+					<strong class="title">Future features</strong><br>
+					Personalised game modes.<br>
+					Adjustable levels.<br>
+					Touch mouse controls.<br>
+					Music.<br>
+					New translations soon<br>
+					<br>
+					<strong class="title">Fails & faults</strong><br>
+					Anything! =D<br>
+				</p>
+
+				<!--div class="bigtitle">License</div-->
+
+				<!--div class="bigtitle">Privacy</div-->
+
+				<div class="bigtitle">About</div>
+				<p>
+					<strong class="title">Credits</strong><br>
+					<span class="line">Progamming, design and documentation <span class="tab"><strong>Juande Martos</strong></span></span><br>
+					<span class="line">Performance testing and extreme ideas <span class="tab"><strong>Juanjo Riado, Jorge Martín</strong></span></span><br>
+					<br>
+					<strong class="title">With the help of...</strong><br>
+					<span class="line">Speeding up user interface <span class="tab"><strong><a href="http://jquery.com" target="_blank">jQuery</strong></a></span></span><br>
+					<span class="line">Scores reference<span class="tab"><a href="http://goo.gl/sJAff" target="_blank"><strong>http://goo.gl/sJAff</strong></a></span></span><br>
+				</p>
+				<br><br>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="j/librerias/bX-fwt.js"></script>
+	<script type="text/javascript" src="j/librerias/bX-ui.js"></script>
+	<script type="text/javascript" src="j/librerias/bX-controls.js"></script>
+</body>
+</html>
