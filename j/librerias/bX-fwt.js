@@ -2018,7 +2018,7 @@
 		return mat3;
 	}
 	this.switchMat1 = switchMat1;
-	this.switchMat1 = switchMat2;
+	this.switchMat2 = switchMat2;
 	this.switchMat3 = switchMat3;
 	this.getMat1 = getMat1;
 	this.getMat2 = getMat2;
