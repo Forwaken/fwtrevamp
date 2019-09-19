@@ -99,6 +99,9 @@
         "custom-rotation-clockwise": "Clockwise",
         "custom-rotation-cclockwise": "Counterclockwise",
 
+	"custom-mat": "Materials",
+	"custom-mat-d": "Change what materials the pieces can generate as.",
+
         "custom-pieces": "Pieces",
         "custom-pieces-d": "Change what pieces drop in the game.",
 
@@ -205,6 +208,9 @@
         "custom-rotation-clockwise": "Sentido horario",
         "custom-rotation-cclockwise": "Sentido antihorario",
 
+	"custom-mat": "Materials",
+	"custom-mat-d": "Change what materials the pieces can generate as.",
+	    
         "custom-pieces": "Pieces",
         "custom-pieces-d": "Change what pieces drop in the game.",
 
@@ -309,6 +315,9 @@
         "custom-rotation-d": "Wählen Sie die Standardrotation aus, um ein Stück mit zu drehen &uarr; Schlüssel.",
         "custom-rotation-clockwise": "im Uhrzeigersinn",
         "custom-rotation-cclockwise": "Gegen den Uhrzeigersinn",
+
+	"custom-mat": "Materials",
+	"custom-mat-d": "Change what materials the pieces can generate as.",
 
         "custom-pieces": "Pieces",
         "custom-pieces-d": "Change what pieces drop in the game.",
@@ -435,6 +444,9 @@
         "custom-rotation-clockwise": "Sentido horário",
         "custom-rotation-cclockwise": "Sentido anti-horário",
 
+	"custom-mat": "Materials",
+	"custom-mat-d": "Change what materials the pieces can generate as.",
+
         "custom-pieces": "Pieces",
         "custom-pieces-d": "Change what pieces drop in the game.",
 
@@ -539,6 +551,9 @@
         "custom-rotation-d": "Sélectionnez la rotation par défaut pour faire tourner une pièce avec la touche &uarr;.",
         "custom-rotation-clockwise": "Dans le sens horaire",
         "custom-rotation-cclockwise": "Dans le sens antihoraire",
+
+	"custom-mat": "Materials",
+	"custom-mat-d": "Change what materials the pieces can generate as.",
 
         "custom-pieces": "Pieces",
         "custom-pieces-d": "Change what pieces drop in the game.",
