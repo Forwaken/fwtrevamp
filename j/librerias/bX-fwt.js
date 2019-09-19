@@ -17,7 +17,7 @@
 
 	// Pieces
 	var colors = ["red", "green", "cyan", "orange", "blue", "white", "yellow", "purple"];
-	var mats = [3];
+	var mats = [];
 	var mat1, mat2, mat3;
 	var mat1 = true;
 	var next1, next2, next3, hold, current, temp, shade, invisible;
@@ -153,6 +153,7 @@
 		window.cancelAnimFrame(clock);
 		
 		set();
+		mat();
 		
 		lastLine = height - 1;
 		gameStatus = 3;
@@ -1031,6 +1032,7 @@
 
 		if(!paintOnly) {
 			set();
+			mat();
 			rndForm = Math.round(Math.random() * (forms.length - 1));
 			rndColor = Math.round(Math.random() * (colors.length - 1));
 			rndMat = Math.round(Math.random() * mats.length - 1);
