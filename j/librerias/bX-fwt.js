@@ -17,10 +17,10 @@
 
 	// Pieces
 	var colors = ["red", "green", "cyan", "orange", "blue", "white", "yellow", "purple"];
+	var mats = [3];
 	var next1, next2, next3, hold, current, temp, shade, invisible;
 	var clock = 0;
 	var forms = [];
-	var mat1, mat2, mat3;
 	var sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9, sp10, sp11, sp12, sp13, sp14, sp15, sp16, sp17, sp18, sp19, sp20, sp21, sp22, sp23, sp24, sp25, sp26, sp27, sp28, sp29, sp30, sp31;
 	var sp1 = true;
 	var sp2 = true;
@@ -167,17 +167,21 @@
 			
 			arndForm = Math.round(Math.random() * (forms.length - 1));
 			arndColor = Math.round(Math.random() * (colors.length - 1));
+			arndMat = Math.round(Math.random() * mats.length - 1);
+			if (arndMat == 0) {arndMat = 1}
 			aiSource = Math.round(width / 2) - Math.round(forms[rndForm][0].length / 2);
 			ajSource = forms[rndForm].length * -1;
 
-			next1 = { i: aiSource, j: ajSource, mat: 1, col: arndColor, form: forms[arndForm] }
+			next1 = { i: aiSource, j: ajSource, mat: mats[arndMat], col: arndColor, form: forms[arndForm] }
 			
 			brndForm = Math.round(Math.random() * (forms.length - 1));
 			brndColor = Math.round(Math.random() * (colors.length - 1));
+			brndMat = Math.round(Math.random() * mats.length - 1);
+			if (brndMat == 0) {brndMat = 1}
 			biSource = Math.round(width / 2) - Math.round(forms[rndForm][0].length / 2);
 			bjSource = forms[rndForm].length * -1;
 
-			next2 = { i: biSource, j: bjSource, mat: 1, col: brndColor, form: forms[brndForm] }
+			next2 = { i: biSource, j: bjSource, mat: mats[brndMat], col: brndColor, form: forms[brndForm] }
 			
 		dropBonus = 0;
 		
@@ -393,8 +397,8 @@
 			if (n == width) {
 				for (j_involved = current.j + j; j_involved > lastLine; j_involved--) {
 					for (i = 0; i < width; i++){
-						map[j_involved][i].mat = map[j_involved - 1][i].mat;  // IT CAN FAIL!
-						map[j_involved][i].col = map[j_involved - 1][i].col;
+							map[j_involved][i].mat = map[j_involved - 1][i].mat;  // IT CAN FAIL!
+							map[j_involved][i].col = map[j_involved - 1][i].col;
 					}
 				}
 				for (i = 0; i < width; i++){
@@ -633,14 +637,14 @@
 			for (j = 0; j < map.length; j++)
 				for (i = 0; i < map[0].length; i++)
 					if (map[j][i].mat != 0)
-						out.drawImage(chooseImage.mapped(i, j), size * i, size * j, size, size);
+						out.drawImage(chooseImage.mapped(i, j, map[j][i].mat), size * i, size * j, size, size);
 
 
 			if (typeof current != 'undefined' && typeof current.form != 'undefined')
 				for (j = 0; j < current.form.length; j++)
 					for (i = 0; i < current.form[j].length; i++)
 						if (current.form[j][i] == 1)
-								out.drawImage(chooseImage.current(), (i * size) + (current.i * size), (j * size) + (current.j * size), size, size);
+								out.drawImage(chooseImage.current(current.mat), (i * size) + (current.i * size), (j * size) + (current.j * size), size, size);
 
 
 			if (shadeEnabled && shade !== undefined && current.j != shade.j) {
@@ -648,92 +652,102 @@
 					for (i = 0; i < shade.form[j].length; i++)
 						if (shade.form[j][i] == 1)
 							if (gameStatus == 3)
-								out.drawImage(chooseImage.shade(), (i * size) + (shade.i * size), (j * size) + (shade.j * size), size, size);
+								out.drawImage(chooseImage.shade(current.mat), (i * size) + (shade.i * size), (j * size) + (shade.j * size), size, size);
 			}
 		}
 	}
 
 	var chooseImage = {
-		current: function(){
-			if (colorTheme == "classic"){
+		current: function(mat){
+			if (mat == 2) {
 				if (gameStatus == 3)
-					return graphics.classic.o[current.col];
+					return graphics.invisible.preview;
 				else
-					return graphics.classic.t[current.col];
-			} else if (colorTheme == "gameboy") {
-				if (gameStatus == 3)
-					return graphics.gameboy.o[current.col];
-				else
-					return graphics.gameboy.t[current.col];
-			} else if (colorTheme == "retro") {
-				if (gameStatus == 3)
-					return graphics.retro.o[current.col];
-				else
-					return graphics.retro.t[current.col];
-			} else if (colorTheme == "bckwht") {
-				if (gameStatus == 3)
-					return graphics.bckwht.o[current.col];
-				else
-					return graphics.bckwht.t[current.col];
-			} else if (colorTheme == "crayon") {
-				if (gameStatus == 3)
-					return graphics.crayon.o[current.col];
-				else
-					return graphics.crayon.t[current.col];
-			} else if (colorTheme == "recent") {
-				if (gameStatus == 3)
-					return graphics.recent.o[current.col];
-				else
-					return graphics.recent.t[current.col];
-			} else if (colorTheme == "bit8") {
-				if (gameStatus == 3)
-					return graphics.bit8.o[current.col];
-				else
-					return graphics.bit8.t[current.col];
-			} else if (colorTheme == "face") {
-				if (gameStatus == 3)
-					return graphics.face.o[current.col];
-				else
-					return graphics.face.t[current.col];
-			} else if (colorTheme == "billiard") {
-				if (gameStatus == 3)
-					return graphics.billiard.o[current.col];
-				else
-					return graphics.billiard.t[current.col];
-			} else if (colorTheme == "dark") {
-				if (gameStatus == 3)
-					return graphics.dark.o[current.col];
-				else
-					return graphics.dark.t[current.col];
-			} else if (colorTheme == "stud") {
-				if (gameStatus == 3)
-					return graphics.stud.o[current.col];
-				else
-					return graphics.stud.t[current.col];
-			} else if (colorTheme == "block") {
-				if (gameStatus == 3)
-					return graphics.block.o[current.col];
-				else
-					return graphics.block.t[current.col];
-			} else if (colorTheme == "panel") {
-				if (gameStatus == 3)
-					return graphics.panel.o[current.col];
-				else
-					return graphics.panel.t[current.col];
-			} else if (colorTheme == "crystal") {
-				if (gameStatus == 3)
-					return graphics.crystal.o[current.col];
-				else
-					return graphics.crystal.t[current.col];
-			} else {
-				if (gameStatus == 3)
-					return graphics.iced.o;
-				else
-					return graphics.iced.t;
+					return graphics.invisible.preview;
+				} else if (colorTheme == "classic"){
+					if (gameStatus == 3)
+						return graphics.classic.o[current.col];
+					else
+						return graphics.classic.t[current.col];
+				} else if (colorTheme == "gameboy") {
+					if (gameStatus == 3)
+						return graphics.gameboy.o[current.col];
+					else
+						return graphics.gameboy.t[current.col];
+				} else if (colorTheme == "retro") {
+					if (gameStatus == 3)
+						return graphics.retro.o[current.col];
+					else
+						return graphics.retro.t[current.col];
+				} else if (colorTheme == "bckwht") {
+					if (gameStatus == 3)
+						return graphics.bckwht.o[current.col];
+					else
+						return graphics.bckwht.t[current.col];
+				} else if (colorTheme == "crayon") {
+					if (gameStatus == 3)
+						return graphics.crayon.o[current.col];
+					else
+						return graphics.crayon.t[current.col];
+				} else if (colorTheme == "recent") {
+					if (gameStatus == 3)
+						return graphics.recent.o[current.col];
+					else
+						return graphics.recent.t[current.col];
+				} else if (colorTheme == "bit8") {
+					if (gameStatus == 3)
+						return graphics.bit8.o[current.col];
+					else
+						return graphics.bit8.t[current.col];
+				} else if (colorTheme == "face") {
+					if (gameStatus == 3)
+						return graphics.face.o[current.col];
+					else
+						return graphics.face.t[current.col];
+				} else if (colorTheme == "billiard") {
+					if (gameStatus == 3)
+						return graphics.billiard.o[current.col];
+					else
+						return graphics.billiard.t[current.col];
+				} else if (colorTheme == "dark") {
+					if (gameStatus == 3)
+						return graphics.dark.o[current.col];
+					else
+						return graphics.dark.t[current.col];
+				} else if (colorTheme == "stud") {
+					if (gameStatus == 3)
+						return graphics.stud.o[current.col];
+					else
+						return graphics.stud.t[current.col];
+				} else if (colorTheme == "block") {
+					if (gameStatus == 3)
+						return graphics.block.o[current.col];
+					else
+						return graphics.block.t[current.col];
+				} else if (colorTheme == "panel") {
+					if (gameStatus == 3)
+						return graphics.panel.o[current.col];
+					else
+						return graphics.panel.t[current.col];
+				} else if (colorTheme == "crystal") {
+					if (gameStatus == 3)
+						return graphics.crystal.o[current.col];
+					else
+						return graphics.crystal.t[current.col];
+				} else {
+					if (gameStatus == 3)
+						return graphics.iced.o;
+					else
+						return graphics.iced.t;
 				}
 		},
-		shade: function(){
-			if (colorTheme == "classic"){
+		shade: function(mat){
+			if (mat == 2) {
+				if (gameStatus == 3)
+					return graphics.invisible.shade;
+				else
+					return graphics.invisible.shade;
+			} else if (colorTheme == "classic"){
 				return graphics.classic.t[current.col]
 			} else if (colorTheme == "gameboy") {
 				return graphics.gameboy.t[current.col]
@@ -765,8 +779,13 @@
 				return graphics.iced.t;
 				}
 		},
-		next1: function(){
-			if (colorTheme == "classic"){
+		next1: function(mat){
+			if (mat == 2) {
+				if (gameStatus == 3)
+					return graphics.invisible.preview;
+				else
+					return graphics.invisible.preview;
+			} else if (colorTheme == "classic"){
 				return graphics.classic.o[next1.col]
 			} else if (colorTheme == "gameboy") {
 				return graphics.gameboy.o[next1.col]
@@ -798,8 +817,13 @@
 				return graphics.iced.o;
 				}
 		},
-		next2: function(){
-			if (colorTheme == "classic"){
+		next2: function(mat){
+			if (mat == 2) {
+				if (gameStatus == 3)
+					return graphics.invisible.preview;
+				else
+					return graphics.invisible.preview;
+			} else if (colorTheme == "classic"){
 				return graphics.classic.o[next2.col]
 			} else if (colorTheme == "gameboy") {
 				return graphics.gameboy.o[next2.col]
@@ -831,8 +855,13 @@
 				return graphics.iced.o;
 				}
 		},
-		next3: function(){
-			if (colorTheme == "classic"){
+		next3: function(mat){
+			if (mat == 2) {
+				if (gameStatus == 3)
+					return graphics.invisible.preview;
+				else
+					return graphics.invisible.preview;
+			} else if (colorTheme == "classic"){
 				return graphics.classic.o[next3.col]
 			} else if (colorTheme == "gameboy") {
 				return graphics.gameboy.o[next3.col]
@@ -864,8 +893,13 @@
 				return graphics.iced.o;
 				}
 		},
-		hold: function(){
-			if (colorTheme == "classic"){
+		hold: function(mat){
+			if (mat == 2) {
+				if (gameStatus == 3)
+					return graphics.invisible.preview;
+				else
+					return graphics.invisible.preview;
+			} else if (colorTheme == "classic"){
 				return graphics.classic.o[hold.col]
 			} else if (colorTheme == "gameboy") {
 				return graphics.gameboy.o[hold.col]
@@ -897,8 +931,13 @@
 				return graphics.iced.o;
 				}
 		},
-		mapped: function(i, j){
-			if (invisibleEnabled == true) {
+		mapped: function(i, j, mat){
+			if (mat == 2) {
+				if (gameStatus == 3)
+					return graphics.invisible;
+				else
+					return graphics.invisible;
+			} else if (invisibleEnabled == true) {
 				return graphics.invisible;
 			} else {
 				if (colorTheme == "classic"){
@@ -989,10 +1028,12 @@
 			set();
 			rndForm = Math.round(Math.random() * (forms.length - 1));
 			rndColor = Math.round(Math.random() * (colors.length - 1));
+			rndMat = Math.round(Math.random() * mats.length - 1);
+			if (rndMat == 0) {rndMat = 1}
 			iSource = Math.round(width / 2) - Math.round(forms[rndForm][0].length / 2);
 			jSource = forms[rndForm].length * -1;
 
-			next3 = { i: iSource, j: jSource, mat: 1, col: rndColor, form: forms[rndForm] }
+			next3 = { i: iSource, j: jSource, mat: mats[rndMat], col: rndColor, form: forms[rndForm] }
 		}
 
 		// --- //
@@ -1013,7 +1054,7 @@
 			for (j = 0; j < next1.form.length; j++)
 				for (i = 0; i < next1.form[j].length; i++)
 					if (next1.form[j][i] == 1)
-						newOutNext1.drawImage(chooseImage.next1(), 25 * i + centerX, 25 * j + centerY, 25, 25);
+						newOutNext1.drawImage(chooseImage.next1(next1.mat), 25 * i + centerX, 25 * j + centerY, 25, 25);
 
 			$(newCanvasNext1).animate({ 'left': 0, 'opacity': 1 }, 260);
 			
@@ -1032,7 +1073,7 @@
 			for (j = 0; j < next2.form.length; j++)
 				for (i = 0; i < next2.form[j].length; i++)
 					if (next2.form[j][i] == 1)
-						newOutNext2.drawImage(chooseImage.next2(), 12.5 * i + bcenterX, 12.5 * j + bcenterY, 12.5, 12.5);
+						newOutNext2.drawImage(chooseImage.next2(next2.mat), 12.5 * i + bcenterX, 12.5 * j + bcenterY, 12.5, 12.5);
 
 			$(newCanvasNext2).animate({ 'left': 0, 'opacity': 1 }, 0);
 			
@@ -1051,7 +1092,7 @@
 			for (j = 0; j < next3.form.length; j++)
 				for (i = 0; i < next3.form[j].length; i++)
 					if (next3.form[j][i] == 1)
-						newOutNext3.drawImage(chooseImage.next3(), 12.5 * i + ccenterX, 12.5 * j + ccenterY, 12.5, 12.5);
+						newOutNext3.drawImage(chooseImage.next3(next3.mat), 12.5 * i + ccenterX, 12.5 * j + ccenterY, 12.5, 12.5);
 
 			$(newCanvasNext3).animate({ 'left': 60, 'opacity': 1 }, 0);
 			
@@ -1072,7 +1113,7 @@
 			for (j = 0; j < hold.form.length; j++)
 				for (i = 0; i < hold.form[j].length; i++)
 					if (hold.form[j][i] == 1)
-						newOutHold.drawImage(chooseImage.hold(), 25 * i + dcenterX, 25 * j + dcenterY, 25, 25);
+						newOutHold.drawImage(chooseImage.hold(hold.mat), 25 * i + dcenterX, 25 * j + dcenterY, 25, 25);
 			
 			$(newCanvasHold).animate({ 'left': 0, 'opacity': 1 }, 0);
 		}
@@ -1346,6 +1387,16 @@
 		graphics.invisible = new Image();
 		graphics.invisible.src = "g/material/invisible.png";
 		graphics.invisible.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.invisible.preview = new Image();
+		graphics.invisible.preview.src = "g/material/invisible-preview.png";
+		graphics.invisible.preview.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.invisible.shade = new Image();
+		graphics.invisible.shade.src = "g/material/invisible-shade.png";
+		graphics.invisible.shade.onload = function() {
 			ui.loader.tick();
 		}
 
@@ -1916,27 +1967,6 @@
 	this.getSp30 = getSp30;
 	this.getSp31 = getSp31;
 	
-	var getMat1 = function() {
-		return mat1;
-	}
-	var switchMat1 = function(bool) {
-		mat1 = bool;
-		savePrefs();
-	}
-	var getMat2 = function() {
-		return mat2;
-	}
-	var switchMat2 = function(bool) {
-		mat2 = bool;
-		savePrefs();
-	}
-	var getMat3 = function() {
-		return mat3;
-	}
-	var switchMat3 = function(bool) {
-		mat3 = bool;
-		savePrefs();
-	}
 	// Functions to grab width, height, level, and options
 	var getWidth = function() {
 		return width;
