@@ -889,6 +889,10 @@ html, body {
     background-image: url(g/piece/sp31.png)
 }
 
+#layout .activity#settings #settingscroller .row .controlsc .alternate#t10 {
+    background-image: url(g/theme-classic.png)
+}
+
 #layout .activity#settings #settingscroller .row .controlsd {
     height: auto;
     padding: 20px 0 18px 0;
