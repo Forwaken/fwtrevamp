@@ -18,6 +18,8 @@
 	// Pieces
 	var colors = ["red", "green", "cyan", "orange", "blue", "white", "yellow", "purple"];
 	var mats = [3];
+	var mat1, mat2, mat3;
+	var mat1 = true;
 	var next1, next2, next3, hold, current, temp, shade, invisible;
 	var clock = 0;
 	var forms = [];
@@ -105,6 +107,9 @@
 		sp29 = prefs.sp29s;
 		sp30 = prefs.sp30s;
 		sp31 = prefs.sp31s;
+		mat1 = prefs.mat1s;
+		mat2 = prefs.mat2s;
+		mat3 = prefs.mat3s;
 	} catch(e){
 		//-> No action
 	}
@@ -1367,7 +1372,10 @@
 			'sp28s': sp28,
 			'sp29s': sp29,
 			'sp30s': sp30,
-			'sp31s': sp31
+			'sp31s': sp31,
+			'mat1s': mat1,
+			'mat2s': mat2,
+			'mat3s': mat3
 		});
 	}
 
@@ -1966,6 +1974,53 @@
 	this.getSp29 = getSp29;
 	this.getSp30 = getSp30;
 	this.getSp31 = getSp31;
+	
+	// Function that defines what each material is
+	var mat = function() {
+		mats.length = 0;
+		
+		if (mat1 == true) {
+			mats.push(1);
+		}
+		if (mat2 == true) {
+			mats.push(2);
+		}
+		if (mat3 == true) {
+			mats.push(3);
+		}
+	}
+	
+	// Functions to grab materials
+	var switchMat1 = function(bool) {
+		mat1 = bool;
+		mat();
+		savePrefs();
+	}
+	var switchMat2 = function(bool) {
+		mat2 = bool;
+		mat();
+		savePrefs();
+	}
+	var switchMat3 = function(bool) {
+		mat3 = bool;
+		mat();
+		savePrefs();
+	}
+	var getMat1 = function() {
+		return mat1;	
+	}
+	var getMat2 = function() {
+		return mat2;
+	}
+	var getMat3 = function() {
+		return mat3;
+	}
+	this.switchMat1 = switchMat1;
+	this.switchMat1 = switchMat2;
+	this.switchMat3 = switchMat3;
+	this.getMat1 = getMat1;
+	this.getMat2 = getMat2;
+	this.getMat3 = getMat3;
 	
 	// Functions to grab width, height, level, and options
 	var getWidth = function() {
