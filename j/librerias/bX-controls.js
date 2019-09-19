@@ -46,6 +46,10 @@ var controls = function () {
 		if (fwt.getSp29()) {$("#settings #set .alternate.opt.sp29").addClass('s');}
 		if (fwt.getSp30()) {$("#settings #set .alternate.opt.sp30").addClass('s');}
 		if (fwt.getSp31()) {$("#settings #set .alternate.opt.sp31").addClass('s');}
+		
+		if(fwt.getMat1()) {$("#settings #mat .alternate.opt.mat1").addClass('s');}
+		if(fwt.getMat2()) {$("#settings #mat .alternate.opt.mat2").addClass('s');}
+		if(fwt.getMat3()) {$("#settings #mat .alternate.opt.mat3").addClass('s');}
 
 		$('#settings #sizes .val').removeClass('not1 not2');
 	}
@@ -400,6 +404,38 @@ var controls = function () {
 		} else {
 			$(this).addClass('s');
 			fwt.switchSp31(true);
+		}
+		ui.stopGame();
+	});
+	
+	// Materials:
+	$("#settings #mat .alternate.opt.mat1").click(function(){
+		if (fwt.getMat1()) {
+			$(this).removeClass('s');
+			fwt.switchMat1(false);
+		} else {
+			$(this).addClass('s');
+			fwt.switchMat1(true);
+		}
+		ui.stopGame();
+	});
+	$("#settings #mat .alternate.opt.mat2").click(function(){
+		if (fwt.getMat2()) {
+			$(this).removeClass('s');
+			fwt.switchMat2(false);
+		} else {
+			$(this).addClass('s');
+			fwt.switchMat2(true);
+		}
+		ui.stopGame();
+	});
+	$("#settings #mat .alternate.opt.mat3").click(function(){
+		if (fwt.getMat3()) {
+			$(this).removeClass('s');
+			fwt.switchMat3(false);
+		} else {
+			$(this).addClass('s');
+			fwt.switchMat3(true);
 		}
 		ui.stopGame();
 	});
