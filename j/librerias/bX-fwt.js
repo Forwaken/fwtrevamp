@@ -20,6 +20,7 @@
 	var next1, next2, next3, hold, current, temp, shade, invisible;
 	var clock = 0;
 	var forms = [];
+	var mat1, mat2, mat3;
 	var sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9, sp10, sp11, sp12, sp13, sp14, sp15, sp16, sp17, sp18, sp19, sp20, sp21, sp22, sp23, sp24, sp25, sp26, sp27, sp28, sp29, sp30, sp31;
 	var sp1 = true;
 	var sp2 = true;
@@ -1915,6 +1916,27 @@
 	this.getSp30 = getSp30;
 	this.getSp31 = getSp31;
 	
+	var getMat1 = function() {
+		return mat1;
+	}
+	var switchMat1 = function(bool) {
+		mat1 = bool;
+		savePrefs();
+	}
+	var getMat2 = function() {
+		return mat2;
+	}
+	var switchMat2 = function(bool) {
+		mat2 = bool;
+		savePrefs();
+	}
+	var getMat3 = function() {
+		return mat3;
+	}
+	var switchMat3 = function(bool) {
+		mat3 = bool;
+		savePrefs();
+	}
 	// Functions to grab width, height, level, and options
 	var getWidth = function() {
 		return width;
