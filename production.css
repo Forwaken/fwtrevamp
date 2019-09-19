@@ -792,6 +792,10 @@ html, body {
     background-image: url(g/piece/sp29.png)
 }
 
+#layout .activity#settings #settingscroller .row .controsb .alternate#t10 {
+    background-image: url(g/material-invis.png)
+}
+
 #layout .activity#settings #settingscroller .row .controlsc {
     height: auto;
     padding: 20px 0 18px 0;
