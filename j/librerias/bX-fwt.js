@@ -435,7 +435,7 @@
 	var checkCol = function () {
 		columns = 0;
 		
-		for (j = current.form.length - 1; j >= 0; j--) {
+		for (i = current.form[0].length - 1; i >= 0; i--) {
 
 			n = 0;
 			for (j = 0; j < height; j++) {
