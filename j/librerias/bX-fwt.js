@@ -432,7 +432,7 @@
 		}
 	}
 	
-	var checkColumn = function () {
+	var checkCol = function () {
 		columns = 0;
 		
 		for (j = current.form.length - 1; j >= 0; j--) {
