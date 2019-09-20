@@ -174,7 +174,6 @@
 			arndForm = Math.round(Math.random() * (forms.length - 1));
 			arndColor = Math.round(Math.random() * (colors.length - 1));
 			arndMat = Math.round(Math.random() * (mats.length - 1));
-			if (arndMat == 0) {arndMat = 1}
 			aiSource = Math.round(width / 2) - Math.round(forms[rndForm][0].length / 2);
 			ajSource = forms[rndForm].length * -1;
 
@@ -183,7 +182,6 @@
 			brndForm = Math.round(Math.random() * (forms.length - 1));
 			brndColor = Math.round(Math.random() * (colors.length - 1));
 			brndMat = Math.round(Math.random() * (mats.length - 1));
-			if (brndMat == 0) {brndMat = 1}
 			biSource = Math.round(width / 2) - Math.round(forms[rndForm][0].length / 2);
 			bjSource = forms[rndForm].length * -1;
 
@@ -1036,7 +1034,6 @@
 			rndForm = Math.round(Math.random() * (forms.length - 1));
 			rndColor = Math.round(Math.random() * (colors.length - 1));
 			rndMat = Math.round(Math.random() * (mats.length - 1));
-			if (rndMat == 0) {rndMat = 1}
 			iSource = Math.round(width / 2) - Math.round(forms[rndForm][0].length / 2);
 			jSource = forms[rndForm].length * -1;
 
