@@ -439,7 +439,7 @@
 
 			n = 0;
 			for (j = 0; j < height; j++) {
-				if (map[j][current.i + i].mat < 3)
+				if (map[j][current.i + i].mat == 3)
 					n++
 				else
 					continue;
@@ -450,8 +450,8 @@
 					map[j][lastCol].mat = 0;
 					map[j][lastCol].col = 0;
 				}
-				i++;
 				lastCol++;
+				i++;
 
 				columns++;
 				linecount++;
