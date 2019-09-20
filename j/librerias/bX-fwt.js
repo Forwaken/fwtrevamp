@@ -459,7 +459,7 @@
 
 		}
 
-		if (lines > 0) {
+		if (columns > 0) {
 			fsum = [10 + linecount, 50 + (linecount * 2), 200 + (linecount * 3), 1000 + (linecount * 4), 1000 + (linecount * 5), 1000 + (linecount * 6), 1000 + (linecount * 7), 1000 + (linecount * 8)];
 			p = fsum[columns - 1];
 			mark(p, "line", columns);
