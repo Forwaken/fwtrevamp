@@ -699,6 +699,9 @@ html, body {
     background-image: url(g/piece/sp30.png)
 }
 
+#layout .activity#settings #settingscroller .row .controlsa .alternate#t10 {
+    background-image: url(g/theme-classic.png)
+}
 #layout .activity#settings #settingscroller .row .controlsb {
     height: auto;
     padding: 20px 0 18px 0;
@@ -792,7 +795,7 @@ html, body {
     background-image: url(g/piece/sp29.png)
 }
 
-#layout .activity#settings #settingscroller .row .controsb .alternate#t10 {
+#layout .activity#settings #settingscroller .row .controlsb .alternate#t10 {
     background-image: url(g/material-invis.png)
 }
 
@@ -891,10 +894,6 @@ html, body {
 
 #layout .activity#settings #settingscroller .row .controlsc .alternate#t9 {
     background-image: url(g/piece/sp31.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsc .alternate#t10 {
-    background-image: url(g/theme-classic.png)
 }
 
 #layout .activity#settings #settingscroller .row .controlsd {
