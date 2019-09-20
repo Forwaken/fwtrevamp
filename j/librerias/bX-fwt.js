@@ -440,12 +440,12 @@
 			n = 0;
 			for (j = 0; j < height; j++) {
 				if (map[j][current.i + i].mat > 2)
-					break;
+					continue;
 				else
 					n++;
 			}
 
-			if (n == (height/3)) {
+			if (n > (height/3)) {
 				for (i = 0; i < width; i++){
 					map[j][lastCol].mat = 0;
 					map[j][lastCol].col = 0;
