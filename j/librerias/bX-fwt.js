@@ -445,8 +445,8 @@
 					n++;
 			}
 
-			if (n > (height/3)) {
-				for (i = 0; i < width; i++){
+			if (n > (height/2)) {
+				for (j = 0; j < height; j++){
 					map[j][lastCol].mat = 0;
 					map[j][lastCol].col = 0;
 				}
