@@ -439,10 +439,10 @@
 
 			n = 0;
 			for (j = 0; j < height; j++) {
-				if (map[j][current.i + i].mat > 2)
-					continue;
+				if (map[j][current.i + i].mat < 3)
+					n++
 				else
-					n++;
+					continue;
 			}
 
 			if (n > (height/2)) {
