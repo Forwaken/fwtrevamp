@@ -5,7 +5,7 @@
 
 	// Board
 	var map, compiled;
-	var width = 10, height = 24, levelstart = 0, lastLine;
+	var width = 10, height = 24, levelstart = 0, lastLine, lastCol;
 
 	// Game
 	var gameStatus = 0; // 0: no init - 1: over - 2: paused - 3: game
@@ -127,6 +127,7 @@
 		window.cancelAnimFrame(clock);
 
 		lastLine = saved.lastLine;
+		lastCol = saved.lastCol;
 		gameStatus = 3;
 		setNextPiece(false, true); // -> This requires gameStatus > 1
 
@@ -156,6 +157,7 @@
 		mat();
 		
 		lastLine = height - 1;
+		lastCol = width - 1;
 		gameStatus = 3;
 
 		normalDelay = 50;
@@ -298,8 +300,10 @@
 		}
 
 		lastLine = Math.min(current.j, lastLine);
+		lastCol = Math.min(lastCol, current.i);
 
 		checkLine();
+		checkCol();
 
 		return true;
 	}
@@ -353,6 +357,9 @@
 		}
 
 		if (lastLine < 5 && Math.random() * 5 > 2)
+			msg = "Date prisa";
+		
+		if (lastCol < 5 && Math.random() * 5 > 2)
 			msg = "Date prisa";
 
 		if (type == 'drop')
@@ -422,6 +429,40 @@
 			fsum = [10 + linecount, 50 + (linecount * 2), 200 + (linecount * 3), 1000 + (linecount * 4), 1000 + (linecount * 5), 1000 + (linecount * 6), 1000 + (linecount * 7), 1000 + (linecount * 8)];
 			p = fsum[lines - 1];
 			mark(p, "line", lines);
+		}
+	}
+	
+	var checkColumn = function () {
+		columns = 0;
+		
+		for (j = current.form.length - 1; j >= 0; j--) {
+
+			n = 0;
+			for (j = 0; j < height; j++) {
+				if (map[j][current.i + i].mat > 2)
+					break;
+				else
+					n++;
+			}
+
+			if (n == (height/3)) {
+				for (i = 0; i < width; i++){
+					map[j][lastCol].mat = 0;
+					map[j][lastCol].col = 0;
+				}
+				i++;
+				lastCol++;
+
+				columns++;
+				linecount++;
+			}
+
+		}
+
+		if (lines > 0) {
+			fsum = [10 + linecount, 50 + (linecount * 2), 200 + (linecount * 3), 1000 + (linecount * 4), 1000 + (linecount * 5), 1000 + (linecount * 6), 1000 + (linecount * 7), 1000 + (linecount * 8)];
+			p = fsum[columns - 1];
+			mark(p, "line", columns);
 		}
 	}
 
@@ -1324,6 +1365,7 @@
 		save.next3 = next3;
 		save.hold = hold;
 		save.lastLine = lastLine;
+		save.lastCol = lastCol;
 		save.level = level;
 		save.score = score;
 		save.linecount = linecount;
