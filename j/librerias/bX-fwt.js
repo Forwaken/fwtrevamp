@@ -5,7 +5,7 @@
 
 	// Board
 	var map, compiled;
-	var width = 10, height = 24, levelstart = 0, lastLine, lastCol;
+	var width = 10, height = 24, levelstart = 0, lastLine;
 
 	// Game
 	var gameStatus = 0; // 0: no init - 1: over - 2: paused - 3: game
@@ -127,7 +127,6 @@
 		window.cancelAnimFrame(clock);
 
 		lastLine = saved.lastLine;
-		lastCol = saved.lastCol;
 		gameStatus = 3;
 		setNextPiece(false, true); // -> This requires gameStatus > 1
 
@@ -157,7 +156,6 @@
 		mat();
 		
 		lastLine = height - 1;
-		lastCol = width - 1;
 		gameStatus = 3;
 
 		normalDelay = 50;
@@ -300,7 +298,6 @@
 		}
 
 		lastLine = Math.min(current.j, lastLine);
-		lastCol = Math.min(lastCol, current.i);
 
 		checkLine();
 		checkCol();
@@ -357,9 +354,6 @@
 		}
 
 		if (lastLine < 5 && Math.random() * 5 > 2)
-			msg = "Date prisa";
-		
-		if (lastCol < 5 && Math.random() * 5 > 2)
 			msg = "Date prisa";
 
 		if (type == 'drop')
@@ -447,10 +441,9 @@
 
 			if (n > (height/2)) {
 				for (j = 0; j < height; j++){
-					map[j][lastCol].mat = 0;
-					map[j][lastCol].col = 0;
+					map[j][i].mat = 0;
+					map[j][i].col = 0;
 				}
-				lastCol++;
 				i++;
 
 				columns++;
@@ -1365,7 +1358,6 @@
 		save.next3 = next3;
 		save.hold = hold;
 		save.lastLine = lastLine;
-		save.lastCol = lastCol;
 		save.level = level;
 		save.score = score;
 		save.linecount = linecount;
