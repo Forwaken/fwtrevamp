@@ -787,6 +787,8 @@
 					return graphics.invisible.shade;
 				else
 					return graphics.invisible.shade;
+			} else if (mat == 3) {
+				return graphics.bckwht.cross;
 			} else if (colorTheme == "classic"){
 				return graphics.classic.t[current.col]
 			} else if (colorTheme == "gameboy") {
@@ -986,7 +988,7 @@
 				else
 					return graphics.invisible;
 			} else if (mat == 3) {
-				return graphics.bckwht.o.cross;
+				return graphics.bckwht.cross;
 			} else if (invisibleEnabled == true) {
 				return graphics.invisible;
 			} else {
