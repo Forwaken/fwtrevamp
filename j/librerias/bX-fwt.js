@@ -441,8 +441,8 @@
 
 			if (n > (height/2)) {
 				for (j = 0; j < height; j++){
-					map[j][i].mat = 0;
-					map[j][i].col = 0;
+					map[j][current.i + i].mat = 0;
+					map[j][current.i + i].col = 0;
 				}
 				i++;
 
