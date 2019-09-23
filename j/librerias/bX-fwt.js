@@ -702,6 +702,8 @@
 					return graphics.invisible.preview;
 				else
 					return graphics.invisible.preview;
+				} else if (mat == 3) {
+					return graphics.bckwht.cross;
 				} else if (colorTheme == "classic"){
 					if (gameStatus == 3)
 						return graphics.classic.o[current.col];
@@ -823,6 +825,8 @@
 					return graphics.invisible.preview;
 				else
 					return graphics.invisible.preview;
+			} else if (mat == 3) {
+				return graphics.bckwht.cross;
 			} else if (colorTheme == "classic"){
 				return graphics.classic.o[next1.col]
 			} else if (colorTheme == "gameboy") {
@@ -861,6 +865,8 @@
 					return graphics.invisible.preview;
 				else
 					return graphics.invisible.preview;
+			} else if (mat == 3) {
+				return graphics.bckwht.cross;
 			} else if (colorTheme == "classic"){
 				return graphics.classic.o[next2.col]
 			} else if (colorTheme == "gameboy") {
@@ -899,6 +905,8 @@
 					return graphics.invisible.preview;
 				else
 					return graphics.invisible.preview;
+			} else if (mat == 3) {
+				return graphics.bckwht.cross;
 			} else if (colorTheme == "classic"){
 				return graphics.classic.o[next3.col]
 			} else if (colorTheme == "gameboy") {
@@ -937,6 +945,8 @@
 					return graphics.invisible.preview;
 				else
 					return graphics.invisible.preview;
+			} else if (mat == 3) {
+				return graphics.bckwht.cross;
 			} else if (colorTheme == "classic"){
 				return graphics.classic.o[hold.col]
 			} else if (colorTheme == "gameboy") {
@@ -975,6 +985,8 @@
 					return graphics.invisible;
 				else
 					return graphics.invisible;
+			} else if (mat == 3) {
+				return graphics.bckwht.o.cross;
 			} else if (invisibleEnabled == true) {
 				return graphics.invisible;
 			} else {
@@ -1438,6 +1450,11 @@
 		graphics.invisible.shade = new Image();
 		graphics.invisible.shade.src = "g/material/invisible-shade.png";
 		graphics.invisible.shade.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.bckwht.cross = new Image();
+		graphics.bckwht.cross.src = "g/material/bckwht-o-cross.png";
+		graphics.bckwht.cross.onload = function() {
 			ui.loader.tick();
 		}
 
