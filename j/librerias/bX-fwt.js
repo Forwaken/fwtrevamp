@@ -1156,7 +1156,7 @@
 				$(this).remove();
 			});
 
-			newCanvasHold = $('<canvas width="120" height="120">').addClass('newHold').appendTo('#next')[0];
+			newCanvasHold = $('<canvas width="120" height="120" ontouchstart="holdk()">').addClass('newHold').appendTo('#next')[0];
 			newOutHold = newCanvasHold.getContext('2d');
 
 			dcenterX = (120 - hold.form[0].length * 25) / 2;
