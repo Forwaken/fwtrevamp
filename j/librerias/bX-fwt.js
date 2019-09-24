@@ -1357,7 +1357,35 @@
 				limitDelay = 1;
 			}
 		}
-
+		
+		var ts;
+		$(document).bind('touchstart', function (e){
+		   ts = e.originalEvent.touches[0].clientY;
+		});
+		
+		$(document).bind('touchend', function (e){
+		   var te = e.originalEvent.changedTouches[0].clientY;
+		   if(ts > te+50){
+		      rotate();
+		   }else if(ts < te-50){
+		      drop();
+		   }
+		});
+		
+		var to;
+		$(document).bind('touchstart', function (e){
+		   to = e.originalEvent.touches[0].clientX;
+		});
+		
+		$(document).bind('touchend', function (e){
+		   var tl = e.originalEvent.changedTouches[0].clientX;
+		   if(to > tl+50){
+		      right();
+		   }else if(to < tl-50){
+		      left();
+		   }
+		});
+		
 		window.onbeforeunload = saveToLS;
 
 		setOSDMessages();
