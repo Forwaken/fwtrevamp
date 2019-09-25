@@ -1271,6 +1271,58 @@ html, body {
     color: rgba(180, 20, 20, 0.8)
 }
 
+#layout .activity#pieces .buttonback {
+    -webkit-border-radius: 0 0 1px 1px;
+    -moz-border-radius: 0 0 1px 1px;
+    -ms-border-radius: 0 0 1px 1px;
+    -o-border-radius: 0 0 1px 1px;
+    border-radius: 0 0 1px 1px;
+    -webkit-transition: all 0.15s linear;
+    -webkit-transition-delay: 0s;
+    -moz-transition: all 0.15s linear 0s;
+    -o-transition: all 0.15s linear 0s;
+    transition: all 0.15s linear 0s;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background: url(g/arrow.png) repeat-x rgba(255, 255, 255, 0.2);
+    background-position: 0 50px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    font-weight: 600;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 380px;
+    position: absolute;
+    width: 120px
+}
+
+#layout .activity#pieces .buttonback:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    background-position: -5px 50px;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer
+}
+
+#layout .activity#pieces #piecescroller {
+    -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+    -moz-box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+    bottom: 0;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    left: 130px;
+    overflow: auto;
+    padding: 10px 15px 0 15px;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
 #layout .activity#help {
     -moz-user-select: none;
     -ms-user-select: none;
