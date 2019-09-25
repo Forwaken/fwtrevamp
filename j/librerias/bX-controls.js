@@ -409,7 +409,7 @@ var controls = function () {
 	});
 	
 	// Materials:
-	$("#settings #mat .alternate.opt.mat1").click(function(){
+	$("#pieces #materialscroller .alternate.opt.mat1").click(function(){
 		if (fwt.getMat1()) {
 			$(this).removeClass('s');
 			fwt.switchMat1(false);
@@ -419,7 +419,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #mat .alternate.opt.mat2").click(function(){
+	$("#pieces #materialscroller .alternate.opt.mat2").click(function(){
 		if (fwt.getMat2()) {
 			$(this).removeClass('s');
 			fwt.switchMat2(false);
@@ -429,7 +429,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #mat .alternate.opt.mat3").click(function(){
+	$("#pieces #materialscroller .alternate.opt.mat3").click(function(){
 		if (fwt.getMat3()) {
 			$(this).removeClass('s');
 			fwt.switchMat3(false);
