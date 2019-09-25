@@ -187,7 +187,7 @@ var ui = function () {
 			this.total += n;
 		},
 		ui: function(){
-			gf = ['tile-customize.png', 'tile-help.png', 'tile-newGame.png', 'tile-rankings.png', 'tile-savedGame.png', 'title.png', 'arrow.png'];
+			gf = ['tile-customize.png', 'tile-help.png', 'tile-newGame.png', 'tile-options.png', 'tile-savedGame.png', 'title.png', 'arrow.png'];
 			ga = [];
 			for(i = 0; i < gf.length; i++){
 				ui.loader.needed(1);
