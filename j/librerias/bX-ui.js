@@ -251,9 +251,14 @@ var ui = function () {
 				$('.activity:not(#settings)').animate({ 'margin-left': '-110%' }, 500, function() { $(this).hide(); });
 				$('.activity#settings').show().animate({ 'margin-left': 0 }, 500);
 			break;
-			case 3: // -> Marks
-				$('.activity:not(#marks)').animate({ 'margin-left': '-110%' }, 500, function() { $(this).hide(); });
-				$('.activity#marks').show().animate({ 'margin-left': 0 }, 500);
+			case 3: // -> Pieces
+				fwt.pause(1);
+				setEvents();
+				
+				cmd.loadPrefs();
+				
+				$('.activity:not(#pieces)').animate({ 'margin-left': '-110%' }, 500, function() { $(this).hide(); });
+				$('.activity#pieces').show().animate({ 'margin-left': 0 }, 500);
 			break;
 			case 4: // -> Assistance
 				fwt.pause(1);
