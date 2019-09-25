@@ -4,7 +4,7 @@
         "savedgame-mnu": "Saved game",
         "newgame-mnu": "New game",
         "customize-mnu": "Customize game",
-        "marks-mnu": "Your marks",
+        "piece-mnu": "Customize pieces",
         "helpabout-mnu": "Assistance",
 
         "level-lab": "Level",
@@ -113,7 +113,7 @@
         "savedgame-mnu": "Juego guardado",
         "newgame-mnu": "Nuevo juego",
         "customize-mnu": "Personalizar juego",
-        "marks-mnu": "Logros",
+	"piece-mnu": "Customize pieces",
         "helpabout-mnu": "Asistencia",
 
         "level-lab": "Nivel",
@@ -221,7 +221,7 @@
         "savedgame-mnu": "gespeichertes Spiel",
         "newgame-mnu": "neues Spiel",
         "customize-mnu": "Customize game",
-        "marks-mnu": "Your marks",
+	"piece-mnu": "Customize pieces",
         "helpabout-mnu": "Assistance",
 
         "level-lab": "Niveau",
@@ -329,7 +329,7 @@
         "quickgame-mnu": "Nuova partita rapida",
         "customgame-mnu": "Nuova partita personalizzata",
         "settings-mnu": "Impostazioni",
-        "ranking-mnu": "Classificare",
+        "piece-mnu": "Customize pieces",
         "helpabout-mnu": "Guida e crediti",
 
         "pausegame-btt": "Pausa",
@@ -350,7 +350,7 @@
         "savedgame-mnu": "Salvo jogo",
         "newgame-mnu": "Novo jogo",
         "customize-mnu": "Personalizar jogo",
-        "marks-mnu": "Façanhas",
+        "piece-mnu": "Customize pieces",
         "helpabout-mnu": "Assistência",
 
         "level-lab": "Nível",
@@ -457,7 +457,7 @@
         "savedgame-mnu": "Partie sauvegardée",
         "newgame-mnu": "Nouveau partie",
         "customize-mnu": "Personnaliser jeu",
-        "marks-mnu": "Réalisations",
+        "piece-mnu": "Customize pieces",
         "helpabout-mnu": "Assistance",
 
         "level-lab": "Niveau",
