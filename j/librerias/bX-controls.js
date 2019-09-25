@@ -47,9 +47,9 @@ var controls = function () {
 		if (fwt.getSp30()) {$("#settings #set .alternate.opt.sp30").addClass('s');}
 		if (fwt.getSp31()) {$("#settings #set .alternate.opt.sp31").addClass('s');}
 		
-		if(fwt.getMat1()) {$("#settings #mat .alternate.opt.mat1").addClass('s');}
-		if(fwt.getMat2()) {$("#settings #mat .alternate.opt.mat2").addClass('s');}
-		if(fwt.getMat3()) {$("#settings #mat .alternate.opt.mat3").addClass('s');}
+		if(fwt.getMat1()) {$("#pieces #materialscroller .alternate.opt.mat1").addClass('s');}
+		if(fwt.getMat2()) {$("#pieces #materialscroller .alternate.opt.mat2").addClass('s');}
+		if(fwt.getMat3()) {$("#pieces #materialscroller .alternate.opt.mat3").addClass('s');}
 
 		$('#settings #sizes .val').removeClass('not1 not2');
 	}
