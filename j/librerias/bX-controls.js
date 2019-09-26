@@ -15,37 +15,37 @@ var controls = function () {
 		$('#settings #themes .alternate[data-value="'+fwt.getColorTheme()+'"]').addClass('s');
 		$('#settings #speed .alternate[data-value="'+fwt.getSpeed()+'"]').addClass('s');
 		$('#settings #rotation .alternate[data-value="'+fwt.getRotation()+'"]').addClass('s');
-		if (fwt.getSp1()) {$("#settings #set .alternate.opt.sp1").addClass('s');}
-		if (fwt.getSp2()) {$("#settings #set .alternate.opt.sp2").addClass('s');}
-		if (fwt.getSp3()) {$("#settings #set .alternate.opt.sp3").addClass('s');}
-		if (fwt.getSp4()) {$("#settings #set .alternate.opt.sp4").addClass('s');}
-		if (fwt.getSp5()) {$("#settings #set .alternate.opt.sp5").addClass('s');}
-		if (fwt.getSp6()) {$("#settings #set .alternate.opt.sp6").addClass('s');}
-		if (fwt.getSp7()) {$("#settings #set .alternate.opt.sp7").addClass('s');}
-		if (fwt.getSp8()) {$("#settings #set .alternate.opt.sp8").addClass('s');}
-		if (fwt.getSp9()) {$("#settings #set .alternate.opt.sp9").addClass('s');}
-		if (fwt.getSp10()) {$("#settings #set .alternate.opt.sp10").addClass('s');}
-		if (fwt.getSp11()) {$("#settings #set .alternate.opt.sp11").addClass('s');}
-		if (fwt.getSp12()) {$("#settings #set .alternate.opt.sp12").addClass('s');}
-		if (fwt.getSp13()) {$("#settings #set .alternate.opt.sp13").addClass('s');}
-		if (fwt.getSp14()) {$("#settings #set .alternate.opt.sp14").addClass('s');}
-		if (fwt.getSp15()) {$("#settings #set .alternate.opt.sp15").addClass('s');}
-		if (fwt.getSp16()) {$("#settings #set .alternate.opt.sp16").addClass('s');}
-		if (fwt.getSp17()) {$("#settings #set .alternate.opt.sp17").addClass('s');}
-		if (fwt.getSp18()) {$("#settings #set .alternate.opt.sp18").addClass('s');}
-		if (fwt.getSp19()) {$("#settings #set .alternate.opt.sp19").addClass('s');}
-		if (fwt.getSp20()) {$("#settings #set .alternate.opt.sp20").addClass('s');}
-		if (fwt.getSp21()) {$("#settings #set .alternate.opt.sp21").addClass('s');}
-		if (fwt.getSp22()) {$("#settings #set .alternate.opt.sp22").addClass('s');}
-		if (fwt.getSp23()) {$("#settings #set .alternate.opt.sp23").addClass('s');}
-		if (fwt.getSp24()) {$("#settings #set .alternate.opt.sp24").addClass('s');}
-		if (fwt.getSp25()) {$("#settings #set .alternate.opt.sp25").addClass('s');}
-		if (fwt.getSp26()) {$("#settings #set .alternate.opt.sp26").addClass('s');}
-		if (fwt.getSp27()) {$("#settings #set .alternate.opt.sp27").addClass('s');}
-		if (fwt.getSp28()) {$("#settings #set .alternate.opt.sp28").addClass('s');}
-		if (fwt.getSp29()) {$("#settings #set .alternate.opt.sp29").addClass('s');}
-		if (fwt.getSp30()) {$("#settings #set .alternate.opt.sp30").addClass('s');}
-		if (fwt.getSp31()) {$("#settings #set .alternate.opt.sp31").addClass('s');}
+		if (fwt.getSp1()) {$("#pieces #piecescroller .alternate.opt.sp1").addClass('s');}
+		if (fwt.getSp2()) {$("#pieces #piecescroller .alternate.opt.sp2").addClass('s');}
+		if (fwt.getSp3()) {$("#pieces #piecescroller .alternate.opt.sp3").addClass('s');}
+		if (fwt.getSp4()) {$("#pieces #piecescroller .alternate.opt.sp4").addClass('s');}
+		if (fwt.getSp5()) {$("#pieces #piecescroller .alternate.opt.sp5").addClass('s');}
+		if (fwt.getSp6()) {$("#pieces #piecescroller .alternate.opt.sp6").addClass('s');}
+		if (fwt.getSp7()) {$("#pieces #piecescroller .alternate.opt.sp7").addClass('s');}
+		if (fwt.getSp8()) {$("#pieces #piecescroller .alternate.opt.sp8").addClass('s');}
+		if (fwt.getSp9()) {$("#pieces #piecescroller .alternate.opt.sp9").addClass('s');}
+		if (fwt.getSp10()) {$("#pieces #piecescroller .alternate.opt.sp10").addClass('s');}
+		if (fwt.getSp11()) {$("#pieces #piecescroller .alternate.opt.sp11").addClass('s');}
+		if (fwt.getSp12()) {$("#pieces #piecescroller .alternate.opt.sp12").addClass('s');}
+		if (fwt.getSp13()) {$("#pieces #piecescroller .alternate.opt.sp13").addClass('s');}
+		if (fwt.getSp14()) {$("#pieces #piecescroller .alternate.opt.sp14").addClass('s');}
+		if (fwt.getSp15()) {$("#pieces #piecescroller .alternate.opt.sp15").addClass('s');}
+		if (fwt.getSp16()) {$("#pieces #piecescroller .alternate.opt.sp16").addClass('s');}
+		if (fwt.getSp17()) {$("#pieces #piecescroller .alternate.opt.sp17").addClass('s');}
+		if (fwt.getSp18()) {$("#pieces #piecescroller .alternate.opt.sp18").addClass('s');}
+		if (fwt.getSp19()) {$("#pieces #piecescroller .alternate.opt.sp19").addClass('s');}
+		if (fwt.getSp20()) {$("#pieces #piecescroller .alternate.opt.sp20").addClass('s');}
+		if (fwt.getSp21()) {$("#pieces #piecescroller .alternate.opt.sp21").addClass('s');}
+		if (fwt.getSp22()) {$("#pieces #piecescroller .alternate.opt.sp22").addClass('s');}
+		if (fwt.getSp23()) {$("#pieces #piecescroller .alternate.opt.sp23").addClass('s');}
+		if (fwt.getSp24()) {$("#pieces #piecescroller .alternate.opt.sp24").addClass('s');}
+		if (fwt.getSp25()) {$("#pieces #piecescroller .alternate.opt.sp25").addClass('s');}
+		if (fwt.getSp26()) {$("#pieces #piecescroller .alternate.opt.sp26").addClass('s');}
+		if (fwt.getSp27()) {$("#pieces #piecescroller .alternate.opt.sp27").addClass('s');}
+		if (fwt.getSp28()) {$("#pieces #piecescroller .alternate.opt.sp28").addClass('s');}
+		if (fwt.getSp29()) {$("#pieces #piecescroller .alternate.opt.sp29").addClass('s');}
+		if (fwt.getSp30()) {$("#pieces #piecescroller .alternate.opt.sp30").addClass('s');}
+		if (fwt.getSp31()) {$("#pieces #piecescroller .alternate.opt.sp31").addClass('s');}
 		
 		if(fwt.getMat1()) {$("#pieces #materialscroller .alternate.opt.mat1").addClass('s');}
 		if(fwt.getMat2()) {$("#pieces #materialscroller .alternate.opt.mat2").addClass('s');}
@@ -97,7 +97,7 @@ var controls = function () {
 	});
 	
 	// Piece Selection:
-	$("#settings #set .alternate.opt.sp1").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp1").click(function(){
 		if (fwt.getSp1()) {
 			$(this).removeClass('s');
 			fwt.switchSp1(false);
@@ -107,7 +107,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp2").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp2").click(function(){
 		if (fwt.getSp2()) {
 			$(this).removeClass('s');
 			fwt.switchSp2(false);
@@ -117,7 +117,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp3").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp3").click(function(){
 		if (fwt.getSp3()) {
 			$(this).removeClass('s');
 			fwt.switchSp3(false);
@@ -127,7 +127,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp4").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp4").click(function(){
 		if (fwt.getSp4()) {
 			$(this).removeClass('s');
 			fwt.switchSp4(false);
@@ -137,7 +137,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp5").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp5").click(function(){
 		if (fwt.getSp5()) {
 			$(this).removeClass('s');
 			fwt.switchSp5(false);
@@ -147,7 +147,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp6").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp6").click(function(){
 		if (fwt.getSp6()) {
 			$(this).removeClass('s');
 			fwt.switchSp6(false);
@@ -157,7 +157,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp7").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp7").click(function(){
 		if (fwt.getSp7()) {
 			$(this).removeClass('s');
 			fwt.switchSp7(false);
@@ -167,7 +167,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp8").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp8").click(function(){
 		if (fwt.getSp8()) {
 			$(this).removeClass('s');
 			fwt.switchSp8(false);
@@ -177,7 +177,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp9").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp9").click(function(){
 		if (fwt.getSp9()) {
 			$(this).removeClass('s');
 			fwt.switchSp9(false);
@@ -187,7 +187,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp10").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp10").click(function(){
 		if (fwt.getSp10()) {
 			$(this).removeClass('s');
 			fwt.switchSp10(false);
@@ -197,7 +197,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp11").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp11").click(function(){
 		if (fwt.getSp11()) {
 			$(this).removeClass('s');
 			fwt.switchSp11(false);
@@ -207,7 +207,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp12").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp12").click(function(){
 		if (fwt.getSp12()) {
 			$(this).removeClass('s');
 			fwt.switchSp12(false);
@@ -217,7 +217,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp13").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp13").click(function(){
 		if (fwt.getSp13()) {
 			$(this).removeClass('s');
 			fwt.switchSp13(false);
@@ -227,7 +227,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp14").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp14").click(function(){
 		if (fwt.getSp14()) {
 			$(this).removeClass('s');
 			fwt.switchSp14(false);
@@ -237,7 +237,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp15").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp15").click(function(){
 		if (fwt.getSp15()) {
 			$(this).removeClass('s');
 			fwt.switchSp15(false);
@@ -247,7 +247,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp16").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp16").click(function(){
 		if (fwt.getSp16()) {
 			$(this).removeClass('s');
 			fwt.switchSp16(false);
@@ -257,7 +257,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp17").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp17").click(function(){
 		if (fwt.getSp17()) {
 			$(this).removeClass('s');
 			fwt.switchSp17(false);
@@ -267,7 +267,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp18").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp18").click(function(){
 		if (fwt.getSp18()) {
 			$(this).removeClass('s');
 			fwt.switchSp18(false);
@@ -277,7 +277,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp19").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp19").click(function(){
 		if (fwt.getSp19()) {
 			$(this).removeClass('s');
 			fwt.switchSp19(false);
@@ -287,7 +287,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp20").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp20").click(function(){
 		if (fwt.getSp20()) {
 			$(this).removeClass('s');
 			fwt.switchSp20(false);
@@ -297,7 +297,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp21").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp21").click(function(){
 		if (fwt.getSp21()) {
 			$(this).removeClass('s');
 			fwt.switchSp21(false);
@@ -307,7 +307,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp22").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp22").click(function(){
 		if (fwt.getSp22()) {
 			$(this).removeClass('s');
 			fwt.switchSp22(false);
@@ -317,7 +317,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp23").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp23").click(function(){
 		if (fwt.getSp23()) {
 			$(this).removeClass('s');
 			fwt.switchSp23(false);
@@ -327,7 +327,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp24").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp24").click(function(){
 		if (fwt.getSp24()) {
 			$(this).removeClass('s');
 			fwt.switchSp24(false);
@@ -337,7 +337,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp25").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp25").click(function(){
 		if (fwt.getSp25()) {
 			$(this).removeClass('s');
 			fwt.switchSp25(false);
@@ -347,7 +347,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp26").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp26").click(function(){
 		if (fwt.getSp26()) {
 			$(this).removeClass('s');
 			fwt.switchSp26(false);
@@ -357,7 +357,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp27").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp27").click(function(){
 		if (fwt.getSp27()) {
 			$(this).removeClass('s');
 			fwt.switchSp27(false);
@@ -367,7 +367,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp28").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp28").click(function(){
 		if (fwt.getSp28()) {
 			$(this).removeClass('s');
 			fwt.switchSp28(false);
@@ -377,7 +377,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp29").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp29").click(function(){
 		if (fwt.getSp29()) {
 			$(this).removeClass('s');
 			fwt.switchSp29(false);
@@ -387,7 +387,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp30").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp30").click(function(){
 		if (fwt.getSp30()) {
 			$(this).removeClass('s');
 			fwt.switchSp30(false);
@@ -397,7 +397,7 @@ var controls = function () {
 		}
 		ui.stopGame();
 	});
-	$("#settings #set .alternate.opt.sp31").click(function(){
+	$("#pieces #piecescroller .alternate.opt.sp31").click(function(){
 		if (fwt.getSp31()) {
 			$(this).removeClass('s');
 			fwt.switchSp31(false);
