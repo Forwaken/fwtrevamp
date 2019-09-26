@@ -607,350 +607,6 @@ html, body {
     padding-left: 14px
 }
 
-#layout .activity#settings #settingscroller .row .controlsa {
-    height: auto;
-    padding: 20px 0 18px 30px;
-    float: right;
-    width: 22.5%;
-    min-height: 50px
-}
-
-#layout .activity#settings #settingscroller .row .controlsa .alternate {
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    -ms-border-radius: 1px;
-    -o-border-radius: 1px;
-    border-radius: 1px;
-    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-    background: rgba(255, 255, 255, 0.3);
-	background-repeat: no-repeat;
-	background-position: center;
-    color: rgba(0, 0, 0, 0.6);
-    cursor: pointer;
-    font-size: 14px;
-    height: 128px;
-    line-height: 30px;
-    margin-bottom: 1px;
-    text-align: center;
-    font-weight: 600
-}
-
-#layout .activity#settings #settingscroller .row .controlsa .alternate.s {
-    -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-    background: rgba(255, 255, 255, 0.6);
-	background-repeat: no-repeat;
-	background-position: center;
-    color: rgba(0, 0, 0, 0.8);
-    z-index: 999
-}
-
-#layout .activity#settings #settingscroller .row .controlsa .alternate.opt {
-    -webkit-transition: all 0.1s linear;
-    -webkit-transition-delay: 0s;
-    -moz-transition: all 0.1s linear 0s;
-    -o-transition: all 0.1s linear 0s;
-    transition: all 0.1s linear 0s;
-    width: 128px;
-    text-align: center
-}
-
-#layout .activity#settings #settingscroller .row .controlsa .alternate#t0 {
-    background-image: url(g/theme-face.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsa .alternate#t1 {
-    background-image: url(g/theme-billiard.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsa .alternate#t2 {
-    background-image: url(g/theme-crystal.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsb {
-    height: auto;
-    padding: 20px 0 18px 0;
-    float: right;
-    width: 100px;
-    min-height: 50px
-}
-
-#layout .activity#settings #settingscroller .row .controlsb .alternate {
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    -ms-border-radius: 1px;
-    -o-border-radius: 1px;
-    border-radius: 1px;
-    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-    background: rgba(255, 255, 255, 0.3);
-	background-repeat: no-repeat;
-	background-position: center;
-    color: rgba(0, 0, 0, 0.6);
-    cursor: pointer;
-    font-size: 14px;
-	width: 128px;
-    height: 128px;
-    line-height: 30px;
-    margin-bottom: 1px;
-    text-align: center;
-    font-weight: 600
-}
-
-#layout .activity#settings #settingscroller .row .controlsb .alternate.s {
-    -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-    background: rgba(255, 255, 255, 0.6);
-	background-repeat: no-repeat;
-	background-position: center;
-    color: rgba(0, 0, 0, 0.8);
-    z-index: 999
-}
-
-#layout .activity#settings #settingscroller .row .controlsb .alternate.opt {
-    -webkit-transition: all 0.1s linear;
-    -webkit-transition-delay: 0s;
-    -moz-transition: all 0.1s linear 0s;
-    -o-transition: all 0.1s linear 0s;
-    transition: all 0.1s linear 0s;
-    width: 128px;
-    text-align: center
-}
-
-#layout .activity#settings #settingscroller .row .controlsb .alternate#t0 {
-    background-image: url(g/theme-retro.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsb .alternate#t1 {
-    background-image: url(g/theme-crayon.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsb .alternate#t2 {
-    background-image: url(g/theme-block.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsc {
-    height: auto;
-    padding: 20px 0 18px 0;
-    float: right;
-    width: 130px;
-    min-height: 50px
-}
-
-#layout .activity#settings #settingscroller .row .controlsc .alternate {
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    -ms-border-radius: 1px;
-    -o-border-radius: 1px;
-    border-radius: 1px;
-    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-    background: rgba(255, 255, 255, 0.3);
-	background-repeat: no-repeat;
-	background-position: center;
-    color: rgba(0, 0, 0, 0.6);
-    cursor: pointer;
-    font-size: 14px;
-	width: 128px;
-    height: 128px;
-    line-height: 30px;
-    margin-bottom: 1px;
-    text-align: center;
-    font-weight: 600
-}
-
-#layout .activity#settings #settingscroller .row .controlsc .alternate.s {
-    -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-    background: rgba(255, 255, 255, 0.6);
-	background-repeat: no-repeat;
-	background-position: center;
-    color: rgba(0, 0, 0, 0.8);
-    z-index: 999
-}
-
-#layout .activity#settings #settingscroller .row .controlsc .alternate.opt {
-    -webkit-transition: all 0.1s linear;
-    -webkit-transition-delay: 0s;
-    -moz-transition: all 0.1s linear 0s;
-    -o-transition: all 0.1s linear 0s;
-    transition: all 0.1s linear 0s;
-    width: 128px;
-    text-align: center
-}
-
-#layout .activity#settings #settingscroller .row .controlsc .alternate#t0 {
-    background-image: url(g/theme-bit8.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsc .alternate#t1 {
-    background-image: url(g/theme-recent.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsc .alternate#t2 {
-    background-image: url(g/theme-stud.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsd {
-    height: auto;
-    padding: 20px 0 18px 0;
-    float: right;
-    width: 130px;
-    min-height: 50px
-}
-
-#layout .activity#settings #settingscroller .row .controlsd .alternate {
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    -ms-border-radius: 1px;
-    -o-border-radius: 1px;
-    border-radius: 1px;
-    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-    background: rgba(255, 255, 255, 0.3);
-	background-repeat: no-repeat;
-	background-position: center;
-    color: rgba(0, 0, 0, 0.6);
-    cursor: pointer;
-    font-size: 14px;
-	width: 128px;
-    height: 128px;
-    line-height: 30px;
-    margin-bottom: 1px;
-    text-align: center;
-    font-weight: 600
-}
-
-#layout .activity#settings #settingscroller .row .controlsd .alternate.s {
-    -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-    background: rgba(255, 255, 255, 0.6);
-	background-repeat: no-repeat;
-	background-position: center;
-    color: rgba(0, 0, 0, 0.8);
-    z-index: 999
-}
-
-#layout .activity#settings #settingscroller .row .controlsd .alternate.opt {
-    -webkit-transition: all 0.1s linear;
-    -webkit-transition-delay: 0s;
-    -moz-transition: all 0.1s linear 0s;
-    -o-transition: all 0.1s linear 0s;
-    transition: all 0.1s linear 0s;
-    width: 128px;
-    text-align: center
-}
-
-#layout .activity#settings #settingscroller .row .controlsd .alternate#t0 {
-    background-image: url(g/theme-gameboy.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsd .alternate#t1 {
-    background-image: url(g/theme-bckwht.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsd .alternate#t2 {
-    background-image: url(g/theme-dark.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlse {
-    height: auto;
-    padding: 20px 0 18px 0;
-    float: right;
-    width: 130px;
-    min-height: 50px
-}
-
-#layout .activity#settings #settingscroller .row .controlse .alternate {
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    -ms-border-radius: 1px;
-    -o-border-radius: 1px;
-    border-radius: 1px;
-    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-    background: rgba(255, 255, 255, 0.3);
-	background-repeat: no-repeat;
-	background-position: center;
-    color: rgba(0, 0, 0, 0.6);
-    cursor: pointer;
-    font-size: 14px;
-	width: 128px;
-    height: 128px;
-    line-height: 30px;
-    margin-bottom: 1px;
-    text-align: center;
-    font-weight: 600
-}
-
-#layout .activity#settings #settingscroller .row .controlse .alternate.s {
-    -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-    background: rgba(255, 255, 255, 0.6);
-	background-repeat: no-repeat;
-	background-position: center;
-    color: rgba(0, 0, 0, 0.8);
-    z-index: 999
-}
-
-#layout .activity#settings #settingscroller .row .controlse .alternate.opt {
-    -webkit-transition: all 0.1s linear;
-    -webkit-transition-delay: 0s;
-    -moz-transition: all 0.1s linear 0s;
-    -o-transition: all 0.1s linear 0s;
-    transition: all 0.1s linear 0s;
-    width: 128px;
-    text-align: center
-}
-
-#layout .activity#settings #settingscroller .row .controlse .alternate#t0 {
-    background-image: url(g/theme-classic.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlse .alternate#t1 {
-    background-image: url(g/theme-iced.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlse .alternate#t2 {
-    background-image: url(g/theme-panel.png)
-}
-
 #layout .activity#settings #settingscroller .row .controlsf {
     height: auto;
     padding: 20px 0 18px 30px;
@@ -1256,7 +912,7 @@ html, body {
     overflow: auto;
     padding: 10px 15px 0 5px;
     position: absolute;
-    right: 0;
+    right: 150px;
     top: 0
 }
 
@@ -1431,6 +1087,126 @@ html, body {
 
 #layout .activity#pieces #piecescroller .alternate#t30 {
 	background-image: url(g/piece/sp31.png)
+}
+
+#layout .activity#pieces #themescroller {
+    bottom: 0;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    right: 0;
+    overflow: auto;
+    padding: 10px 5px 0 10px;
+    position: absolute;
+    width: 140px;
+    top: 0;
+    text-align: center;
+}
+
+#layout .activity#pieces #themescroller .alternate {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.3);
+	background-repeat: no-repeat;
+	background-position: center;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    font-size: 14px;
+    height: 128px;
+    line-height: 30px;
+    margin: 1px;
+    text-align: center;
+    font-weight: 600
+}
+
+#layout .activity#pieces #themescroller .alternate.s {
+    -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.6);
+	background-repeat: no-repeat;
+	background-position: center;
+    color: rgba(0, 0, 0, 0.8);
+    z-index: 999
+}
+
+#layout .activity#pieces #themescroller .alternate.opt {
+    -webkit-transition: all 0.1s linear;
+    -webkit-transition-delay: 0s;
+    -moz-transition: all 0.1s linear 0s;
+    -o-transition: all 0.1s linear 0s;
+    transition: all 0.1s linear 0s;
+    width: 128px;
+    text-align: center
+}
+
+#layout .activity#pieces #themescroller .alternate#t0 {
+    background-image: url(g/theme-classic.png)
+}
+
+#layout .activity#pieces #themescroller .alternate#t1 {
+    background-image: url(g/theme-iced.png)
+}
+
+#layout .activity#pieces #themescroller .alternate#t2 {
+    background-image: url(g/theme-gameboy.png)
+}
+
+#layout .activity#pieces #themescroller .alternate#t3 {
+    background-image: url(g/theme-bckwht.png)
+}
+
+#layout .activity#pieces #themescroller .alternate#t4 {
+    background-image: url(g/theme-bit8.png)
+}
+
+#layout .activity#pieces #themescroller .alternate#t5 {
+    background-image: url(g/theme-recent.png)
+}
+
+#layout .activity#pieces #themescroller .alternate#t6 {
+    background-image: url(g/theme-stud.png)
+}
+
+#layout .activity#pieces #themescroller .alternate#t7 {
+    background-image: url(g/theme-panel.png)
+}
+
+#layout .activity#pieces #themescroller .alternate#t8 {
+    background-image: url(g/theme-block.png)
+}
+
+#layout .activity#pieces #themescroller .alternate#t9 {
+    background-image: url(g/theme-retro.png)
+}
+
+#layout .activity#pieces #themescroller .alternate#t10 {
+    background-image: url(g/theme-crystal.png)
+}
+
+#layout .activity#pieces #themescroller .alternate#t11 {
+    background-image: url(g/theme-dark.png)
+}
+
+#layout .activity#pieces #themescroller .alternate#t12 {
+    background-image: url(g/theme-face.png)
+}
+
+#layout .activity#pieces #themescroller .alternate#t13 {
+    background-image: url(g/theme-billiard.png)
+}
+
+#layout .activity#pieces #themescroller .alternate#t14 {
+    background-image: url(g/theme-crayon.png)
 }
 
 #layout .activity#help {
