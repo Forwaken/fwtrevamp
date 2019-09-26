@@ -837,7 +837,7 @@ html, body {
 #layout .activity#pieces #materialscroller {
     bottom: 0;
     border-left: 1px solid rgba(0, 0, 0, 0.1);
-    left: 130px;
+    left: 125px;
     overflow: auto;
     padding: 10px 5px 0 10px;
     position: absolute;
