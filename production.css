@@ -675,33 +675,6 @@ html, body {
     background-image: url(g/theme-crystal.png)
 }
 
-#layout .activity#settings #settingscroller .row .controlsa .alternate#t3 {
-    background-image: url(g/piece/sp5.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsa .alternate#t4 {
-    background-image: url(g/piece/sp10.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsa .alternate#t5 {
-    background-image: url(g/piece/sp15.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsa .alternate#t6 {
-    background-image: url(g/piece/sp20.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsa .alternate#t7 {
-    background-image: url(g/piece/sp25.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsa .alternate#t8 {
-    background-image: url(g/piece/sp30.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsa .alternate#t10 {
-    background-image: url(g/theme-classic.png)
-}
 #layout .activity#settings #settingscroller .row .controlsb {
     height: auto;
     padding: 20px 0 18px 0;
@@ -769,34 +742,6 @@ html, body {
 
 #layout .activity#settings #settingscroller .row .controlsb .alternate#t2 {
     background-image: url(g/theme-block.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsb .alternate#t3 {
-    background-image: url(g/piece/sp4.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsb .alternate#t4 {
-    background-image: url(g/piece/sp9.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsb .alternate#t5 {
-    background-image: url(g/piece/sp14.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsb .alternate#t6 {
-    background-image: url(g/piece/sp19.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsb .alternate#t7 {
-    background-image: url(g/piece/sp24.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsb .alternate#t8 {
-    background-image: url(g/piece/sp29.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsb .alternate#t10 {
-    background-image: url(g/material-invis.png)
 }
 
 #layout .activity#settings #settingscroller .row .controlsc {
@@ -868,34 +813,6 @@ html, body {
     background-image: url(g/theme-stud.png)
 }
 
-#layout .activity#settings #settingscroller .row .controlsc .alternate#t3 {
-	background-image: url(g/piece/sp3.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsc .alternate#t4 {
-    background-image: url(g/piece/sp8.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsc .alternate#t5 {
-    background-image: url(g/piece/sp13.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsc .alternate#t6 {
-    background-image: url(g/piece/sp18.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsc .alternate#t7 {
-    background-image: url(g/piece/sp23.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsc .alternate#t8 {
-    background-image: url(g/piece/sp28.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsc .alternate#t9 {
-    background-image: url(g/piece/sp31.png)
-}
-
 #layout .activity#settings #settingscroller .row .controlsd {
     height: auto;
     padding: 20px 0 18px 0;
@@ -965,30 +882,6 @@ html, body {
     background-image: url(g/theme-dark.png)
 }
 
-#layout .activity#settings #settingscroller .row .controlsd .alternate#t3 {
-    background-image: url(g/piece/sp2.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsd .alternate#t4 {
-    background-image: url(g/piece/sp7.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsd .alternate#t5 {
-    background-image: url(g/piece/sp12.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsd .alternate#t6 {
-    background-image: url(g/piece/sp17.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsd .alternate#t7 {
-    background-image: url(g/piece/sp22.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlsd .alternate#t8 {
-    background-image: url(g/piece/sp27.png)
-}
-
 #layout .activity#settings #settingscroller .row .controlse {
     height: auto;
     padding: 20px 0 18px 0;
@@ -1056,30 +949,6 @@ html, body {
 
 #layout .activity#settings #settingscroller .row .controlse .alternate#t2 {
     background-image: url(g/theme-panel.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlse .alternate#t3 {
-    background-image: url(g/piece/sp1.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlse .alternate#t4 {
-    background-image: url(g/piece/sp6.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlse .alternate#t5 {
-    background-image: url(g/piece/sp11.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlse .alternate#t6 {
-    background-image: url(g/piece/sp16.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlse .alternate#t7 {
-    background-image: url(g/piece/sp21.png)
-}
-
-#layout .activity#settings #settingscroller .row .controlse .alternate#t8 {
-    background-image: url(g/piece/sp26.png)
 }
 
 #layout .activity#settings #settingscroller .row .controlsf {
@@ -1389,6 +1258,179 @@ html, body {
     position: absolute;
     right: 0;
     top: 0
+}
+
+#layout .activity#pieces #piecescroller .alternate {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.3);
+	background-repeat: no-repeat;
+	background-position: center;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    font-size: 14px;
+    height: 128px;
+    line-height: 30px;
+    margin: 1px;
+    text-align: center;
+    font-weight: 600;
+    float: left;
+}
+
+#layout .activity#pieces #piecescroller .alternate.s {
+    -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.6);
+	background-repeat: no-repeat;
+	background-position: center;
+    color: rgba(0, 0, 0, 0.8);
+    z-index: 999
+}
+
+#layout .activity#pieces #piecescroller .alternate.opt {
+    -webkit-transition: all 0.1s linear;
+    -webkit-transition-delay: 0s;
+    -moz-transition: all 0.1s linear 0s;
+    -o-transition: all 0.1s linear 0s;
+    transition: all 0.1s linear 0s;
+    width: 128px;
+    text-align: center
+}
+
+#layout .activity#pieces #piecescroller .alternate#t0 {
+	background-image: url(g/piece/sp1.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t1 {
+	background-image: url(g/piece/sp2.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t2 {
+	background-image: url(g/piece/sp3.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t3 {
+	background-image: url(g/piece/sp4.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t4 {
+	background-image: url(g/piece/sp5.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t5 {
+	background-image: url(g/piece/sp6.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t6 {
+	background-image: url(g/piece/sp7.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t7 {
+	background-image: url(g/piece/sp8.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t8 {
+	background-image: url(g/piece/sp9.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t9 {
+	background-image: url(g/piece/sp10.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t10 {
+	background-image: url(g/piece/sp11.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t11 {
+	background-image: url(g/piece/sp12.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t12 {
+	background-image: url(g/piece/sp13.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t13 {
+	background-image: url(g/piece/sp14.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t14 {
+	background-image: url(g/piece/sp15.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t15 {
+	background-image: url(g/piece/sp16.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t16 {
+	background-image: url(g/piece/sp17.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t17 {
+	background-image: url(g/piece/sp18.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t18 {
+	background-image: url(g/piece/sp19.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t19 {
+	background-image: url(g/piece/sp20.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t20 {
+	background-image: url(g/piece/sp21.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t21 {
+	background-image: url(g/piece/sp22.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t22 {
+	background-image: url(g/piece/sp23.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t23 {
+	background-image: url(g/piece/sp24.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t24 {
+	background-image: url(g/piece/sp25.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t25 {
+	background-image: url(g/piece/sp26.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t26 {
+	background-image: url(g/piece/sp27.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t27 {
+	background-image: url(g/piece/sp28.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t28 {
+	background-image: url(g/piece/sp29.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t29 {
+	background-image: url(g/piece/sp30.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t30 {
+	background-image: url(g/piece/sp31.png)
 }
 
 #layout .activity#help {
