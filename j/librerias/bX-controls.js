@@ -12,7 +12,7 @@ var controls = function () {
 			$("#settings #invisibles .alternate.true").addClass('s');
 		else
 			$("#settings #invisibles .alternate.false").addClass('s');
-		$('#settings #themes .alternate[data-value="'+fwt.getColorTheme()+'"]').addClass('s');
+		$('#pieces #themescroller .alternate[data-value="'+fwt.getColorTheme()+'"]').addClass('s');
 		$('#settings #speed .alternate[data-value="'+fwt.getSpeed()+'"]').addClass('s');
 		$('#settings #rotation .alternate[data-value="'+fwt.getRotation()+'"]').addClass('s');
 		if (fwt.getSp1()) {$("#pieces #piecescroller .alternate.opt.sp1").addClass('s');}
@@ -81,8 +81,8 @@ var controls = function () {
 	});
 
 	// Themes:
-	$("#settings #themes .alternate.opt").click(function(){
-		$("#settings #themes .alternate").removeClass('s');
+	$("#pieces #themescroller .alternate.opt").click(function(){
+		$("#pieces #themescroller .alternate").removeClass('s');
 		$(this).addClass('s');
 		fwt.switchTheme($(this).attr("data-value"));
 		fwt.repaintNextPiece();
