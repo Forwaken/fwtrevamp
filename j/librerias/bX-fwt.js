@@ -381,10 +381,10 @@
 			} else if (speed == "medium") {
 				normalDelay = Math.floor(40 - (level ^ 0.8));
 				limitDelay = normalDelay;
-			} else (
+			} else {
 				normalDelay = Math.floor((40 * Math.random) - (level ^ Math.random));
 				limitDelay = normalDelay;
-			)
+			}
 		$('.activity#game #next #level').html('<span class="xtr" data-xtr="level-lab">' + $.i18n._('level-lab') + '</span> ' + level);
 		savePrefs();
 	}
