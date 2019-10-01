@@ -1368,7 +1368,10 @@
 		$(document).bind('touchend', function (e){
 		   var te = e.originalEvent.changedTouches[0].clientY;
 		   if(ts < te-50){
-		      drop();
+		      limitDelay = normalDelay;
+		   }
+		   if(ts > te+50){
+		      holdk();
 		   }
 		   var tl = e.originalEvent.changedTouches[0].clientX;
 		   if(to > tl+50){
