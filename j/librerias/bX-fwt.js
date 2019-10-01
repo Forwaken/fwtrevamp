@@ -378,10 +378,13 @@
 			} else if (speed == "low") {
 				normalDelay = Math.floor(40 - (level ^ 0.8)) * 1.5;
 				limitDelay = normalDelay;
-			} else {
+			} else if (speed == "medium") {
 				normalDelay = Math.floor(40 - (level ^ 0.8));
 				limitDelay = normalDelay;
-			}
+			} else (
+				normalDelay = Math.floor((40 * Math.random) - (level ^ Math.random));
+				limitDelay = normalDelay;
+			)
 		$('.activity#game #next #level').html('<span class="xtr" data-xtr="level-lab">' + $.i18n._('level-lab') + '</span> ' + level);
 		savePrefs();
 	}
@@ -2137,7 +2140,7 @@
 		return speed;
 	}
 	var switchSpeed = function(motion) {
-		if (motion == "low" || motion == "medium" || motion == "high") {
+		if (motion == "low" || motion == "medium" || motion == "high" || motion == "rnd") {
 			speed = motion;
 			newGame();
 			savePrefs();
