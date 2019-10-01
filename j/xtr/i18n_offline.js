@@ -93,6 +93,7 @@
 		"custom-speed-low": "Low",
 		"custom-speed-medium": "Medium",
 		"custom-speed-high": "High",
+	    	"custom-speed-rnd": "???",
 
         "custom-rotation": "Direction of rotation",
         "custom-rotation-d": "Select the default rotation to rotate a piece with the &uarr; key.",
@@ -202,6 +203,7 @@
 		"custom-speed-low": "Low",
 		"custom-speed-medium": "Medium",
 		"custom-speed-high": "High",
+	    	"custom-speed-rnd": "???",
 		
         "custom-rotation": "Sentido de giro",
         "custom-rotation-d": "Elige el sentido de giro por defecto al rotar una pieza con la tecla &uarr; .",
@@ -310,6 +312,7 @@
 		"custom-speed-low": "Low",
 		"custom-speed-medium": "Medium",
 		"custom-speed-high": "High",
+	    	"custom-speed-rnd": "???",
 		
         "custom-rotation": "Drehrichtung",
         "custom-rotation-d": "Wählen Sie die Standardrotation aus, um ein Stück mit zu drehen &uarr; Schlüssel.",
@@ -438,6 +441,7 @@
 		"custom-speed-low": "Low",
 		"custom-speed-medium": "Medium",
 		"custom-speed-high": "High",
+	    	"custom-speed-rnd": "???",
 		
         "custom-rotation": "Rotação",
         "custom-rotation-d": "Selecione a rotação padrão para girar uma peça com &uarr; .",
@@ -546,6 +550,7 @@
 		"custom-speed-low": "Low",
 		"custom-speed-medium": "Medium",
 		"custom-speed-high": "High",
+	    	"custom-speed-rnd": "???",
 		
         "custom-rotation": "Sens de rotation",
         "custom-rotation-d": "Sélectionnez la rotation par défaut pour faire tourner une pièce avec la touche &uarr;.",
