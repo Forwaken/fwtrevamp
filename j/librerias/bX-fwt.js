@@ -744,6 +744,66 @@
 							return graphics.gameboy.o.block;
 						else
 							return graphics.gameboy.t.block;
+					} else if (colorTheme == "retro") {
+						if (gameStatus == 3)
+							return graphics.retro.o.block;
+						else
+							return graphics.retro.t.block;
+					} else if (colorTheme == "bckwht") {
+						if (gameStatus == 3)
+							return graphics.bckwht.o.block;
+						else
+							return graphics.bckwht.t.block;
+					} else if (colorTheme == "crayon") {
+						if (gameStatus == 3)
+							return graphics.crayon.o.block;
+						else
+							return graphics.crayon.t.block;
+					} else if (colorTheme == "recent") {
+						if (gameStatus == 3)
+							return graphics.recent.o.block;
+						else
+							return graphics.recent.t.block;
+					} else if (colorTheme == "bit8") {
+						if (gameStatus == 3)
+							return graphics.bit8.o.block;
+						else
+							return graphics.bit8.t.block;
+					} else if (colorTheme == "face") {
+						if (gameStatus == 3)
+							return graphics.face.o.block;
+						else
+							return graphics.face.t.block;
+					} else if (colorTheme == "billiard") {
+						if (gameStatus == 3)
+							return graphics.billiard.o.block;
+						else
+							return graphics.billiard.t.block;
+					} else if (colorTheme == "dark") {
+						if (gameStatus == 3)
+							return graphics.dark.o.block;
+						else
+							return graphics.dark.t.block;
+					} else if (colorTheme == "stud") {
+						if (gameStatus == 3)
+							return graphics.stud.o.block;
+						else
+							return graphics.stud.t.block;
+					} else if (colorTheme == "block") {
+						if (gameStatus == 3)
+							return graphics.block.o.block;
+						else
+							return graphics.block.t.block;
+					} else if (colorTheme == "panel") {
+						if (gameStatus == 3)
+							return graphics.panel.o.block;
+						else
+							return graphics.panel.t.block;
+					} else if (colorTheme == "crystal") {
+						if (gameStatus == 3)
+							return graphics.crystal.o.block;
+						else
+							return graphics.crystal.t.block;
 					} else {
 						if (gameStatus == 3)
 							return graphics.iced.o.block;
@@ -843,6 +903,38 @@
 				} else {
 					return graphics.iced.t.cross;
 				}
+			} else if (mat == 4) {
+				if (colorTheme == "classic"){
+					return graphics.classic.t.block;
+				} else if (colorTheme == "gameboy") {
+					return graphics.gameboy.t.block;
+				} else if (colorTheme == "retro") {
+					return graphics.retro.t.block;
+				} else if (colorTheme == "bckwht") {
+					return graphics.bckwht.t.block;
+				} else if (colorTheme == "crayon") {
+					return graphics.crayon.t.block;
+				} else if (colorTheme == "recent") {
+					return graphics.recent.t.block;
+				} else if (colorTheme == "bit8") {
+					return graphics.bit8.t.block;
+				} else if (colorTheme == "face") {
+					return graphics.face.t.block;
+				} else if (colorTheme == "billiard") {
+					return graphics.billiard.t.block;
+				} else if (colorTheme == "dark") {
+					return graphics.dark.t.block;
+				} else if (colorTheme == "stud") {
+					return graphics.stud.t.block;
+				} else if (colorTheme == "block") {
+					return graphics.block.t.block;
+				} else if (colorTheme == "panel") {
+					return graphics.panel.t.block;
+				} else if (colorTheme == "crystal") {
+					return graphics.crystal.t.block;
+				} else {
+					return graphics.iced.t.block;
+				}
 			} else if (colorTheme == "classic"){
 				return graphics.classic.t[current.col]
 			} else if (colorTheme == "gameboy") {
@@ -890,6 +982,38 @@
 					return graphics.face.o.cross;
 				} else {
 					return graphics.iced.o.cross;
+				}
+			} else if (mat == 4) {
+				if (colorTheme == "classic"){
+					return graphics.classic.o.block;
+				} else if (colorTheme == "gameboy") {
+					return graphics.gameboy.o.block;
+				} else if (colorTheme == "retro") {
+					return graphics.retro.o.block;
+				} else if (colorTheme == "bckwht") {
+					return graphics.bckwht.o.block;
+				} else if (colorTheme == "crayon") {
+					return graphics.crayon.o.block;
+				} else if (colorTheme == "recent") {
+					return graphics.recent.o.block;
+				} else if (colorTheme == "bit8") {
+					return graphics.bit8.o.block;
+				} else if (colorTheme == "face") {
+					return graphics.face.o.block;
+				} else if (colorTheme == "billiard") {
+					return graphics.billiard.o.block;
+				} else if (colorTheme == "dark") {
+					return graphics.dark.o.block;
+				} else if (colorTheme == "stud") {
+					return graphics.stud.o.block;
+				} else if (colorTheme == "block") {
+					return graphics.block.o.block;
+				} else if (colorTheme == "panel") {
+					return graphics.panel.o.block;
+				} else if (colorTheme == "crystal") {
+					return graphics.crystal.o.block;
+				} else {
+					return graphics.iced.o.block;
 				}
 			} else if (colorTheme == "classic"){
 				return graphics.classic.o[next1.col]
@@ -939,6 +1063,38 @@
 				} else {
 					return graphics.iced.o.cross;
 				}
+			} else if (mat == 4) {
+				if (colorTheme == "classic"){
+					return graphics.classic.o.block;
+				} else if (colorTheme == "gameboy") {
+					return graphics.gameboy.o.block;
+				} else if (colorTheme == "retro") {
+					return graphics.retro.o.block;
+				} else if (colorTheme == "bckwht") {
+					return graphics.bckwht.o.block;
+				} else if (colorTheme == "crayon") {
+					return graphics.crayon.o.block;
+				} else if (colorTheme == "recent") {
+					return graphics.recent.o.block;
+				} else if (colorTheme == "bit8") {
+					return graphics.bit8.o.block;
+				} else if (colorTheme == "face") {
+					return graphics.face.o.block;
+				} else if (colorTheme == "billiard") {
+					return graphics.billiard.o.block;
+				} else if (colorTheme == "dark") {
+					return graphics.dark.o.block;
+				} else if (colorTheme == "stud") {
+					return graphics.stud.o.block;
+				} else if (colorTheme == "block") {
+					return graphics.block.o.block;
+				} else if (colorTheme == "panel") {
+					return graphics.panel.o.block;
+				} else if (colorTheme == "crystal") {
+					return graphics.crystal.o.block;
+				} else {
+					return graphics.iced.o.block;
+				}
 			} else if (colorTheme == "classic"){
 				return graphics.classic.o[next2.col]
 			} else if (colorTheme == "gameboy") {
@@ -987,6 +1143,38 @@
 				} else {
 					return graphics.iced.o.cross;
 				}
+			} else if (mat == 4) {
+				if (colorTheme == "classic"){
+					return graphics.classic.o.block;
+				} else if (colorTheme == "gameboy") {
+					return graphics.gameboy.o.block;
+				} else if (colorTheme == "retro") {
+					return graphics.retro.o.block;
+				} else if (colorTheme == "bckwht") {
+					return graphics.bckwht.o.block;
+				} else if (colorTheme == "crayon") {
+					return graphics.crayon.o.block;
+				} else if (colorTheme == "recent") {
+					return graphics.recent.o.block;
+				} else if (colorTheme == "bit8") {
+					return graphics.bit8.o.block;
+				} else if (colorTheme == "face") {
+					return graphics.face.o.block;
+				} else if (colorTheme == "billiard") {
+					return graphics.billiard.o.block;
+				} else if (colorTheme == "dark") {
+					return graphics.dark.o.block;
+				} else if (colorTheme == "stud") {
+					return graphics.stud.o.block;
+				} else if (colorTheme == "block") {
+					return graphics.block.o.block;
+				} else if (colorTheme == "panel") {
+					return graphics.panel.o.block;
+				} else if (colorTheme == "crystal") {
+					return graphics.crystal.o.block;
+				} else {
+					return graphics.iced.o.block;
+				}
 			} else if (colorTheme == "classic"){
 				return graphics.classic.o[next3.col]
 			} else if (colorTheme == "gameboy") {
@@ -1034,6 +1222,38 @@
 					return graphics.face.o.cross;
 				} else {
 					return graphics.iced.o.cross;
+				}
+			} else if (mat == 4) {
+				if (colorTheme == "classic"){
+					return graphics.classic.o.block;
+				} else if (colorTheme == "gameboy") {
+					return graphics.gameboy.o.block;
+				} else if (colorTheme == "retro") {
+					return graphics.retro.o.block;
+				} else if (colorTheme == "bckwht") {
+					return graphics.bckwht.o.block;
+				} else if (colorTheme == "crayon") {
+					return graphics.crayon.o.block;
+				} else if (colorTheme == "recent") {
+					return graphics.recent.o.block;
+				} else if (colorTheme == "bit8") {
+					return graphics.bit8.o.block;
+				} else if (colorTheme == "face") {
+					return graphics.face.o.block;
+				} else if (colorTheme == "billiard") {
+					return graphics.billiard.o.block;
+				} else if (colorTheme == "dark") {
+					return graphics.dark.o.block;
+				} else if (colorTheme == "stud") {
+					return graphics.stud.o.block;
+				} else if (colorTheme == "block") {
+					return graphics.block.o.block;
+				} else if (colorTheme == "panel") {
+					return graphics.panel.o.block;
+				} else if (colorTheme == "crystal") {
+					return graphics.crystal.o.block;
+				} else {
+					return graphics.iced.o.block;
 				}
 			} else if (colorTheme == "classic"){
 				return graphics.classic.o[hold.col]
@@ -1094,6 +1314,83 @@
 						return graphics.iced.o.cross;
 					else
 						return graphics.iced.t.cross;
+				}
+			} else if (mat == 4) {
+				if (colorTheme == "classic"){
+					if (gameStatus == 3)
+						return graphics.classic.o.block;
+					else
+						return graphics.classic.t.block;
+				} else if (colorTheme == "gameboy") {
+					if (gameStatus == 3)
+						return graphics.gameboy.o.block;
+					else
+						return graphics.gameboy.t.block;
+				} else if (colorTheme == "retro") {
+					if (gameStatus == 3)
+						return graphics.retro.o.block;
+					else
+						return graphics.retro.t.block;
+				} else if (colorTheme == "bckwht") {
+					if (gameStatus == 3)
+						return graphics.bckwht.o.block;
+					else
+						return graphics.bckwht.t.block;
+				} else if (colorTheme == "crayon") {
+					if (gameStatus == 3)
+						return graphics.crayon.o.block;
+					else
+						return graphics.crayon.t.block;
+				} else if (colorTheme == "recent") {
+					if (gameStatus == 3)
+						return graphics.recent.o.block;
+					else
+						return graphics.recent.t.block;
+				} else if (colorTheme == "bit8") {
+					if (gameStatus == 3)
+						return graphics.bit8.o.block;
+					else
+						return graphics.bit8.t.block;
+				} else if (colorTheme == "face") {
+					if (gameStatus == 3)
+						return graphics.face.o.block;
+					else
+						return graphics.face.t.block;
+				} else if (colorTheme == "billiard") {
+					if (gameStatus == 3)
+						return graphics.billiard.o.block;
+					else
+						return graphics.billiard.t.block;
+				} else if (colorTheme == "dark") {
+					if (gameStatus == 3)
+						return graphics.dark.o.block;
+					else
+						return graphics.dark.t.block;
+				} else if (colorTheme == "stud") {
+					if (gameStatus == 3)
+						return graphics.stud.o.block;
+					else
+						return graphics.stud.t.block;
+				} else if (colorTheme == "block") {
+					if (gameStatus == 3)
+						return graphics.block.o.block;
+					else
+						return graphics.block.t.block;
+				} else if (colorTheme == "panel") {
+					if (gameStatus == 3)
+						return graphics.panel.o.block;
+					else
+						return graphics.panel.t.block;
+				} else if (colorTheme == "crystal") {
+					if (gameStatus == 3)
+						return graphics.crystal.o.block;
+					else
+						return graphics.crystal.t.block;
+				} else {
+					if (gameStatus == 3)
+						return graphics.iced.o.block;
+					else
+						return graphics.iced.t.block;
 				}
 			} else if (invisibleEnabled == true) {
 				return graphics.invisible;
