@@ -1495,6 +1495,158 @@
 		graphics.bckwht.cross.onload = function() {
 			ui.loader.tick();
 		}
+		
+		// Symbiote
+		graphics.iced.o.block = new Image();
+		graphics.iced.o.block.src = "g/material/iced-o-block.png";
+		graphics.iced.o.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.iced.t.block = new Image();
+		graphics.iced.t.block.src = "g/material/iced-t-block.png";
+		graphics.iced.t.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.classic.o.block = new Image();
+		graphics.classic.o.block.src = "g/material/classic-o-block.png";
+		graphics.classic.o.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.classic.t.block = new Image();
+		graphics.classic.t.block.src = "g/material/classic-t-block.png";
+		graphics.classic.t.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.gameboy.o.block = new Image();
+		graphics.gameboy.o.block.src = "g/material/gameboy-o-block.png";
+		graphics.gameboy.o.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.gameboy.t.block = new Image();
+		graphics.gameboy.t.block.src = "g/material/gameboy-t-block.png";
+		graphics.gameboy.t.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.retro.o.block = new Image();
+		graphics.retro.o.block.src = "g/material/retro-o-block.png";
+		graphics.retro.o.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.retro.t.block = new Image();
+		graphics.retro.t.block.src = "g/material/retro-t-block.png";
+		graphics.retro.t.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.bckwht.o.block = new Image();
+		graphics.bckwht.o.block.src = "g/material/bckwht-o-block.png";
+		graphics.bckwht.o.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.bckwht.t.block = new Image();
+		graphics.bckwht.t.block.src = "g/material/bckwht-t-block.png";
+		graphics.bckwht.t.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.crayon.o.block = new Image();
+		graphics.crayon.o.block.src = "g/material/crayon-o-block.png";
+		graphics.crayon.o.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.crayon.t.block = new Image();
+		graphics.crayon.t.block.src = "g/material/crayon-t-block.png";
+		graphics.crayon.t.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.recent.o.block = new Image();
+		graphics.recent.o.block.src = "g/material/recent-o-block.png";
+		graphics.recent.o.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.recent.t.block = new Image();
+		graphics.recent.t.block.src = "g/material/recent-t-block.png";
+		graphics.recent.t.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.bit8.o.block = new Image();
+		graphics.bit8.o.block.src = "g/material/bit8-o-block.png";
+		graphics.bit8.o.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.bit8.t.block = new Image();
+		graphics.bit8.t.block.src = "g/material/bit8-t-block.png";
+		graphics.bit8.t.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.face.o.block = new Image();
+		graphics.face.o.block.src = "g/material/face-o-block.png";
+		graphics.face.o.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.face.t.block = new Image();
+		graphics.face.t.block.src = "g/material/face-t-block.png";
+		graphics.face.t.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.billiard.o.block = new Image();
+		graphics.billiard.o.block.src = "g/material/billiard-o-block.png";
+		graphics.billiard.o.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.billiard.t.block = new Image();
+		graphics.billiard.t.block.src = "g/material/billiard-t-block.png";
+		graphics.billiard.t.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.dark.o.block = new Image();
+		graphics.dark.o.block.src = "g/material/dark-o-block.png";
+		graphics.dark.o.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.dark.t.block = new Image();
+		graphics.dark.t.block.src = "g/material/dark-t-block.png";
+		graphics.dark.t.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.stud.o.block = new Image();
+		graphics.stud.o.block.src = "g/material/stud-o-block.png";
+		graphics.stud.o.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.stud.t.block = new Image();
+		graphics.stud.t.block.src = "g/material/stud-t-block.png";
+		graphics.stud.t.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.block.o.block = new Image();
+		graphics.block.o.block.src = "g/material/block-o-block.png";
+		graphics.block.o.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.block.t.block = new Image();
+		graphics.block.t.block.src = "g/material/block-t-block.png";
+		graphics.block.t.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.panel.o.block = new Image();
+		graphics.panel.o.block.src = "g/material/panel-o-block.png";
+		graphics.panel.o.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.panel.t.block = new Image();
+		graphics.panel.t.block.src = "g/material/panel-t-block.png";
+		graphics.panel.t.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.crystal.o.block = new Image();
+		graphics.crystal.o.block.src = "g/material/crystal-o-block.png";
+		graphics.crystal.o.block.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.crystal.t.block = new Image();
+		graphics.crystal.t.block.src = "g/material/crystal-t-block.png";
+		graphics.crystal.t.block.onload = function() {
+			ui.loader.tick();
+		}
 
 		// Iced
 		graphics.iced.o = new Image();
