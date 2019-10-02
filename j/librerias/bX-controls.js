@@ -50,6 +50,7 @@ var controls = function () {
 		if(fwt.getMat1()) {$("#pieces #materialscroller .alternate.opt.mat1").addClass('s');}
 		if(fwt.getMat2()) {$("#pieces #materialscroller .alternate.opt.mat2").addClass('s');}
 		if(fwt.getMat3()) {$("#pieces #materialscroller .alternate.opt.mat3").addClass('s');}
+		if(fwt.getMat4()) {$("#pieces #materialscroller .alternate.opt.mat4").addClass('s');}
 
 		$('#settings #sizes .val').removeClass('not1 not2');
 	}
@@ -436,6 +437,16 @@ var controls = function () {
 		} else {
 			$(this).addClass('s');
 			fwt.switchMat3(true);
+		}
+		ui.stopGame();
+	});
+	$("#pieces #materialscroller .alternate.opt.mat4").click(function(){
+		if (fwt.getMat4()) {
+			$(this).removeClass('s');
+			fwt.switchMat4(false);
+		} else {
+			$(this).addClass('s');
+			fwt.switchMat4(true);
 		}
 		ui.stopGame();
 	});
