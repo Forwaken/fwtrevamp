@@ -712,7 +712,27 @@
 				else
 					return graphics.invisible.preview;
 				} else if (mat == 3) {
-					return graphics.bckwht.cross;
+					if (colorTheme == "gameboy"){
+						if (gameStatus == 3)
+							return graphics.gameboy.o.cross;
+						else
+							return graphics.gameboy.t.cross;
+					} else if (colorTheme == "bckwht") {
+						if (gameStatus == 3)
+							return graphics.bckwht.o.cross;
+						else
+							return graphics.bckwht.t.cross;
+					} else if (colorTheme == "face") {
+						if (gameStatus == 3)
+							return graphics.face.o.cross;
+						else
+							return graphics.face.t.cross;
+					} else {
+						if (gameStatus == 3)
+							return graphics.iced.o.cross;
+						else
+							return graphics.iced.t.cross;
+					}
 				} else if (mat == 4) {
 					if (colorTheme == "classic"){
 						if (gameStatus == 3)
@@ -814,7 +834,15 @@
 				else
 					return graphics.invisible.shade;
 			} else if (mat == 3) {
-				return graphics.bckwht.cross;
+				if (colorTheme == "gameboy"){
+					return graphics.gameboy.t.cross;
+				} else if (colorTheme == "bckwht"){
+					return graphics.bckwht.t.cross;
+				} else if (colorTheme == "face"){
+					return graphics.face.t.cross;
+				} else {
+					return graphics.iced.t.cross;
+				}
 			} else if (colorTheme == "classic"){
 				return graphics.classic.t[current.col]
 			} else if (colorTheme == "gameboy") {
@@ -854,7 +882,15 @@
 				else
 					return graphics.invisible.preview;
 			} else if (mat == 3) {
-				return graphics.bckwht.cross;
+				if (colorTheme == "gameboy"){
+					return graphics.gameboy.o.cross;
+				} else if (colorTheme == "bckwht"){
+					return graphics.bckwht.o.cross;
+				} else if (colorTheme == "face"){
+					return graphics.face.o.cross;
+				} else {
+					return graphics.iced.o.cross;
+				}
 			} else if (colorTheme == "classic"){
 				return graphics.classic.o[next1.col]
 			} else if (colorTheme == "gameboy") {
@@ -894,7 +930,15 @@
 				else
 					return graphics.invisible.preview;
 			} else if (mat == 3) {
-				return graphics.bckwht.cross;
+				if (colorTheme == "gameboy"){
+					return graphics.gameboy.o.cross;
+				} else if (colorTheme == "bckwht"){
+					return graphics.bckwht.o.cross;
+				} else if (colorTheme == "face"){
+					return graphics.face.o.cross;
+				} else {
+					return graphics.iced.o.cross;
+				}
 			} else if (colorTheme == "classic"){
 				return graphics.classic.o[next2.col]
 			} else if (colorTheme == "gameboy") {
@@ -934,7 +978,15 @@
 				else
 					return graphics.invisible.preview;
 			} else if (mat == 3) {
-				return graphics.bckwht.cross;
+				if (colorTheme == "gameboy"){
+					return graphics.gameboy.o.cross;
+				} else if (colorTheme == "bckwht"){
+					return graphics.bckwht.o.cross;
+				} else if (colorTheme == "face"){
+					return graphics.face.o.cross;
+				} else {
+					return graphics.iced.o.cross;
+				}
 			} else if (colorTheme == "classic"){
 				return graphics.classic.o[next3.col]
 			} else if (colorTheme == "gameboy") {
@@ -974,7 +1026,15 @@
 				else
 					return graphics.invisible.preview;
 			} else if (mat == 3) {
-				return graphics.bckwht.cross;
+				if (colorTheme == "gameboy"){
+					return graphics.gameboy.o.cross;
+				} else if (colorTheme == "bckwht"){
+					return graphics.bckwht.o.cross;
+				} else if (colorTheme == "face"){
+					return graphics.face.o.cross;
+				} else {
+					return graphics.iced.o.cross;
+				}
 			} else if (colorTheme == "classic"){
 				return graphics.classic.o[hold.col]
 			} else if (colorTheme == "gameboy") {
@@ -1014,7 +1074,27 @@
 				else
 					return graphics.invisible;
 			} else if (mat == 3) {
-				return graphics.bckwht.cross;
+				if (colorTheme == "gameboy"){
+					if (gameStatus == 3)
+						return graphics.gameboy.o.cross;
+					else
+						return graphics.gameboy.t.cross;
+				} else if (colorTheme == "bckwht") {
+					if (gameStatus == 3)
+						return graphics.bckwht.o.cross;
+					else
+						return graphics.bckwht.t.cross;
+				} else if (colorTheme == "face") {
+					if (gameStatus == 3)
+						return graphics.face.o.cross;
+					else
+						return graphics.face.t.cross;
+				} else {
+					if (gameStatus == 3)
+						return graphics.iced.o.cross;
+					else
+						return graphics.iced.t.cross;
+				}
 			} else if (invisibleEnabled == true) {
 				return graphics.invisible;
 			} else {
@@ -1507,12 +1587,61 @@
 		graphics.invisible.shade.onload = function() {
 			ui.loader.tick();
 		}
-		graphics.bckwht.cross = new Image();
-		graphics.bckwht.cross.src = "g/material/bckwht-o-cross.png";
-		graphics.bckwht.cross.onload = function() {
+		
+		// Iced
+		graphics.iced.o = new Image();
+		graphics.iced.o.src = "g/material/iced-o.png";
+		graphics.iced.o.onload = function(){
+			ui.loader.tick();
+		}
+		graphics.iced.t = new Image();
+		graphics.iced.t.src = "g/material/iced-t.png";
+		graphics.iced.t.onload = function(){
 			ui.loader.tick();
 		}
 		
+		// Cross
+		graphics.bckwht.o.cross = new Image();
+		graphics.bckwht.o.cross.src = "g/material/bckwht-o-cross.png";
+		graphics.bckwht.o.cross.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.bckwht.t.cross = new Image();
+		graphics.bckwht.t.cross.src = "g/material/bckwht-t-cross.png";
+		graphics.bckwht.t.cross.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.iced.o.cross = new Image();
+		graphics.iced.o.cross.src = "g/material/iced-o-cross.png";
+		graphics.iced.o.cross.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.iced.t.cross = new Image();
+		graphics.iced.t.cross.src = "g/material/iced-t-cross.png";
+		graphics.iced.t.cross.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.gameboy.o.cross = new Image();
+		graphics.gameboy.o.cross.src = "g/material/gameboy-o-cross.png";
+		graphics.gameboy.o.cross.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.gameboy.t.cross = new Image();
+		graphics.gameboy.t.cross.src = "g/material/gameboy-t-cross.png";
+		graphics.gameboy.t.cross.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.face.o.cross = new Image();
+		graphics.face.o.cross.src = "g/material/face-o-cross.png";
+		graphics.face.o.cross.onload = function() {
+			ui.loader.tick();
+		}
+		graphics.face.t.cross = new Image();
+		graphics.face.t.cross.src = "g/material/face-t-cross.png";
+		graphics.face.t.cross.onload = function() {
+			ui.loader.tick();
+		}
+
 		// Symbiote
 		graphics.iced.o.block = new Image();
 		graphics.iced.o.block.src = "g/material/iced-o-block.png";
@@ -1662,18 +1791,6 @@
 		graphics.crystal.t.block = new Image();
 		graphics.crystal.t.block.src = "g/material/crystal-t-block.png";
 		graphics.crystal.t.block.onload = function() {
-			ui.loader.tick();
-		}
-
-		// Iced
-		graphics.iced.o = new Image();
-		graphics.iced.o.src = "g/material/iced-o.png";
-		graphics.iced.o.onload = function(){
-			ui.loader.tick();
-		}
-		graphics.iced.t = new Image();
-		graphics.iced.t.src = "g/material/iced-t.png";
-		graphics.iced.t.onload = function(){
 			ui.loader.tick();
 		}
 
