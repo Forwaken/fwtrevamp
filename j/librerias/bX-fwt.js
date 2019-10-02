@@ -416,12 +416,8 @@
 					}
 				}
 				for (i = 0; i < width; i++){
-					if (map[lastLine][i].mat !== 4) {
-						map[lastLine][i].mat = 0;
-						map[lastLine][i].col = 0;
-					} else {
-						continue;
-					}
+					map[lastLine][i].mat = 0;
+					map[lastLine][i].col = 0;
 				}
 				lastLine++;
 				j++;
