@@ -406,12 +406,17 @@
 			if (n == width) {
 				for (j_involved = current.j + j; j_involved > lastLine; j_involved--) {
 					for (i = 0; i < width; i++){
+						if (map[j_involved - 1][i].mat !== 4) {
 							map[j_involved][i].mat = map[j_involved - 1][i].mat;  // IT CAN FAIL!
 							map[j_involved][i].col = map[j_involved - 1][i].col;
+						} else {
+							map[j_involved][i].mat = map[j_involved][i].mat;
+							map[j_involved][i].col = map[j_involved][i].col;
+						}
 					}
 				}
 				for (i = 0; i < width; i++){
-					if (map[lastLine][i].mat != 4){
+					if (map[lastLine][i].mat !== 4){
 						map[lastLine][i].mat = 0;
 						map[lastLine][i].col = 0;
 					} else {
