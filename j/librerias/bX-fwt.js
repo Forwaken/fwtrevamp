@@ -713,7 +713,24 @@
 					return graphics.invisible.preview;
 				} else if (mat == 3) {
 					return graphics.bckwht.cross;
-				} else if (colorTheme == "classic"){
+				} else if (mat == 4) {
+					if (colorTheme == "classic"){
+						if (gameStatus == 3)
+							return graphics.classic.o.block;
+						else
+							return graphics.classic.t.block;
+					} else if (colorTheme == "gameboy") {
+						if (gameStatus == 3)
+							return graphics.gameboy.o.block;
+						else
+							return graphics.gameboy.t.block;
+					} else {
+						if (gameStatus == 3)
+							return graphics.iced.o.block;
+						else
+							return graphics.iced.t.block;
+					}
+				} else if (colorTheme == "classic") {
 					if (gameStatus == 3)
 						return graphics.classic.o[current.col];
 					else
