@@ -11,6 +11,7 @@
 	var gameStatus = 0; // 0: no init - 1: over - 2: paused - 3: game
 	var level, score, linecount, dropBonus;
 	var rnd0, rnd1, rnd2, rnd3, rnd4;
+	var seed = [[1],[0]]
 
 	// Velocity
 	var delay = 0, normalDelay = 50, limitDelay = normalDelay;
@@ -170,6 +171,8 @@
 		$('.activity#game #next #linecount').html('<span class="xtr" data-xtr="linecount-lab">' + $.i18n._('linecount-lab') + '</span> ' + linecount);
 
 		resetMap();
+		loadSeed();
+		
 		setNextPiece(true);
 			
 			arndForm = Math.round(Math.random() * (forms.length - 1));
@@ -2709,6 +2712,17 @@
 	this.getMat2 = getMat2;
 	this.getMat3 = getMat3;
 	this.getMat4 = getMat4;
+	
+	var loadSeed = function() {
+		for (j = 0; j < (seed.length - 1); j++) {
+			for (i = 0; i < (seed[j].length - 1); i++){
+				map[j][i].mat = seed[j][i];
+				if (seed[j][i] == 1) {
+					map[j][i].col = (Math.round(Math.random() * (colors.length - 1)));
+				}
+			}
+		}
+	}
 	
 	// Functions to grab width, height, level, and options
 	var getWidth = function() {
