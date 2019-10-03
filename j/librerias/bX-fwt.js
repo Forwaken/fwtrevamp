@@ -11,7 +11,7 @@
 	var gameStatus = 0; // 0: no init - 1: over - 2: paused - 3: game
 	var level, score, linecount, dropBonus;
 	var rnd0, rnd1, rnd2, rnd3, rnd4;
-	var seed = [[1, 1, 1, 1],[1, 1, 1, 1]];
+	var seed = [[1, 1],[1, 1]];
 
 	// Velocity
 	var delay = 0, normalDelay = 50, limitDelay = normalDelay;
@@ -171,7 +171,6 @@
 		$('.activity#game #next #linecount').html('<span class="xtr" data-xtr="linecount-lab">' + $.i18n._('linecount-lab') + '</span> ' + linecount);
 
 		resetMap();
-		loadSeed();
 		
 		setNextPiece(true);
 			
@@ -197,6 +196,8 @@
 		current = next1;
 		next1 = next2;
 		next2 = next3;
+		
+		loadSeed();
 		
 		setNextPiece();
 		
