@@ -2715,7 +2715,7 @@
 	this.getMat4 = getMat4;
 	
 	var loadSeed = function() {
-		for (j = 0; j < seed.length; j++) {
+		for (j = height; j < (height - seed.length); j--) {
 			for (i = 0; i < seed[j].length; i++){
 				map[j][i].mat = seed[j][i];
 				if (seed[j][j] != 0) {
