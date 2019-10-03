@@ -2715,10 +2715,10 @@
 	this.getMat4 = getMat4;
 	
 	var loadSeed = function() {
-		for (j = height; j > (height - seed.length); j--) {
-			for (i = 0; i < seed[j].length; i++){
-				map[j][i].mat = seed[j][i];
-				if (seed[j][j] != 0) {
+		for (j = height, l = 0; j > (height - seed.length), l < seed.length; j--, l++) {
+			for (i = 0; i < seed[l].length; i++){
+				map[j][i].mat = seed[l][i];
+				if (seed[l][i] != 0) {
 					map[j][i].col = (Math.round(Math.random() * (colors.length - 1)));
 				}
 			}
