@@ -11,7 +11,7 @@
 	var gameStatus = 0; // 0: no init - 1: over - 2: paused - 3: game
 	var level, score, linecount, dropBonus;
 	var rnd0, rnd1, rnd2, rnd3, rnd4;
-	var seed = [[1, 1, 1, 1],[1, 1, 1, 1]];
+	var seed = [[1, 1],[1, 1],[1,1],[1,1]];
 
 	// Velocity
 	var delay = 0, normalDelay = 50, limitDelay = normalDelay;
@@ -2718,7 +2718,7 @@
 		for (j = 0; j < seed.length - 1; j++) {
 			for (i = 0; i < (seed[j].length - 1); i++){
 				map[j][i].mat = seed[j][i];
-				if (seed[j][i] == 1) {
+				if (seed[j][j] != 0) {
 					map[j][i].col = (Math.round(Math.random() * (colors.length - 1)));
 				}
 			}
