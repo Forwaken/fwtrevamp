@@ -4,6 +4,7 @@ var controls = function () {
 		$('#settings .custom-size-w').val(fwt.getWidth());
 		$('#settings .custom-size-h').val(fwt.getHeight());
 		$('#settings .custom-level-s').val(fwt.getLevel());
+		$('#settings .custom-seed-n').val(fwt.getSeed());
 		if (fwt.getShadeEnabled())
 			$("#settings #shades .alternate.true").addClass('s');
 		else
@@ -494,6 +495,13 @@ var controls = function () {
 			fwt.setLevel(s);
 		}
 		ui.stopGame();
+	});
+	
+	// Seed:
+	$("#settings #seed .custom-seed-n").keyup(function(){
+		n = $(this).val();
+			fwt.setSeed(n);
+		}
 	});
 
 	this.loadPrefs = loadPrefs;
