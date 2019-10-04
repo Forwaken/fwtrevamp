@@ -501,7 +501,7 @@ var controls = function () {
 		n = $(this).val();
 			fwt.setSeed(n);
 		}
-	});
+	);
 
 	this.loadPrefs = loadPrefs;
 }
