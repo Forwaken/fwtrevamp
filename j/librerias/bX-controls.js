@@ -4,7 +4,7 @@ var controls = function () {
 		$('#settings .custom-size-w').val(fwt.getWidth());
 		$('#settings .custom-size-h').val(fwt.getHeight());
 		$('#settings .custom-level-s').val(fwt.getLevel());
-		$('#settings .custom-seed-n').val(fwt.getSeed());
+		$('#settings .custom-seed-n').val($(fwt.getSeed()).val().split('\n'));
 		if (fwt.getShadeEnabled())
 			$("#settings #shades .alternate.true").addClass('s');
 		else
