@@ -2746,7 +2746,7 @@
 		savePrefs();
 	}
 	var setSeed = function(p) {
-		seed = p;
+		seed = [p];
 		savePrefs();
 	}
 	var getSeed = function() {
