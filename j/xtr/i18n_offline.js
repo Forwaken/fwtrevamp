@@ -63,6 +63,11 @@
 		"custom-level-d": "You can change what level you start at.",
 		"custom-level-start": "Level",
 		"custom-level-notice": "* A value between 0 and 999",
+	    
+	    	"custom-seed": "New Game Seed",
+	    	"custom-seed-d": "Change the piece layout when you start a new game.",
+	    	"custom-seed-s": "Seed",
+	    	"custom-seed-notice": "Use format: [[0,0,0],[0,0,0],[0,0,0]]",
 
         "custom-shade": "Shades",
         "custom-shade-d": "Shadows tell you where to drop a piece, activate them if the game is too much for you.",
@@ -173,6 +178,11 @@
 		"custom-level-d": "You can change what level you start at.",
 		"custom-level-start": "Level",
 		"custom-level-notice": "* A value between 0 and 999",
+	    
+	    	"custom-seed": "New Game Seed",
+	    	"custom-seed-d": "Change the piece layout when you start a new game.",
+	    	"custom-seed-s": "Seed",
+	    	"custom-seed-notice": "Use format: [[0,0,0],[0,0,0],[0,0,0]]",
 
         "custom-shade": "Sombras",
         "custom-shade-d": "Las sombras te muestran dónde va a caer una pieza, actívalas si el juego puede contigo.",
@@ -282,6 +292,11 @@
 		"custom-level-d": "You can change what level you start at.",
 		"custom-level-start": "Level",
 		"custom-level-notice": "* A value between 0 and 999",
+	    
+	    	"custom-seed": "New Game Seed",
+	    	"custom-seed-d": "Change the piece layout when you start a new game.",
+	    	"custom-seed-s": "Seed",
+	    	"custom-seed-notice": "Use format: [[0,0,0],[0,0,0],[0,0,0]]",
 
         "custom-shade": "Vorschau Schatten",
         "custom-shade-d": "Schatten sagen dir, wo du eine Figur ablegen sollst, aktiviere sie, wenn das Spiel zu viel für dich ist.",
@@ -411,6 +426,11 @@
 		"custom-level-d": "You can change what level you start at.",
 		"custom-level-start": "Level",
 		"custom-level-notice": "* A value between 0 and 999",
+	    
+	    	"custom-seed": "New Game Seed",
+	    	"custom-seed-d": "Change the piece layout when you start a new game.",
+	    	"custom-seed-s": "Seed",
+	    	"custom-seed-notice": "Use format: [[0,0,0],[0,0,0],[0,0,0]]",
 
         "custom-shade": "Sombras",
         "custom-shade-d": "Mostrar onde as sombras cairão uma parte, se o jogo pode ativá-los com você.",
@@ -520,6 +540,11 @@
 		"custom-level-d": "You can change what level you start at.",
 		"custom-level-start": "Level",
 		"custom-level-notice": "* A value between 0 and 999",
+	    
+	    	"custom-seed": "New Game Seed",
+	    	"custom-seed-d": "Change the piece layout when you start a new game.",
+	    	"custom-seed-s": "Seed",
+	    	"custom-seed-notice": "Use format: [[0,0,0],[0,0,0],[0,0,0]]",
 
         "custom-shade": "Nuances",
         "custom-shade-d": "Nuances vous dire où déposer une pièce, les activer si le jeu est trop pour vous.",
