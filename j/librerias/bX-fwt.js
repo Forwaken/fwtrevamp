@@ -11,7 +11,7 @@
 	var gameStatus = 0; // 0: no init - 1: over - 2: paused - 3: game
 	var level, score, linecount, dropBonus;
 	var rnd0, rnd1, rnd2, rnd3, rnd4;
-	var seed = [[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]];
+	var seed = [];
 
 	// Velocity
 	var delay = 0, normalDelay = 50, limitDelay = normalDelay;
@@ -71,6 +71,7 @@
 		width = prefs.width || width;
 		height = prefs.height || height;
 		levelstart = prefs.levelstart || levelstart;
+		seed = prefs.seed || seed;
 		colorTheme = prefs.theme || colorTheme;
 			$('canvas#canvas').attr('data-theme', colorTheme);
 		shadeEnabled = prefs.shades || shadeEnabled;
@@ -1825,6 +1826,7 @@
 			'width': width,
 			'height': height,
 			'levelstart': levelstart,
+			'seed': seed,
 			'rotation': rotation,
 			'sp1s': sp1,
 			'sp2s': sp2,
@@ -2743,6 +2745,13 @@
 		levelstart = p*1;
 		savePrefs();
 	}
+	var setSeed = function(p) {
+		seed = p;
+		savePrefs();
+	}
+	var getSeed = function() {
+		return seed;
+	}
 	var getLevel = function() {
 		return levelstart;
 	}
@@ -2803,6 +2812,8 @@
 	  this.switchInvisibles			= switchInvisibles;
 	 this.getLevel					= getLevel;
 	  this.setLevel					= setLevel;
+	 this.getSeed					= getSeed;
+	  this.setSeed					= setSeed;
 
 }
 var fwt = new fwt();
