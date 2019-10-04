@@ -2746,7 +2746,8 @@
 		savePrefs();
 	}
 	var setSeed = function(p) {
-		seed = $('p').val().split('/n')
+		seed = [];
+		seed.push(p);
 		savePrefs();
 	}
 	var getSeed = function() {
