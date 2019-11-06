@@ -338,8 +338,8 @@
 		calcLevel();
 		
 		// coin //
-		coincount += (plus * 0.001);
-		$('.footcoin#foot #right').html(coincount);
+		coincount += (plus * 0.001*forms.length);
+		$('.footcoin#foot #right').html($.i18n._('coincount') + coincount.toFixed(2));
 		
 		// osd //
 		waitExtra = 0;
