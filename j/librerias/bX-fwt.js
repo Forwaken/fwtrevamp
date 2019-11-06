@@ -8,7 +8,7 @@
 	var width = 10, height = 24, levelstart = 0, lastLine;
 	
 	if ($.evalJSON(localStorage.fwtPreferences.coincount >= 0)) {
-		var coincount = $.evalJSON(localStorage.fwtPreferences.coincount;
+		var coincount = $.evalJSON(localStorage.fwtPreferences.coincount);
 	} else {
 		var coincount = 0;
 	}
