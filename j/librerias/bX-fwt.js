@@ -7,7 +7,7 @@
 	var map, compiled;
 	var width = 10, height = 24, levelstart = 0, lastLine;
 	
-	var coincount = 0;
+	var coincount;
 
 	// Game
 	var gameStatus = 0; // 0: no init - 1: over - 2: paused - 3: game
