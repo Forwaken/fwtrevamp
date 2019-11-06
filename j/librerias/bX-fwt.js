@@ -6,6 +6,8 @@
 	// Board
 	var map, compiled;
 	var width = 10, height = 24, levelstart = 0, lastLine;
+	
+	var coincount = 0;
 
 	// Game
 	var gameStatus = 0; // 0: no init - 1: over - 2: paused - 3: game
@@ -67,7 +69,8 @@
 	//-> Get preferences from localStorage if any
 	try{
 		prefs = $.evalJSON(localStorage.fwtPreferences);
-		
+		count = $.evalJSON(localStorage.fwtCoincount);
+		coincount = count.coincount || coincount;
 		width = prefs.width || width;
 		height = prefs.height || height;
 		levelstart = prefs.levelstart || levelstart;
@@ -335,7 +338,14 @@
 
 		// level //
 		calcLevel();
-
+		
+		// coin //
+		if (type == 'lines') {
+			coincount = coincount+((plus*about*.001)/(1/forms.length))
+		} else {
+			coincount = coincount+((plus*.001)/(1/forms.length))
+		}
+		
 		// osd //
 		waitExtra = 0;
 		classExtra = '';
