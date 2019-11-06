@@ -338,7 +338,19 @@
 		calcLevel();
 		
 		// coin //
-		coincount += (plus * 0.001*forms.length);
+		if (type == "line") {
+			if (invisibleEnabled == true) {
+				coincount += (plus*0.05*forms.length*about/normalDelay);
+			} else {
+				coincount += (plus*0.01*forms.length*about/normalDelay);
+			}
+		} else {
+			if (invisibleEnabled == true) {
+				coincount += (plus*0.05*forms.length/normalDelay);
+			} else {
+				coincount += (plus*0.01*forms.length/normalDelay);
+			}
+		}
 		$('.footcoin#foot #right').html($.i18n._('coincount') + coincount.toFixed(2));
 		
 		// osd //
