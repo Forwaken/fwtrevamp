@@ -21,7 +21,7 @@ var ui = function () {
 	_iv1 = new Image(); _iv1.src = "g/loader.png"; _iv1.onload = preLoader;
 //
 
-	$('.footcoin#foot #right').html($.i18n._('fwt.coincount') + fwt.coincount.toFixed(2));
+	$('.footcoin#foot #right').html($.i18n._('coincount') + fwt.coincount.toFixed(2));
 
 //	<Init> prepares user interface
 	var savedGameImage = null;
