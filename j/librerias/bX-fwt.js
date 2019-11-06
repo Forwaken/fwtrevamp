@@ -345,6 +345,7 @@
 		} else {
 			coincount = coincount+((plus*.001)/(1/forms.length))
 		}
+		$('#foot #right').html('<span style="color: #D4AF37">' + $.i18n_('coincount') + Math.floor(coincount) + '</span>');
 		
 		// osd //
 		waitExtra = 0;
