@@ -340,11 +340,7 @@
 		calcLevel();
 		
 		// coin //
-		if (type == "line") {
-			coincount += (plus*about*.001)/(1/forms.length)
-		} else {
-			coincount += (plus*.001)/(1/forms.length)
-		}
+		coincount += (plus*.001*forms.length)
 		$('#foot #right').html('<span style="color: #D4AF37">' + $.i18n_('coincount') + coincount + '</span>');
 		
 		// osd //
