@@ -339,7 +339,7 @@
 		
 		// coin //
 		coincount += plus * .001;
-		$('#foot #right').html($.i18n_('coincount') + coincount);
+		$('#foot #right').html($.i18n._('coincount') + coincount);
 		
 		// osd //
 		waitExtra = 0;
