@@ -338,8 +338,8 @@
 		calcLevel();
 		
 		// coin //
-		coincount += plus * .001;
-		$('#foot #right').html(coincount);
+		coincount += (plus * 0.001);
+		$('.footcoin#foot #right').html(coincount);
 		
 		// osd //
 		waitExtra = 0;
