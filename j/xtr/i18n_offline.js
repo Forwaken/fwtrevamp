@@ -8,6 +8,7 @@
         "helpabout-mnu": "Assistance",
 
         "level-lab": "Level",
+	"coincount": "Coins: ",
 		
 		"linecount-lab": "Lines",
 
@@ -123,6 +124,7 @@
         "helpabout-mnu": "Asistencia",
 
         "level-lab": "Nivel",
+	"coincount": "Coins: ",
 		
 		"linecount-lab": "Lines",
 
@@ -237,6 +239,7 @@
         "helpabout-mnu": "Assistance",
 
         "level-lab": "Niveau",
+	"coincount": "Coins: ",
 		
 		"linecount-lab": "Lines",
 
@@ -372,6 +375,7 @@
         "helpabout-mnu": "Assistência",
 
         "level-lab": "Nível",
+	"coincount": "Coins: ",
 		
 		"linecount-lab": "Lines",
 
@@ -485,6 +489,7 @@
         "helpabout-mnu": "Assistance",
 
         "level-lab": "Niveau",
+	"coincount": "Coins: ",
 		
 		"linecount-lab": "Lines",
 
