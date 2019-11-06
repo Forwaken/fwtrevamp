@@ -2782,6 +2782,9 @@
 	var getSpeed = function() {
 		return speed;
 	}
+	var getCoincount = function() {
+		return coincount;
+	}
 	var switchSpeed = function(motion) {
 		if (motion == "low" || motion == "medium" || motion == "high" || motion == "rnd") {
 			speed = motion;
@@ -2826,6 +2829,7 @@
 	  this.setLevel					= setLevel;
 	 this.getSeed					= getSeed;
 	  this.setSeed					= setSeed;
+	 this.getCoincount				= coincount;
 
 }
 var fwt = new fwt();
