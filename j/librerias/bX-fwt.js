@@ -338,7 +338,7 @@
 		calcLevel();
 		
 		// coin //
-		coincount += (plus*.001*forms.length)
+		coincount += (plus*.001)
 		$('#foot #right').html('<span style="color: #D4AF37">' + $.i18n_('coincount') + coincount + '</span>');
 		
 		// osd //
