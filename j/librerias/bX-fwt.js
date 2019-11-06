@@ -1826,6 +1826,7 @@
 		save.linecount = linecount;
 		save.dropBonus = dropBonus;
 		localStorage.fwtActiveGame = $.toJSON(save);
+		localStorage.fwtCoinCount = $.toJSON({'coincount': coincount});
 	}
 
 	var savePrefs = function() {
