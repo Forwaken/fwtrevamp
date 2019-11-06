@@ -7,8 +7,12 @@
 	var map, compiled;
 	var width = 10, height = 24, levelstart = 0, lastLine;
 	
-	var coincount = 0;
-	$('.footcoin#foot #right').html($.i18n._('coincount') + coincount.toFixed(2));
+	if ($.evalJSON(localStorage.fwtPreferences.coincount >= 0)) {
+		var coincount = $.evalJSON(localStorage.fwtPreferences.coincount;
+	} else {
+		var coincount = 0;
+	}
+	$('.footcoin#foot #right').html("Coins: " + coincount.toFixed(2));
 
 	// Game
 	var gameStatus = 0; // 0: no init - 1: over - 2: paused - 3: game
@@ -1839,6 +1843,7 @@
 		localStorage.fwtPreferences = $.toJSON({
 			'shades': shadeEnabled,
 			'invisibles': invisibleEnabled,
+			'coincount': coincount,
 			'speed': speed,
 			'theme': colorTheme,
 			'width': width,
