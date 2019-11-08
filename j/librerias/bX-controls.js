@@ -41,6 +41,7 @@ const controls = function () {
     if (fwt.getSp29()) { $('#pieces #piecescroller .alternate.opt.sp29').addClass('s'); }
     if (fwt.getSp30()) { $('#pieces #piecescroller .alternate.opt.sp30').addClass('s'); }
     if (fwt.getSp31()) { $('#pieces #piecescroller .alternate.opt.sp31').addClass('s'); }
+    if (fwt.getSp32()) { $('#pieces #piecescroller .alternate.opt.sp32').addClass('s'); }
 
     if (fwt.getMat1()) { $('#pieces #materialscroller .alternate.opt.mat1').addClass('s'); }
     if (fwt.getMat2()) { $('#pieces #materialscroller .alternate.opt.mat2').addClass('s'); }
@@ -400,6 +401,16 @@ const controls = function () {
     } else {
       $(this).addClass('s');
       fwt.switchSp31(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp32').click(function () {
+    if (fwt.getSp32()) {
+      $(this).removeClass('s');
+      fwt.switchSp32(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp32(true);
     }
     ui.stopGame();
   });
