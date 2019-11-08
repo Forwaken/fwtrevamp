@@ -2623,6 +2623,11 @@
 		set();
 		savePrefs();
 	}
+	var switchPiece = function(p, bool) {
+		p = bool;
+		set();
+		savePrefs();
+	}
 	var getSp1 = function() {
 		return sp1;
 	}
@@ -2746,6 +2751,9 @@
 	var getSp41 = function() {
 		return sp41;
 	}
+	var getPiece = function(p) {
+		return p;
+	}
 	this.switchSp1 = switchSp1;
 	this.switchSp2 = switchSp2;
 	this.switchSp3 = switchSp3;
@@ -2787,6 +2795,7 @@
 	this.switchSp39 = switchSp39;
 	this.switchSp40 = switchSp40;
 	this.switchSp41 = switchSp41;
+	this.switchPiece = switchPiece;
 	this.getSp1 = getSp1;
 	this.getSp2 = getSp2;
 	this.getSp3 = getSp3;
@@ -2828,6 +2837,7 @@
 	this.getSp39 = getSp39;
 	this.getSp40 = getSp40;
 	this.getSp41 = getSp41;
+	this.getPiece = getPiece;
 	
 	// Function that defines what each material is
 	var mat = function() {
