@@ -1093,6 +1093,42 @@ html, body {
 	background-image: url(g/piece/sp32.png)
 }
 
+#layout .activity#pieces #piecescroller .alternate#t32 {
+	background-image: url(g/piece/sp33.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t33 {
+	background-image: url(g/piece/sp34.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t34 {
+	background-image: url(g/piece/sp35.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t35 {
+	background-image: url(g/piece/sp36.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t36 {
+	background-image: url(g/piece/sp37.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t37 {
+	background-image: url(g/piece/sp38.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t38 {
+	background-image: url(g/piece/sp39.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t39 {
+	background-image: url(g/piece/sp40.png)
+}
+
+#layout .activity#pieces #piecescroller .alternate#t40 {
+	background-image: url(g/piece/sp41.png)
+}
+
 #layout .activity#pieces #themescroller {
     bottom: 0;
     border-left: 1px solid rgba(0, 0, 0, 0.1);
