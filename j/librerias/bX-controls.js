@@ -42,6 +42,15 @@ const controls = function () {
     if (fwt.getSp30()) { $('#pieces #piecescroller .alternate.opt.sp30').addClass('s'); }
     if (fwt.getSp31()) { $('#pieces #piecescroller .alternate.opt.sp31').addClass('s'); }
     if (fwt.getSp32()) { $('#pieces #piecescroller .alternate.opt.sp32').addClass('s'); }
+    if (fwt.getSp33()) { $('#pieces #piecescroller .alternate.opt.sp33').addClass('s'); }
+    if (fwt.getSp34()) { $('#pieces #piecescroller .alternate.opt.sp34').addClass('s'); }
+    if (fwt.getSp35()) { $('#pieces #piecescroller .alternate.opt.sp35').addClass('s'); }
+    if (fwt.getSp36()) { $('#pieces #piecescroller .alternate.opt.sp36').addClass('s'); }
+    if (fwt.getSp37()) { $('#pieces #piecescroller .alternate.opt.sp37').addClass('s'); }
+    if (fwt.getSp38()) { $('#pieces #piecescroller .alternate.opt.sp38').addClass('s'); }
+    if (fwt.getSp39()) { $('#pieces #piecescroller .alternate.opt.sp39').addClass('s'); }
+    if (fwt.getSp40()) { $('#pieces #piecescroller .alternate.opt.sp40').addClass('s'); }
+    if (fwt.getSp41()) { $('#pieces #piecescroller .alternate.opt.sp41').addClass('s'); }
 
     if (fwt.getMat1()) { $('#pieces #materialscroller .alternate.opt.mat1').addClass('s'); }
     if (fwt.getMat2()) { $('#pieces #materialscroller .alternate.opt.mat2').addClass('s'); }
@@ -411,6 +420,96 @@ const controls = function () {
     } else {
       $(this).addClass('s');
       fwt.switchSp32(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp33').click(function () {
+    if (fwt.getSp33()) {
+      $(this).removeClass('s');
+      fwt.switchSp33(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp33(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp34').click(function () {
+    if (fwt.getSp34()) {
+      $(this).removeClass('s');
+      fwt.switchSp34(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp34(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp35').click(function () {
+    if (fwt.getSp35()) {
+      $(this).removeClass('s');
+      fwt.switchSp35(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp35(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp36').click(function () {
+    if (fwt.getSp36()) {
+      $(this).removeClass('s');
+      fwt.switchSp36(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp36(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp37').click(function () {
+    if (fwt.getSp37()) {
+      $(this).removeClass('s');
+      fwt.switchSp37(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp37(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp38').click(function () {
+    if (fwt.getSp38()) {
+      $(this).removeClass('s');
+      fwt.switchSp38(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp38(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp39').click(function () {
+    if (fwt.getSp39()) {
+      $(this).removeClass('s');
+      fwt.switchSp39(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp39(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp40').click(function () {
+    if (fwt.getSp40()) {
+      $(this).removeClass('s');
+      fwt.switchSp40(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp40(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp41').click(function () {
+    if (fwt.getSp41()) {
+      $(this).removeClass('s');
+      fwt.switchSp41(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp41(true);
     }
     ui.stopGame();
   });
