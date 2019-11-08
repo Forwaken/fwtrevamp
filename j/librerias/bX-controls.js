@@ -504,7 +504,7 @@ const controls = function () {
     ui.stopGame();
   });
   $('#pieces #piecescroller .alternate.opt.sp41').click(function () {
-    if (fwt.getsp41()) {
+    if (fwt.getSp41()) {
       $(this).removeClass('s');
       fwt.switchSp41(false);
     } else {
