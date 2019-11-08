@@ -1089,6 +1089,10 @@ html, body {
 	background-image: url(g/piece/sp31.png)
 }
 
+#layout .activity#pieces #piecescroller .alternate#t31 {
+	background-image: url(g/piece/sp32.png)
+}
+
 #layout .activity#pieces #themescroller {
     bottom: 0;
     border-left: 1px solid rgba(0, 0, 0, 0.1);
