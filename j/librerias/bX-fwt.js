@@ -31,7 +31,7 @@
 	var next1, next2, next3, hold, current, temp, shade, invisible;
 	var clock = 0;
 	var forms = [];
-	var sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9, sp10, sp11, sp12, sp13, sp14, sp15, sp16, sp17, sp18, sp19, sp20, sp21, sp22, sp23, sp24, sp25, sp26, sp27, sp28, sp29, sp30, sp31;
+	var sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9, sp10, sp11, sp12, sp13, sp14, sp15, sp16, sp17, sp18, sp19, sp20, sp21, sp22, sp23, sp24, sp25, sp26, sp27, sp28, sp29, sp30, sp31, sp32;
 	var sp1 = true;
 	var sp2 = true;
 	var sp3 = true;
@@ -115,6 +115,7 @@
 		sp29 = prefs.sp29s;
 		sp30 = prefs.sp30s;
 		sp31 = prefs.sp31s;
+		sp32 = prefs.sp32s;
 		mat1 = prefs.mat1s;
 		mat2 = prefs.mat2s;
 		mat3 = prefs.mat3s;
@@ -1882,6 +1883,7 @@
 			'sp29s': sp29,
 			'sp30s': sp30,
 			'sp31s': sp31,
+			'sp32s': sp32,
 			'mat1s': mat1,
 			'mat2s': mat2,
 			'mat3s': mat3,
@@ -2365,6 +2367,9 @@
 		if (sp31 == true) {
 			forms.push([[1], [1], [1]]);
 		}
+		if (sp32 == true) {
+			forms.push([[1, 1], [1, 1], [1, 1]]);
+		}
 	}
 	
 	//Functions to change and get piece options
@@ -2523,6 +2528,11 @@
 		set();
 		savePrefs();
 	}
+	var switchSp32 = function(bool) {
+		sp32 = bool;
+		set();
+		savePrefs();
+	}
 	var getSp1 = function() {
 		return sp1;
 	}
@@ -2616,6 +2626,9 @@
 	var getSp31 = function() {
 		return sp31;
 	}
+	var getSp32 = function() {
+		return sp32;
+	}
 	this.switchSp1 = switchSp1;
 	this.switchSp2 = switchSp2;
 	this.switchSp3 = switchSp3;
@@ -2647,6 +2660,7 @@
 	this.switchSp29 = switchSp29;
 	this.switchSp30 = switchSp30;
 	this.switchSp31 = switchSp31;
+	this.switchSp32 = switchSp32;
 	this.getSp1 = getSp1;
 	this.getSp2 = getSp2;
 	this.getSp3 = getSp3;
@@ -2678,6 +2692,7 @@
 	this.getSp29 = getSp29;
 	this.getSp30 = getSp30;
 	this.getSp31 = getSp31;
+	this.getSp32 = getSp32;
 	
 	// Function that defines what each material is
 	var mat = function() {
