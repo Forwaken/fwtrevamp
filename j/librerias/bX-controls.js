@@ -504,12 +504,12 @@ const controls = function () {
     ui.stopGame();
   });
   $('#pieces #piecescroller .alternate.opt.sp41').click(function () {
-    if (fwt.getSp41()) {
+    if (fwt.getPiece({sp41})) {
       $(this).removeClass('s');
-      fwt.switchSp41(false);
+      fwt.switchPiece({sp41}, false);
     } else {
       $(this).addClass('s');
-      fwt.switchSp41(true);
+      fwt.switchPiece({sp41}, true);
     }
     ui.stopGame();
   });
