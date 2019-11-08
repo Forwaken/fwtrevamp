@@ -2578,6 +2578,51 @@
 		set();
 		savePrefs();
 	}
+	var switchSp33 = function(bool) {
+		sp33 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp34 = function(bool) {
+		sp34 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp35 = function(bool) {
+		sp35 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp36 = function(bool) {
+		sp36 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp37 = function(bool) {
+		sp37 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp38 = function(bool) {
+		sp38 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp39 = function(bool) {
+		sp39 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp40 = function(bool) {
+		sp40 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp41 = function(bool) {
+		sp41 = bool;
+		set();
+		savePrefs();
+	}
 	var getSp1 = function() {
 		return sp1;
 	}
@@ -2674,6 +2719,33 @@
 	var getSp32 = function() {
 		return sp32;
 	}
+	var getSp33 = function() {
+		return sp33;
+	}
+	var getSp34 = function() {
+		return sp34;
+	}
+	var getSp35 = function() {
+		return sp35;
+	}
+	var getSp36 = function() {
+		return sp36;
+	}
+	var getSp37 = function() {
+		return sp37;
+	}
+	var getSp38 = function() {
+		return sp38;
+	}
+	var getSp39 = function() {
+		return sp39;
+	}
+	var getSp40 = function() {
+		return sp40;
+	}
+	var getSp41 = function() {
+		return sp41;
+	}
 	this.switchSp1 = switchSp1;
 	this.switchSp2 = switchSp2;
 	this.switchSp3 = switchSp3;
@@ -2706,6 +2778,15 @@
 	this.switchSp30 = switchSp30;
 	this.switchSp31 = switchSp31;
 	this.switchSp32 = switchSp32;
+	this.switchSp33 = switchSp33;
+	this.switchSp34 = switchSp34;
+	this.switchSp35 = switchSp35;
+	this.switchSp36 = switchSp36;
+	this.switchSp37 = switchSp37;
+	this.switchSp38 = switchSp38;
+	this.switchSp39 = switchSp39;
+	this.switchSp40 = switchSp40;
+	this.switchSp41 = switchSp41;
 	this.getSp1 = getSp1;
 	this.getSp2 = getSp2;
 	this.getSp3 = getSp3;
@@ -2738,6 +2819,15 @@
 	this.getSp30 = getSp30;
 	this.getSp31 = getSp31;
 	this.getSp32 = getSp32;
+	this.getSp33 = getSp33;
+	this.getSp34 = getSp34;
+	this.getSp35 = getSp35;
+	this.getSp36 = getSp36;
+	this.getSp37 = getSp37;
+	this.getSp38 = getSp38;
+	this.getSp39 = getSp39;
+	this.getSp40 = getSp40;
+	this.getSp41 = getSp41;
 	
 	// Function that defines what each material is
 	var mat = function() {
