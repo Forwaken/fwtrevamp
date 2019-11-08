@@ -31,7 +31,7 @@
 	var next1, next2, next3, hold, current, temp, shade, invisible;
 	var clock = 0;
 	var forms = [];
-	var sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9, sp10, sp11, sp12, sp13, sp14, sp15, sp16, sp17, sp18, sp19, sp20, sp21, sp22, sp23, sp24, sp25, sp26, sp27, sp28, sp29, sp30, sp31, sp32;
+	var sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9, sp10, sp11, sp12, sp13, sp14, sp15, sp16, sp17, sp18, sp19, sp20, sp21, sp22, sp23, sp24, sp25, sp26, sp27, sp28, sp29, sp30, sp31, sp32, sp33, sp34, sp35, sp36, sp37, sp38, sp39, sp40, sp41;
 	var sp1 = true;
 	var sp2 = true;
 	var sp3 = true;
@@ -116,6 +116,15 @@
 		sp30 = prefs.sp30s;
 		sp31 = prefs.sp31s;
 		sp32 = prefs.sp32s;
+		sp33 = prefs.sp33s;
+		sp34 = prefs.sp34s;
+		sp35 = prefs.sp35s;
+		sp36 = prefs.sp36s;
+		sp37 = prefs.sp37s;
+		sp38 = prefs.sp38s;
+		sp39 = prefs.sp39s;
+		sp40 = prefs.sp40s;
+		sp41 = prefs.sp41s;
 		mat1 = prefs.mat1s;
 		mat2 = prefs.mat2s;
 		mat3 = prefs.mat3s;
@@ -1884,6 +1893,15 @@
 			'sp30s': sp30,
 			'sp31s': sp31,
 			'sp32s': sp32,
+			'sp33s': sp33,
+			'sp34s': sp34,
+			'sp35s': sp35,
+			'sp36s': sp36,
+			'sp37s': sp37,
+			'sp38s': sp38,
+			'sp39s': sp39,
+			'sp40s': sp40,
+			'sp41s': sp41,
 			'mat1s': mat1,
 			'mat2s': mat2,
 			'mat3s': mat3,
@@ -2369,6 +2387,33 @@
 		}
 		if (sp32 == true) {
 			forms.push([[1, 1], [1, 1], [1, 1]]);
+		}
+		if (sp33 == true) {
+			forms.push([[1, 1, 1, 1, 1, 1]]);
+		}
+		if (sp34 == true) {
+			forms.push([[1, 0], [1, 0], [1, 1], [1, 0], [1, 0]]);
+		}
+		if (sp35 == true) {
+			forms.push([[1, 1], [1, 0], [1, 0], [1, 1]]);
+		}
+		if (sp36 == true) {
+			forms.push([[1, 0], [1, 1], [1, 1], [1, 0]]);
+		}
+		if (sp37 == true) {
+			forms.push([[1, 1, 1], [0, 1, 0], [0, 1, 0], [0, 1, 0]]);
+		}
+		if (sp38 == true) {
+			forms.push([[0, 1, 0], [1, 1, 1], [0, 1, 0], [0, 1, 0]]);
+		}
+		if (sp39 == true) {
+			forms.push([[1, 0, 1], [1, 1, 1], [0, 1, 0]]);
+		}
+		if (sp40 == true) {
+			forms.push([[1, 0, 0], [1, 1, 0], [1, 1, 1]]);
+		}
+		if (sp41 == true) {
+			forms.push([[0, 1, 0], [1, 1, 1], [1, 1, 0]]);
 		}
 	}
 	
