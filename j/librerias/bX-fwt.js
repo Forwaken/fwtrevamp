@@ -6,12 +6,7 @@
 	// Board
 	var map, compiled;
 	var width = 10, height = 24, levelstart = 0, lastLine;
-	
-	if ($.evalJSON(localStorage.fwtPreferences.coincount >= 0)) {
-		var coincount = $.evalJSON(localStorage.fwtPreferences.coincount);
-	} else {
-		var coincount = 0;
-	}
+	var coincount = 0;
 	$('.footcoin#foot #right').html("Coins: " + coincount.toFixed(2));
 
 	// Game
