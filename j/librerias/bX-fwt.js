@@ -120,6 +120,22 @@
 		sp39 = prefs.sp39s;
 		sp40 = prefs.sp40s;
 		sp41 = prefs.sp41s;
+		sp42 = prefs.sp42s;
+		sp43 = prefs.sp43s;
+		sp44 = prefs.sp44s;
+		sp45 = prefs.sp45s;
+		sp46 = prefs.sp46s;
+		sp47 = prefs.sp47s;
+		sp48 = prefs.sp48s;
+		sp49 = prefs.sp49s;
+		sp50 = prefs.sp50s;
+		sp51 = prefs.sp51s;
+		sp52 = prefs.sp52s;
+		sp53 = prefs.sp53s;
+		sp54 = prefs.sp54s;
+		sp55 = prefs.sp55s;
+		sp56 = prefs.sp56s;
+		sp57 = prefs.sp57s;
 		mat1 = prefs.mat1s;
 		mat2 = prefs.mat2s;
 		mat3 = prefs.mat3s;
@@ -1897,6 +1913,22 @@
 			'sp39s': sp39,
 			'sp40s': sp40,
 			'sp41s': sp41,
+			'sp42s': sp42,
+			'sp43s': sp43,
+			'sp44s': sp44,
+			'sp45s': sp45,
+			'sp46s': sp46,
+			'sp47s': sp47,
+			'sp48s': sp48,
+			'sp49s': sp49,
+			'sp50s': sp50,
+			'sp51s': sp51,
+			'sp52s': sp52,
+			'sp53s': sp53,
+			'sp54s': sp54,
+			'sp55s': sp55,
+			'sp56s': sp56,
+			'sp57s': sp57,
 			'mat1s': mat1,
 			'mat2s': mat2,
 			'mat3s': mat3,
@@ -2666,6 +2698,86 @@
 		set();
 		savePrefs();
 	}
+	var switchSp42 = function(bool) {
+		sp42 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp43 = function(bool) {
+		sp43 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp44 = function(bool) {
+		sp44 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp45 = function(bool) {
+		sp45 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp46 = function(bool) {
+		sp46 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp47 = function(bool) {
+		sp47 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp48 = function(bool) {
+		sp48 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp49 = function(bool) {
+		sp49 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp50 = function(bool) {
+		sp50 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp51 = function(bool) {
+		sp51 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp52 = function(bool) {
+		sp52 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp53 = function(bool) {
+		sp53 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp54 = function(bool) {
+		sp54 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp55 = function(bool) {
+		sp55 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp56 = function(bool) {
+		sp56 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp57 = function(bool) {
+		sp57 = bool;
+		set();
+		savePrefs();
+	}
 	var getSp1 = function() {
 		return sp1;
 	}
@@ -2789,6 +2901,54 @@
 	var getSp41 = function() {
 		return sp41;
 	}
+	var getSp42 = function() {
+		return sp42;
+	}
+	var getSp43 = function() {
+		return sp43;
+	}
+	var getSp44 = function() {
+		return sp44;
+	}
+	var getSp45 = function() {
+		return sp45;
+	}
+	var getSp46 = function() {
+		return sp46;
+	}
+	var getSp47 = function() {
+		return sp47;
+	}
+	var getSp48 = function() {
+		return sp48;
+	}
+	var getSp49 = function() {
+		return sp49;
+	}
+	var getSp50 = function() {
+		return sp50;
+	}
+	var getSp51 = function() {
+		return sp51;
+	}
+	var getSp52 = function() {
+		return sp52;
+	}
+	var getSp53 = function() {
+		return sp53;
+	}
+	var getSp54 = function() {
+		return sp54;
+	}
+	var getSp55 = function() {
+		return sp55;
+	}
+	var getSp56 = function() {
+		return sp56;
+	}
+	var getSp57 = function() {
+		return sp57;
+	}
 	this.switchSp1 = switchSp1;
 	this.switchSp2 = switchSp2;
 	this.switchSp3 = switchSp3;
@@ -2830,6 +2990,22 @@
 	this.switchSp39 = switchSp39;
 	this.switchSp40 = switchSp40;
 	this.switchSp41 = switchSp41;
+	this.switchSp42 = switchSp42;
+	this.switchSp43 = switchSp43;
+	this.switchSp44 = switchSp44;
+	this.switchSp45 = switchSp45;
+	this.switchSp46 = switchSp46;
+	this.switchSp47 = switchSp47;
+	this.switchSp48 = switchSp48;
+	this.switchSp49 = switchSp49;
+	this.switchSp50 = switchSp50;
+	this.switchSp51 = switchSp51;
+	this.switchSp52 = switchSp52;
+	this.switchSp53 = switchSp53;
+	this.switchSp54 = switchSp54;
+	this.switchSp55 = switchSp55;
+	this.switchSp56 = switchSp56;
+	this.switchSp57 = switchSp57;
 	this.getSp1 = getSp1;
 	this.getSp2 = getSp2;
 	this.getSp3 = getSp3;
@@ -2871,6 +3047,22 @@
 	this.getSp39 = getSp39;
 	this.getSp40 = getSp40;
 	this.getSp41 = getSp41;
+	this.getSp42 = getSp42;
+	this.getSp43 = getSp43;
+	this.getSp44 = getSp44;
+	this.getSp45 = getSp45;
+	this.getSp46 = getSp46;
+	this.getSp47 = getSp47;
+	this.getSp48 = getSp48;
+	this.getSp49 = getSp49;
+	this.getSp50 = getSp50;
+	this.getSp51 = getSp51;
+	this.getSp52 = getSp52;
+	this.getSp53 = getSp53;
+	this.getSp54 = getSp54;
+	this.getSp55 = getSp55;
+	this.getSp56 = getSp56;
+	this.getSp57 = getSp57;
 	
 	// Function that defines what each material is
 	var mat = function() {
