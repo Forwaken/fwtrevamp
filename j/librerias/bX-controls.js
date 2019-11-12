@@ -67,6 +67,40 @@ const controls = function () {
     if (fwt.getSp55()) { $('#pieces #piecescroller .alternate.opt.sp55').addClass('s'); }
     if (fwt.getSp56()) { $('#pieces #piecescroller .alternate.opt.sp56').addClass('s'); }
     if (fwt.getSp57()) { $('#pieces #piecescroller .alternate.opt.sp57').addClass('s'); }
+    if (fwt.getSp58()) { $('#pieces #piecescroller .alternate.opt.sp58').addClass('s'); }
+    if (fwt.getSp59()) { $('#pieces #piecescroller .alternate.opt.sp59').addClass('s'); }
+    if (fwt.getSp60()) { $('#pieces #piecescroller .alternate.opt.sp60').addClass('s'); }
+    if (fwt.getSp61()) { $('#pieces #piecescroller .alternate.opt.sp61').addClass('s'); }
+    if (fwt.getSp62()) { $('#pieces #piecescroller .alternate.opt.sp62').addClass('s'); }
+    if (fwt.getSp63()) { $('#pieces #piecescroller .alternate.opt.sp63').addClass('s'); }
+    if (fwt.getSp64()) { $('#pieces #piecescroller .alternate.opt.sp64').addClass('s'); }
+    if (fwt.getSp65()) { $('#pieces #piecescroller .alternate.opt.sp65').addClass('s'); }
+    if (fwt.getSp66()) { $('#pieces #piecescroller .alternate.opt.sp66').addClass('s'); }
+    if (fwt.getSp67()) { $('#pieces #piecescroller .alternate.opt.sp67').addClass('s'); }
+    if (fwt.getSp68()) { $('#pieces #piecescroller .alternate.opt.sp68').addClass('s'); }
+    if (fwt.getSp69()) { $('#pieces #piecescroller .alternate.opt.sp69').addClass('s'); }
+    if (fwt.getSp70()) { $('#pieces #piecescroller .alternate.opt.sp70').addClass('s'); }
+    if (fwt.getSp71()) { $('#pieces #piecescroller .alternate.opt.sp71').addClass('s'); }
+    if (fwt.getSp72()) { $('#pieces #piecescroller .alternate.opt.sp72').addClass('s'); }
+    if (fwt.getSp73()) { $('#pieces #piecescroller .alternate.opt.sp73').addClass('s'); }
+    if (fwt.getSp74()) { $('#pieces #piecescroller .alternate.opt.sp74').addClass('s'); }
+    if (fwt.getSp75()) { $('#pieces #piecescroller .alternate.opt.sp75').addClass('s'); }
+    if (fwt.getSp76()) { $('#pieces #piecescroller .alternate.opt.sp76').addClass('s'); }
+    if (fwt.getSp77()) { $('#pieces #piecescroller .alternate.opt.sp77').addClass('s'); }
+    if (fwt.getSp78()) { $('#pieces #piecescroller .alternate.opt.sp78').addClass('s'); }
+    if (fwt.getSp79()) { $('#pieces #piecescroller .alternate.opt.sp79').addClass('s'); }
+    if (fwt.getSp80()) { $('#pieces #piecescroller .alternate.opt.sp80').addClass('s'); }
+    if (fwt.getSp81()) { $('#pieces #piecescroller .alternate.opt.sp81').addClass('s'); }
+    if (fwt.getSp82()) { $('#pieces #piecescroller .alternate.opt.sp82').addClass('s'); }
+    if (fwt.getSp83()) { $('#pieces #piecescroller .alternate.opt.sp83').addClass('s'); }
+    if (fwt.getSp84()) { $('#pieces #piecescroller .alternate.opt.sp84').addClass('s'); }
+    if (fwt.getSp85()) { $('#pieces #piecescroller .alternate.opt.sp85').addClass('s'); }
+    if (fwt.getSp86()) { $('#pieces #piecescroller .alternate.opt.sp86').addClass('s'); }
+    if (fwt.getSp87()) { $('#pieces #piecescroller .alternate.opt.sp87').addClass('s'); }
+    if (fwt.getSp88()) { $('#pieces #piecescroller .alternate.opt.sp88').addClass('s'); }
+    if (fwt.getSp89()) { $('#pieces #piecescroller .alternate.opt.sp89').addClass('s'); }
+    if (fwt.getSp90()) { $('#pieces #piecescroller .alternate.opt.sp90').addClass('s'); }
+    if (fwt.getSp91()) { $('#pieces #piecescroller .alternate.opt.sp91').addClass('s'); }
 
     if (fwt.getMat1()) { $('#pieces #materialscroller .alternate.opt.mat1').addClass('s'); }
     if (fwt.getMat2()) { $('#pieces #materialscroller .alternate.opt.mat2').addClass('s'); }
@@ -686,6 +720,346 @@ const controls = function () {
     } else {
       $(this).addClass('s');
       fwt.switchSp57(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp58').click(function () {
+    if (fwt.getSp58()) {
+      $(this).removeClass('s');
+      fwt.switchSp58(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp58(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp59').click(function () {
+    if (fwt.getSp59()) {
+      $(this).removeClass('s');
+      fwt.switchSp59(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp59(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp60').click(function () {
+    if (fwt.getSp60()) {
+      $(this).removeClass('s');
+      fwt.switchSp60(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp60(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp61').click(function () {
+    if (fwt.getSp61()) {
+      $(this).removeClass('s');
+      fwt.switchSp61(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp61(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp62').click(function () {
+    if (fwt.getSp62()) {
+      $(this).removeClass('s');
+      fwt.switchSp62(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp62(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp63').click(function () {
+    if (fwt.getSp63()) {
+      $(this).removeClass('s');
+      fwt.switchSp63(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp63(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp64').click(function () {
+    if (fwt.getSp64()) {
+      $(this).removeClass('s');
+      fwt.switchSp64(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp64(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp65').click(function () {
+    if (fwt.getSp65()) {
+      $(this).removeClass('s');
+      fwt.switchSp65(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp65(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp66').click(function () {
+    if (fwt.getSp66()) {
+      $(this).removeClass('s');
+      fwt.switchSp66(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp66(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp67').click(function () {
+    if (fwt.getSp67()) {
+      $(this).removeClass('s');
+      fwt.switchSp67(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp67(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp68').click(function () {
+    if (fwt.getSp68()) {
+      $(this).removeClass('s');
+      fwt.switchSp68(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp68(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp69').click(function () {
+    if (fwt.getSp69()) {
+      $(this).removeClass('s');
+      fwt.switchSp69(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp69(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp70').click(function () {
+    if (fwt.getSp70()) {
+      $(this).removeClass('s');
+      fwt.switchSp70(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp70(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp71').click(function () {
+    if (fwt.getSp71()) {
+      $(this).removeClass('s');
+      fwt.switchSp71(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp71(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp72').click(function () {
+    if (fwt.getSp72()) {
+      $(this).removeClass('s');
+      fwt.switchSp72(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp72(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp73').click(function () {
+    if (fwt.getSp73()) {
+      $(this).removeClass('s');
+      fwt.switchSp73(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp73(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp74').click(function () {
+    if (fwt.getSp74()) {
+      $(this).removeClass('s');
+      fwt.switchSp74(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp74(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp75').click(function () {
+    if (fwt.getSp75()) {
+      $(this).removeClass('s');
+      fwt.switchSp75(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp75(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp76').click(function () {
+    if (fwt.getSp76()) {
+      $(this).removeClass('s');
+      fwt.switchSp76(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp76(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp77').click(function () {
+    if (fwt.getSp77()) {
+      $(this).removeClass('s');
+      fwt.switchSp77(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp77(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp78').click(function () {
+    if (fwt.getSp78()) {
+      $(this).removeClass('s');
+      fwt.switchSp78(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp78(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp79').click(function () {
+    if (fwt.getSp79()) {
+      $(this).removeClass('s');
+      fwt.switchSp79(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp79(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp80').click(function () {
+    if (fwt.getSp80()) {
+      $(this).removeClass('s');
+      fwt.switchSp80(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp80(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp81').click(function () {
+    if (fwt.getSp81()) {
+      $(this).removeClass('s');
+      fwt.switchSp81(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp81(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp82').click(function () {
+    if (fwt.getSp82()) {
+      $(this).removeClass('s');
+      fwt.switchSp82(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp82(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp83').click(function () {
+    if (fwt.getSp83()) {
+      $(this).removeClass('s');
+      fwt.switchSp83(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp83(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp84').click(function () {
+    if (fwt.getSp84()) {
+      $(this).removeClass('s');
+      fwt.switchSp84(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp84(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp85').click(function () {
+    if (fwt.getSp85()) {
+      $(this).removeClass('s');
+      fwt.switchSp85(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp85(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp86').click(function () {
+    if (fwt.getSp86()) {
+      $(this).removeClass('s');
+      fwt.switchSp86(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp86(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp87').click(function () {
+    if (fwt.getSp87()) {
+      $(this).removeClass('s');
+      fwt.switchSp87(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp87(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp88').click(function () {
+    if (fwt.getSp88()) {
+      $(this).removeClass('s');
+      fwt.switchSp88(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp88(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp89').click(function () {
+    if (fwt.getSp89()) {
+      $(this).removeClass('s');
+      fwt.switchSp89(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp89(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp90').click(function () {
+    if (fwt.getSp90()) {
+      $(this).removeClass('s');
+      fwt.switchSp90(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp90(true);
+    }
+    ui.stopGame();
+  });
+  $('#pieces #piecescroller .alternate.opt.sp91').click(function () {
+    if (fwt.getSp91()) {
+      $(this).removeClass('s');
+      fwt.switchSp91(false);
+    } else {
+      $(this).addClass('s');
+      fwt.switchSp91(true);
     }
     ui.stopGame();
   });
