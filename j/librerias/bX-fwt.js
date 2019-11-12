@@ -26,7 +26,7 @@
 	var next1, next2, next3, hold, current, temp, shade, invisible;
 	var clock = 0;
 	var forms = [];
-	var sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9, sp10, sp11, sp12, sp13, sp14, sp15, sp16, sp17, sp18, sp19, sp20, sp21, sp22, sp23, sp24, sp25, sp26, sp27, sp28, sp29, sp30, sp31, sp32, sp33, sp34, sp35, sp36, sp37, sp38, sp39, sp40, sp41, sp42, sp43, sp44, sp45, sp46, sp47, sp48, sp49, sp50, sp51, sp52, sp53, sp54, sp55, sp56, sp57;
+	var sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9, sp10, sp11, sp12, sp13, sp14, sp15, sp16, sp17, sp18, sp19, sp20, sp21, sp22, sp23, sp24, sp25, sp26, sp27, sp28, sp29, sp30, sp31, sp32, sp33, sp34, sp35, sp36, sp37, sp38, sp39, sp40, sp41, sp42, sp43, sp44, sp45, sp46, sp47, sp48, sp49, sp50, sp51, sp52, sp53, sp54, sp55, sp56, sp57, sp58, sp59, sp60, sp61, sp62, sp63, sp64, sp65, sp66, sp67, sp68, sp69, sp70, sp71, sp72, sp73, sp74, sp75, sp76, sp77, sp78, sp79, sp80, sp81, sp82, sp83, sp84, sp85, sp86, sp87, sp88, sp89, sp90, sp91;
 	var sp1 = true;
 	var sp2 = true;
 	var sp3 = true;
@@ -136,6 +136,40 @@
 		sp55 = prefs.sp55s;
 		sp56 = prefs.sp56s;
 		sp57 = prefs.sp57s;
+		sp58 = prefs.sp58s;
+		sp59 = prefs.sp59s;
+		sp60 = prefs.sp60s;
+		sp61 = prefs.sp61s;
+		sp62 = prefs.sp62s;
+		sp63 = prefs.sp63s;
+		sp64 = prefs.sp64s;
+		sp65 = prefs.sp65s;
+		sp66 = prefs.sp66s;
+		sp67 = prefs.sp67s;
+		sp68 = prefs.sp68s;
+		sp69 = prefs.sp69s;
+		sp70 = prefs.sp70s;
+		sp71 = prefs.sp71s;
+		sp72 = prefs.sp72s;
+		sp73 = prefs.sp73s;
+		sp74 = prefs.sp74s;
+		sp75 = prefs.sp75s;
+		sp76 = prefs.sp76s;
+		sp77 = prefs.sp77s;
+		sp78 = prefs.sp78s;
+		sp79 = prefs.sp79s;
+		sp80 = prefs.sp80s;
+		sp81 = prefs.sp81s;
+		sp82 = prefs.sp82s;
+		sp83 = prefs.sp83s;
+		sp84 = prefs.sp84s;
+		sp85 = prefs.sp85s;
+		sp86 = prefs.sp86s;
+		sp87 = prefs.sp87s;
+		sp88 = prefs.sp88s;
+		sp89 = prefs.sp89s;
+		sp90 = prefs.sp90s;
+		sp91 = prefs.sp91s;
 		mat1 = prefs.mat1s;
 		mat2 = prefs.mat2s;
 		mat3 = prefs.mat3s;
@@ -1929,6 +1963,40 @@
 			'sp55s': sp55,
 			'sp56s': sp56,
 			'sp57s': sp57,
+			'sp58s': sp58,
+			'sp59s': sp59,
+			'sp60s': sp60,
+			'sp61s': sp61,
+			'sp62s': sp62,
+			'sp63s': sp63,
+			'sp64s': sp64,
+			'sp65s': sp65,
+			'sp66s': sp66,
+			'sp67s': sp67,
+			'sp68s': sp68,
+			'sp69s': sp69,
+			'sp70s': sp70,
+			'sp71s': sp71,
+			'sp72s': sp72,
+			'sp73s': sp73,
+			'sp74s': sp74,
+			'sp75s': sp75,
+			'sp76s': sp76,
+			'sp77s': sp77,
+			'sp78s': sp78,
+			'sp79s': sp79,
+			'sp80s': sp80,
+			'sp81s': sp81,
+			'sp82s': sp82,
+			'sp83s': sp83,
+			'sp84s': sp84,
+			'sp85s': sp85,
+			'sp86s': sp86,
+			'sp87s': sp87,
+			'sp88s': sp88,
+			'sp89s': sp89,
+			'sp90s': sp90,
+			'sp91s': sp91,
 			'mat1s': mat1,
 			'mat2s': mat2,
 			'mat3s': mat3,
@@ -2778,6 +2846,176 @@
 		set();
 		savePrefs();
 	}
+	var switchSp58 = function(bool) {
+		sp58 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp59 = function(bool) {
+		sp59 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp60 = function(bool) {
+		sp60 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp61 = function(bool) {
+		sp61 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp62 = function(bool) {
+		sp62 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp63 = function(bool) {
+		sp63 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp64 = function(bool) {
+		sp64 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp65 = function(bool) {
+		sp65 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp66 = function(bool) {
+		sp66 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp67 = function(bool) {
+		sp67 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp68 = function(bool) {
+		sp68 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp69 = function(bool) {
+		sp69 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp70 = function(bool) {
+		sp70 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp71 = function(bool) {
+		sp71 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp72 = function(bool) {
+		sp72 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp73 = function(bool) {
+		sp73 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp74 = function(bool) {
+		sp74 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp75 = function(bool) {
+		sp75 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp76 = function(bool) {
+		sp76 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp77 = function(bool) {
+		sp77 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp78 = function(bool) {
+		sp78 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp79 = function(bool) {
+		sp79 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp80 = function(bool) {
+		sp80 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp81 = function(bool) {
+		sp81 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp82 = function(bool) {
+		sp82 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp83 = function(bool) {
+		sp83 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp84 = function(bool) {
+		sp84 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp85 = function(bool) {
+		sp85 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp86 = function(bool) {
+		sp86 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp87 = function(bool) {
+		sp87 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp88 = function(bool) {
+		sp88 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp89 = function(bool) {
+		sp89 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp90 = function(bool) {
+		sp90 = bool;
+		set();
+		savePrefs();
+	}
+	var switchSp91 = function(bool) {
+		sp91 = bool;
+		set();
+		savePrefs();
+	}
 	var getSp1 = function() {
 		return sp1;
 	}
@@ -2949,6 +3187,108 @@
 	var getSp57 = function() {
 		return sp57;
 	}
+	var getSp58 = function() {
+		return sp58;
+	}
+	var getSp59 = function() {
+		return sp59;
+	}
+	var getSp60 = function() {
+		return sp60;
+	}
+	var getSp61 = function() {
+		return sp61;
+	}
+	var getSp62 = function() {
+		return sp62;
+	}
+	var getSp63 = function() {
+		return sp63;
+	}
+	var getSp64 = function() {
+		return sp64;
+	}
+	var getSp65 = function() {
+		return sp65;
+	}
+	var getSp66 = function() {
+		return sp66;
+	}
+	var getSp67 = function() {
+		return sp67;
+	}
+	var getSp68 = function() {
+		return sp68;
+	}
+	var getSp69 = function() {
+		return sp69;
+	}
+	var getSp70 = function() {
+		return sp70;
+	}
+	var getSp71 = function() {
+		return sp71;
+	}
+	var getSp72 = function() {
+		return sp72;
+	}
+	var getSp73 = function() {
+		return sp73;
+	}
+	var getSp74 = function() {
+		return sp74;
+	}
+	var getSp75 = function() {
+		return sp75;
+	}
+	var getSp76 = function() {
+		return sp76;
+	}
+	var getSp77 = function() {
+		return sp77;
+	}
+	var getSp78 = function() {
+		return sp78;
+	}
+	var getSp79 = function() {
+		return sp79;
+	}
+	var getSp80 = function() {
+		return sp80;
+	}
+	var getSp81 = function() {
+		return sp81;
+	}
+	var getSp82 = function() {
+		return sp82;
+	}
+	var getSp83 = function() {
+		return sp83;
+	}
+	var getSp84 = function() {
+		return sp84;
+	}
+	var getSp85 = function() {
+		return sp85;
+	}
+	var getSp86 = function() {
+		return sp86;
+	}
+	var getSp87 = function() {
+		return sp87;
+	}
+	var getSp88 = function() {
+		return sp88;
+	}
+	var getSp89 = function() {
+		return sp89;
+	}
+	var getSp90 = function() {
+		return sp90;
+	}
+	var getSp91 = function() {
+		return sp91;
+	}
 	this.switchSp1 = switchSp1;
 	this.switchSp2 = switchSp2;
 	this.switchSp3 = switchSp3;
@@ -3006,6 +3346,40 @@
 	this.switchSp55 = switchSp55;
 	this.switchSp56 = switchSp56;
 	this.switchSp57 = switchSp57;
+	this.switchSp58 = switchSp58;
+	this.switchSp59 = switchSp59;
+	this.switchSp60 = switchSp60;
+	this.switchSp61 = switchSp61;
+	this.switchSp62 = switchSp62;
+	this.switchSp63 = switchSp63;
+	this.switchSp64 = switchSp64;
+	this.switchSp65 = switchSp65;
+	this.switchSp66 = switchSp66;
+	this.switchSp67 = switchSp67;
+	this.switchSp68 = switchSp68;
+	this.switchSp69 = switchSp69;
+	this.switchSp70 = switchSp70;
+	this.switchSp71 = switchSp71;
+	this.switchSp72 = switchSp72;
+	this.switchSp73 = switchSp73;
+	this.switchSp74 = switchSp74;
+	this.switchSp75 = switchSp75;
+	this.switchSp76 = switchSp76;
+	this.switchSp77 = switchSp77;
+	this.switchSp78 = switchSp78;
+	this.switchSp79 = switchSp79;
+	this.switchSp80 = switchSp80;
+	this.switchSp81 = switchSp81;
+	this.switchSp82 = switchSp82;
+	this.switchSp83 = switchSp83;
+	this.switchSp84 = switchSp84;
+	this.switchSp85 = switchSp85;
+	this.switchSp86 = switchSp86;
+	this.switchSp87 = switchSp87;
+	this.switchSp88 = switchSp88;
+	this.switchSp89 = switchSp89;
+	this.switchSp90 = switchSp90;
+	this.switchSp91 = switchSp91;
 	this.getSp1 = getSp1;
 	this.getSp2 = getSp2;
 	this.getSp3 = getSp3;
@@ -3063,6 +3437,40 @@
 	this.getSp55 = getSp55;
 	this.getSp56 = getSp56;
 	this.getSp57 = getSp57;
+	this.getSp58 = getSp58;
+	this.getSp59 = getSp59;
+	this.getSp60 = getSp60;
+	this.getSp61 = getSp61;
+	this.getSp62 = getSp62;
+	this.getSp63 = getSp63;
+	this.getSp64 = getSp64;
+	this.getSp65 = getSp65;
+	this.getSp66 = getSp66;
+	this.getSp67 = getSp67;
+	this.getSp68 = getSp68;
+	this.getSp69 = getSp69;
+	this.getSp70 = getSp70;
+	this.getSp71 = getSp71;
+	this.getSp72 = getSp72;
+	this.getSp73 = getSp73;
+	this.getSp74 = getSp74;
+	this.getSp75 = getSp75;
+	this.getSp76 = getSp76;
+	this.getSp77 = getSp77;
+	this.getSp78 = getSp78;
+	this.getSp79 = getSp79;
+	this.getSp80 = getSp80;
+	this.getSp81 = getSp81;
+	this.getSp82 = getSp82;
+	this.getSp83 = getSp83;
+	this.getSp84 = getSp84;
+	this.getSp85 = getSp85;
+	this.getSp86 = getSp86;
+	this.getSp87 = getSp87;
+	this.getSp88 = getSp88;
+	this.getSp89 = getSp89;
+	this.getSp90 = getSp90;
+	this.getSp91 = getSp91;
 	
 	// Function that defines what each material is
 	var mat = function() {
