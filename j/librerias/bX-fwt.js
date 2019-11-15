@@ -43,7 +43,7 @@
 	var colorTheme = "iced";
 		$('canvas#canvas').attr('data-theme', colorTheme);
 	// Graphics
-	var graphics = {iced: {}, retro: {o: [], t: []}, crayon: {o: [], t: []}, recent: {o: [], t: []},bckwht: {o: [], t: []}, gameboy: {o: [], t: []}, bit8: {o: [], t: []}, face: {o: [], t: []}, billiard: {o: [], t: []}, dark: {o: [], t: []}, stud: {o: [], t: []}, block: {o: [], t: []}, panel: {o: [], t: []}, crystal: {o: [], t: []}, classic: {o: [], t: []}};
+	var graphics = {iced: {}, fire: {}, retro: {o: [], t: []}, crayon: {o: [], t: []}, recent: {o: [], t: []},bckwht: {o: [], t: []}, gameboy: {o: [], t: []}, bit8: {o: [], t: []}, face: {o: [], t: []}, billiard: {o: [], t: []}, dark: {o: [], t: []}, stud: {o: [], t: []}, block: {o: [], t: []}, panel: {o: [], t: []}, crystal: {o: [], t: []}, classic: {o: [], t: []}};
 	
 	// rAF
 	window.requestAnimFrame = (function () {
@@ -966,6 +966,8 @@
 						return graphics.crystal.o[current.col];
 					else
 						return graphics.crystal.t[current.col];
+				} else if (colorTheme == "fire") {
+					return graphics.fire.o;
 				} else {
 					if (gameStatus == 3)
 						return graphics.iced.o;
@@ -1049,9 +1051,11 @@
 				return graphics.panel.t[current.col]
 			} else if (colorTheme == "crystal") {
 				return graphics.crystal.t[current.col]
+			} else if (colorTheme == "fire") {
+				return graphics.fire.o;
 			} else {
 				return graphics.iced.t;
-				}
+			}
 		},
 		next1: function(mat){
 			if (mat == 2) {
@@ -1129,9 +1133,11 @@
 				return graphics.panel.o[next1.col]
 			} else if (colorTheme == "crystal") {
 				return graphics.crystal.o[next1.col]
+			} else if (colorTheme == "fire") {
+				return graphics.fire.o;
 			} else {
 				return graphics.iced.o;
-				}
+			}
 		},
 		next2: function(mat){
 			if (mat == 2) {
@@ -1209,9 +1215,11 @@
 				return graphics.panel.o[next2.col]
 			} else if (colorTheme == "crystal") {
 				return graphics.crystal.o[next2.col]
+			} else if (colorTheme == "fire") {
+				return graphics.fire.o;
 			} else {
 				return graphics.iced.o;
-				}
+			}
 		},
 		next3: function(mat){
 			if (mat == 2) {
@@ -1289,9 +1297,11 @@
 				return graphics.panel.o[next3.col]
 			} else if (colorTheme == "crystal") {
 				return graphics.crystal.o[next3.col]
+			} else if (colorTheme == "fire") {
+				return graphics.fire.o;
 			} else {
 				return graphics.iced.o;
-				}
+			}
 		},
 		hold: function(mat){
 			if (mat == 2) {
@@ -1369,9 +1379,11 @@
 				return graphics.panel.o[hold.col]
 			} else if (colorTheme == "crystal") {
 				return graphics.crystal.o[hold.col]
+			} else if (colorTheme == "fire") {
+				return graphics.fire.o;
 			} else {
 				return graphics.iced.o;
-				}
+			}
 		},
 		mapped: function(i, j, mat){
 			if (mat == 2) {
@@ -1551,6 +1563,8 @@
 							return graphics.crystal.o[map[j][i].col];
 						else
 							return graphics.crystal.t[map[j][i].col];
+				} else if (colorTheme == "fire") {
+					return graphics.fire.o;
 				} else {
 					if (gameStatus == 3)
 						return graphics.iced.o;
@@ -1785,6 +1799,9 @@
 			 break;
 			case "crystal":
 			 colorTheme = "crystal";
+			 break;
+			case "fire":
+			 colorTheme = "fire";
 			 break;
 			default:
 			 colorTheme = "iced";
@@ -2042,6 +2059,13 @@
 		graphics.iced.t = new Image();
 		graphics.iced.t.src = "g/material/iced-t.png";
 		graphics.iced.t.onload = function(){
+			ui.loader.tick();
+		}
+		
+		// Fire
+		graphics.fire.o = new Image();
+		graphics.fire.o.src = "g/material/fire-o.gif";
+		graphics.fire.o.onload = function(){
 			ui.loader.tick();
 		}
 		
