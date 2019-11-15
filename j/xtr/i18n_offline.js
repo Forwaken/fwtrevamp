@@ -93,6 +93,7 @@
 		"custom-theme-block": "Blocks",
 		"custom-theme-panel": "Panels",
 		"custom-theme-crystal": "Crystal",
+	    	"custom-theme-fire": "Fire",
 
 		"custom-speed": "Speed of game",
 		"custom-speed-d": "Change the speed of the game.",
@@ -209,6 +210,7 @@
 		"custom-theme-block": "Blocks",
 		"custom-theme-panel": "Panels",
 		"custom-theme-crystal": "Crystal",
+		"custom-theme-fire": "Fire",
 
 		"custom-speed": "Speed of game",
 		"custom-speed-d": "Change the speed of the game.",
@@ -324,6 +326,7 @@
 		"custom-theme-block": "Blocks",
 		"custom-theme-panel": "Panels",
 		"custom-theme-crystal": "Crystal",
+	    	"custom-theme-fire": "Fire",
 
 		"custom-speed": "Speed of game",
 		"custom-speed-d": "Change the speed of the game.",
@@ -459,6 +462,7 @@
 		"custom-theme-block": "Blocks",
 		"custom-theme-panel": "Panels",
 		"custom-theme-crystal": "Crystal",
+	    	"custom-theme-fire": "Fire",
 
 		"custom-speed": "Speed of game",
 		"custom-speed-d": "Change the speed of the game.",
@@ -574,6 +578,7 @@
 		"custom-theme-block": "Blocks",
 		"custom-theme-panel": "Panels",
 		"custom-theme-crystal": "Crystal",
+	    	"custom-theme-fire": "Fire",
 
 		"custom-speed": "Speed of game",
 		"custom-speed-d": "Change the speed of the game.",
