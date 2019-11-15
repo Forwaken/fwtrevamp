@@ -1761,6 +1761,9 @@
 			case "classic":
 			 colorTheme = "classic";
 			 break;
+			case "fire":
+			 colorTheme = "fire";
+			 break;
 			case "gameboy":
 			 colorTheme = "gameboy";
 			 break;
@@ -1799,9 +1802,6 @@
 			 break;
 			case "crystal":
 			 colorTheme = "crystal";
-			 break;
-			case "fire":
-			 colorTheme = "fire";
 			 break;
 			default:
 			 colorTheme = "iced";
