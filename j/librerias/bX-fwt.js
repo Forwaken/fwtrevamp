@@ -7,7 +7,7 @@
 	var map, compiled;
 	var width = 10, height = 24, levelstart = 0, lastLine;
 	var coincount = 0;
-	$('.footcoin#foot #right').html("Coins: " + coincount.toFixed(2));
+		$('.footcoin#foot #right').html("Coins: " + coincount.toFixed(2));
 
 	// Game
 	var gameStatus = 0; // 0: no init - 1: over - 2: paused - 3: game
@@ -75,6 +75,8 @@
 		seed = prefs.seed || seed;
 		colorTheme = prefs.theme || colorTheme;
 			$('canvas#canvas').attr('data-theme', colorTheme);
+		coincount = prefs.coincount || coincount;
+			$('.footcoin#foot #right').html("Coins: " + coincount.toFixed(2));
 		shadeEnabled = prefs.shades || shadeEnabled;
 		invisibleEnabled = prefs.invisibles || invisibleEnabled;
 		speed = prefs.speed || speed;
