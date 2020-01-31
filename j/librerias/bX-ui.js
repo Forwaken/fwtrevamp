@@ -267,6 +267,15 @@ var ui = function () {
 				$('.activity:not(#help)').animate({ 'margin-left': '-110%' }, 500, function() { $(this).hide(); });
 				$('.activity#help').show().animate({ 'margin-left': 0 }, 500);
 			break;
+			case 5: // -> Shop
+				fwt.pause(1);
+				setEvents();
+				
+				cmd.loadPrefs();
+				
+				$('.activity:not(#shop)').animate({ 'margin-left': '-110%' }, 500, function() { $(this).hide(); });
+				$('.activity#help').show().animate({ 'margin-left': 0 }, 500);
+			break;
 			case 6: // -> Back to main menu
 				fwt.pause(1);
 				setEvents();
