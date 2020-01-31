@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 	<meta name="description" content="An awesome tetris game for the moments when you need to kill the boredom.">
-	<meta name="author" content="Juande Martos - bumxu.com and Asamid">
+	<meta name="author" content="bumxu.com and Asamid">
 
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -51,6 +51,7 @@
 					<div onclick="ui.action(1)" id="t1" class="tile"><span class="xtr" data-xtr="newgame-mnu"></span></div>
 					<div onclick="ui.action(2)" id="t2" class="tile"><span class="xtr" data-xtr="customize-mnu"></span></div>
 					<div onclick="ui.action(3)" id="t3" class="tile"><span class="xtr" data-xtr="piece-mnu"></span></div>
+					<div onclick="ui.action(5)" id="t4" class="tile"><span class="xtr" data-xtr="shop-mnu"></span></div>
 					<div onclick="ui.action(4)" id="t5" class="tile"><span class="xtr" data-xtr="helpabout-mnu"></span></div>
 				</div>
 			</div>
@@ -303,8 +304,11 @@
 				<div id="t12" class="alternate opt xtr" data-value="face" data-xtr="custom-theme-face"></div>
 				<div id="t13" class="alternate opt xtr" data-value="billiard" data-xtr="custom-theme-billiard"></div>
 				<div id="t14" class="alternate opt xtr" data-value="crayon" data-xtr="custom-theme-crayon"></div>
-				<div id="t15" class="alternate opt xtr" data-value="fire" data-xtr="custom-theme-fire"></div>
 			</div>
+		</div>
+		
+		<div class="activity" id="shop">
+			<div class="buttonback xtr" onclick="ui.action(6)" data-xtr="goback-btt"></div>
 		</div>
 		
 		<div class="activity" id="help">
