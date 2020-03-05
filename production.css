@@ -944,6 +944,14 @@ html, body {
     float: left;
 }
 
+#layout .activity#pieces #piecescroller .alternate.tile3 {
+	background: rgba(255, 0, 0, 0.3);
+}
+
+#layout .activity#pieces #piecescroller .alternate.tile3.s {
+	background: rgba(255, 0, 0, 0.6);
+}
+
 #layout .activity#pieces #piecescroller .alternate.s {
     -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
