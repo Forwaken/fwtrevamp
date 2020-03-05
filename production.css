@@ -945,11 +945,35 @@ html, body {
 }
 
 #layout .activity#pieces #piecescroller .alternate.tile3 {
-	background: rgba(255, 0, 0, 0.3);
+	background: rgba(255, 255, 127, 0.3);
 }
 
 #layout .activity#pieces #piecescroller .alternate.tile3.s {
-	background: rgba(255, 0, 0, 0.6);
+	background: rgba(255, 127, 127, 0.6);
+}
+
+#layout .activity#pieces #piecescroller .alternate.tile4 {
+	background: rgba(127, 255, 255, 0.3);
+}
+
+#layout .activity#pieces #piecescroller .alternate.tile4.s {
+	background: rgba(127, 255, 255, 0.6);
+}
+
+#layout .activity#pieces #piecescroller .alternate.tile5 {
+	background: rgba(127, 255, 127, 0.3);
+}
+
+#layout .activity#pieces #piecescroller .alternate.tile5.s {
+	background: rgba(127, 255, 127, 0.6);
+}
+
+#layout .activity#pieces #piecescroller .alternate.tile6 {
+	background: rgba(255, 127, 255, 0.3);
+}
+
+#layout .activity#pieces #piecescroller .alternate.tile6.s {
+	background: rgba(255, 127, 255, 0.6);
 }
 
 #layout .activity#pieces #piecescroller .alternate.s {
